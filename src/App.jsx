@@ -1,10 +1,13 @@
 import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
-
+import logo from "../img/logod.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandshake } from "@fortawesome/free-solid-svg-icons";
+import accountIcon from "../src/assets/business_13582738.png";
+import aiIcon from "../src/assets/ai.png";
+import customer from "../src/assets/people.png";
+import inventory from "../src/assets/distribution.png";
 function App() {
-  // const [count, setCount] = useState(0)
   const [showBasicModal, setShowBasicModal] = useState(false);
   const [showEnterpriseModal, setShowEnterpriseModal] = useState(false);
   const [showBusinessModal, setShowBusinessModal] = useState(false);
@@ -33,13 +36,13 @@ function App() {
             </button>
             <a href='#main' className='navbar-brand'>
               <img
-                src={"logo"}
-                alt='Laapp'
+                src={logo}
+                alt='Dukanbuddy'
                 className='logo logo-sticky d-block d-md-none'
               />
               <img
-                src={"logoLight"}
-                alt='Laapp'
+                src={logo}
+                alt='Dukanbuddy'
                 className='logo d-none d-md-block'
               />
             </a>
@@ -108,25 +111,25 @@ function App() {
               <div className='row'>
                 <div className='col-md-6'>
                   <h1 className='extra-bold display-md-3 font-md'>
-                    A new way
+                    Small Business
                     <span className='d-block display-md-4 light'>
-                      to showcase your app
+                      to Smart Business
                     </span>
                   </h1>
                   <p className='lead'>
-                    Your amazing product deserves an outstanding way to show it.
-                    Dashcore will provide you with a quality template no matter
-                    what your idea is about.
+                    SMALL Business se SMART Business ki Journey dukanBuddy ke
+                    Saath
                   </p>
                   <nav className='nav mt-5'>
-                    <a
+                    {/* <a
                       href='#'
                       className='nav-link mr-3 btn btn-rounded btn-contrast'
                     >
                       <i className='fas fa-tag mr-3'></i> Plans & pricing{" "}
-                    </a>
+                    </a> */}
                     <a
-                      href='#'
+                      href='https://app.dukanbuddy.com/'
+                      target='_blank'
                       className='nav-link btn btn-rounded btn-outline-contrast'
                     >
                       Start now
@@ -167,15 +170,31 @@ function App() {
               <div className='row'>
                 <div className='col-md-6'>
                   <div className='section-heading'>
-                    <i className='fas fa-handshake fa-3x accent mb-3'></i>
-                    <h3 className='text-alternate heading-line'>
-                      We have partnered with awesome folks
-                    </h3>
+                    {/* <i className='fas fa-handshake fa-3x accent mb-3'></i> */}
+                    <FontAwesomeIcon
+                      icon={faHandshake}
+                      className='fa-3x accent mb-3'
+                    />
+                    <h3 className='text-alternate heading-line'>Our Mission</h3>
                     <p className='lead'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Animi, atque eaque eius esse et harum inventore ipsam
-                      laboriosam modi nam necessitatibus nemo pariatur
-                      provident.
+                      At CogitoFS, we envision a future where every MSME in
+                      India prospers without financial constraints. Our mission
+                      is to:
+                      <ul>
+                        <li>
+                          Revolutionize the MSME landscape with innovative
+                          lending products
+                        </li>
+                        <li>Provide cutting-edge CRM solutions</li>
+                        <li>Offer comprehensive financial education</li>
+                      </ul>
+                      Our commitment includes:
+                      <ul>
+                        <li>Relentless product and solution innovation</li>
+                        <li>Unwavering dedication to improving MSME lives</li>
+                      </ul>
+                      We enable MSMEs to focus on their businesses while we
+                      handle the rest.
                     </p>
                   </div>
                   <ul className='nav'>
@@ -229,18 +248,30 @@ function App() {
                     <p className='px-2 text-alternate text-uppercase bold'>
                       Powerful features await for you
                     </p>
-                    <h2 className='heading-line'>
+                    {/* <h2 className='heading-line'>
                       A complete feature stack ready to help you
-                    </h2>
+                    </h2> */}
                     <p className='lead text-muted my-4 semi-bold'>
-                      Laboris nisi ut aliquip ex ea commodo consequat.
+                      We also Provide Customer Managment Employee Management
                     </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
+                    <ul>
+                      <li>
+                        <strong>Customer Management:</strong> Keep track of
+                        customers and their last shopping dates.
+                      </li>
+                      <li>
+                        <strong>Automated Reminders:</strong> Send timely
+                        shopping reminders to customers.
+                      </li>
+                      <li>
+                        <strong>Employee Management:</strong> Easily manage
+                        employee details, wages, and salaries.
+                      </li>
+                      <li>
+                        <strong>User-Friendly Interface:</strong> Navigate
+                        effortlessly with our intuitive design.
+                      </li>
+                    </ul>
                     <a
                       href='#!'
                       className='more-link btn btn-primary text-contrast bold'
@@ -256,12 +287,19 @@ function App() {
                         <div className='card border-0 shadow mb-5 tilt'>
                           <div className='card-body py-5 px-4'>
                             <div className='icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3'>
-                              <i className='icon m-0 pe pe-7s-paint-bucket pe-3x'></i>
+                              <img
+                                src={accountIcon}
+                                className='icon m-0 pe pe-7s-paint-bucket pe-3x'
+                              />
                             </div>
-                            <h4 className='bold mb-5'>Customizable</h4>
+                            <h4 className='bold mb-5'>Accounting</h4>
                             <p className='text-muted lead'>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit
+                              Increase cash flow by:
+                              <ul>
+                                <li>Sending payment reminders</li>
+                                <li>Handling GST and Non-GST bills</li>
+                                <li>Tracking sales and profit</li>
+                              </ul>
                             </p>
                           </div>
                         </div>
@@ -270,12 +308,24 @@ function App() {
                         <div className='card border-0 shadow mb-5 tilt'>
                           <div className='card-body py-5 px-4'>
                             <div className='icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3'>
-                              <i className='icon m-0 pe pe-7s-diamond pe-3x'></i>
+                              <img src={customer} className='h-w-54' />
                             </div>
-                            <h4 className='bold mb-5'>Powerful Design</h4>
+                            <h4 className='bold mb-5'>360° Customer View</h4>
                             <p className='text-muted lead'>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit
+                              <ul>
+                                <li>
+                                  Send marketing Emails/SMS to attract new
+                                  customers.
+                                </li>
+                                <li>
+                                  Understand customer’s buying trends and
+                                  preferences.
+                                </li>
+                                <li>
+                                  Build meaningful relationships with your
+                                  customers.
+                                </li>
+                              </ul>
                             </p>
                           </div>
                         </div>
@@ -286,12 +336,15 @@ function App() {
                         <div className='card border-0 shadow mb-5 tilt'>
                           <div className='card-body py-5 px-4'>
                             <div className='icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3'>
-                              <i className='icon m-0 pe pe-7s-light pe-3x'></i>
+                              <img src={inventory} className='h-w-54' />
                             </div>
-                            <h4 className='bold mb-5'>Creative</h4>
+                            <h4 className='bold mb-5'>Inventory Management</h4>
                             <p className='text-muted lead'>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit
+                              <ul>
+                                <li>One click stock order placement.</li>
+                                <li>Real time order tracking.</li>
+                                <li>Easy handling of Returns.</li>
+                              </ul>
                             </p>
                           </div>
                         </div>
@@ -300,12 +353,22 @@ function App() {
                         <div className='card border-0 shadow mb-5 tilt'>
                           <div className='card-body py-5 px-4'>
                             <div className='icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3'>
-                              <i className='icon m-0 pe pe-7s-cash pe-3x'></i>
+                              <img src={aiIcon} className='h-w-54' />
                             </div>
-                            <h4 className='bold mb-5'>Affordable</h4>
+                            <h4 className='bold mb-5'>
+                              AI driven Market Insights
+                            </h4>
                             <p className='text-muted lead'>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit
+                              <ul>
+                                <li>
+                                  Know changing demands with changing seasons,
+                                  festivals, and occasions.
+                                </li>
+                                <li>
+                                  Receive competitive product suggestions to
+                                  increase your margin.
+                                </li>
+                              </ul>
                             </p>
                           </div>
                         </div>
@@ -1002,7 +1065,7 @@ function App() {
           <div className='container py-3'>
             <div className='row gap-y text-center text-md-left'>
               <div className='col-md-4 mr-auto'>
-                <img src='img/logo-light.png' alt='Logo' className='logo' />
+                <img src={logo} alt='Logo' className='logo' />
                 <p>
                   Laapp, a carefully crafted and powerful HTML5 template, it is
                   perfect to showcase your App or Startup
