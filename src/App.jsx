@@ -7,6 +7,8 @@ import accountIcon from "../src/assets/business_13582738.png";
 import aiIcon from "../src/assets/ai.png";
 import customer from "../src/assets/people.png";
 import inventory from "../src/assets/distribution.png";
+import Feature from "./pages/CoreFeatures";
+import FreQuestion from "./pages/FreQuestion";
 function App() {
   const [showBasicModal, setShowBasicModal] = useState(false);
   const [showEnterpriseModal, setShowEnterpriseModal] = useState(false);
@@ -400,7 +402,7 @@ function App() {
               </div>
               <div className='shape pattern-dots-1'></div>
             </div>
-            <div className='container'>
+            {/* <div className='container'>
               <div className='row gap-y align-items-center'>
                 <div className='col-md-6'>
                   <div className='section-heading'>
@@ -438,7 +440,7 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </section>
           {/* <!-- Features you can't miss --> */}
           <section className='section features-cant-miss'>
@@ -470,35 +472,95 @@ function App() {
                     <li className='media flex-column flex-md-row text-center text-md-left'>
                       <i className='mx-auto mr-md-3 accent pe pe-7s-mail pe-3x'></i>
                       <div className='media-body mt-3 mt-md-0'>
-                        <h5 className='bold mt-0 mb-1'>Mail Management</h5>
+                        <h5 className='bold mt-0 mb-1'>Inventory Management</h5>
                         <p className='m-0'>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Amet aut autem eum laudantium quas recusandae
-                          repellendus voluptate.
+                          Easily track your stock levels, set reorder points,
+                          and manage vendors. Stay updated with real-time
+                          inventory data to avoid stockouts and overstocking.
                         </p>
                       </div>
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <i className='mx-auto mr-md-3 accent pe pe-7s-users pe-3x'></i>
                       <div className='media-body mt-3 mt-md-0'>
-                        <h5 className='bold mt-0 mb-1'>Customers Tracking</h5>
+                        <h5 className='bold mt-0 mb-1'>Sales & Billing</h5>
                         <p className='m-0'>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Amet aut autem eum laudantium quas recusandae
-                          repellendus voluptate.
+                          Simplify your sales process with quick billing,
+                          invoicing, and sales tracking. Generate professional
+                          invoices and keep accurate sales records effortlessly.
                         </p>
                       </div>
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
-                      <div className='media-body mt-3 mt-md-0'>
-                        <h5 className='bold mt-0 mb-1'>Advanced Reporting</h5>
-                        <p className='m-0'>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Amet aut autem eum laudantium quas recusandae
-                          repellendus voluptate.
-                        </p>
-                      </div>
+                      <Feature
+                        heading='Customer Management'
+                        paragraph='Keep detailed records of your customers, manage loyalty programs, and track customer interactions to provide personalized services, send payment reminders and many more awesome features'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Supplier Management'
+                        paragraph='Streamline your supplier relationships by keeping track of orders, payments, and communication in one place.'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Payroll Management'
+                        paragraph='Manage employee( full time and Part time) salaries with ease. Track attendance, calculate wages based on hours worked or shifts, and ensure timely and accurate payroll processing.'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Subscription Management'
+                        paragraph='Offer subscription plans to your customers. Automate renewals, manage billing cycles, and keep track of subscription statuses to provide a seamless experience.'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Cashbook'
+                        paragraph='Maintain a digital cashbook to record daily transactions. Monitor cash inflows and outflows, reconcile accounts, and get a clear picture of your business finances.'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Multi-Store Management [Coming soon*]'
+                        paragraph='If you own multiple stores, manage them all from a single dashboard. Monitor performance, transfer stock, and streamline operations across locations.'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Expense Management'
+                        paragraph='Keep track of all business expenses, categorize them, and manage budgets effectively to control costs and improve profitability.
+'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Procurement'
+                        paragraph='Streamline your procurement process by managing purchase orders, supplier contracts, and inventory replenishment efficiently.'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Security & Permissions'
+                        paragraph='Ensure data security with role-based access control. Assign specific permissions to employees based on their roles to maintain data integrity.'
+                      />
+                    </li>
+                    <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
+                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      <Feature
+                        heading='Mobile App (Coming soon *)'
+                        paragraph='Access all the features of DukanBuddy on the go with our mobile app. Manage your business anytime, anywhere with ease.'
+                      />
                     </li>
                   </ul>
                 </div>
@@ -725,53 +787,7 @@ function App() {
           </section>
 
           {/* <!-- Integrations --> */}
-          <section className='section integration-bubbles'>
-            <div className='container overflow-hidden'>
-              <div className='row'>
-                <div className='col-md-6'>
-                  <div className='bubbles-wrapper'>
-                    <div className='animations m-0'>
-                      {/* Bubble items */}
-                      <div className='bubble bg-contrast rounded-circle p-2 shadow icon icon-md'>
-                        <img
-                          src='img/demo/header/apx.svg'
-                          alt=''
-                          className='img-responsive'
-                        />
-                        <span className='badge badge-contrast shadow-box'>
-                          Autoprefixer
-                        </span>
-                      </div>
-                      {/* Repeat other bubble items similarly */}
-                      {/* Example: */}
-                      {/* <div className="bubble bg-contrast rounded-circle p-2 shadow icon icon-xxl">
-                  <img src="img/demo/header/bs.svg" alt="" className="img-responsive" />
-                  <span className="badge badge-contrast shadow-box">Bootstrap</span>
-                </div> */}
-                    </div>
-                  </div>
-                </div>
-                <div className='col-md-6'>
-                  <div className='section-heading'>
-                    <p className='text-alternate text-uppercase bold'>
-                      Extending core
-                    </p>
-                    <h2 className='heading-line'>
-                      Integrations to make it better
-                    </h2>
-                    <p className='lead text-muted'>
-                      Ever wonder about the wonder of Laap: We count on hundreds
-                      of friends contributing day by day to make Laapp a
-                      wonderful tool
-                    </p>
-                  </div>
-                  <a href='#!' className='more-link'>
-                    Explore all integration
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
+
           {/* <!-- Why Choose Us --> */}
           <section className='section why-choose-us'>
             <div className='shapes-container'>
@@ -779,11 +795,14 @@ function App() {
             </div>
             <div className='container pb-8 bring-to-front'>
               <div className='section-heading text-center'>
-                <h2 className='heading-line'>Why you should choose Laap?</h2>
+                <h2 className='heading-line'>
+                  Why you should choose Dukanbuddy?
+                </h2>
                 <p className='text-muted lead mx-auto'>
-                  Laapp is designed to provide you with the latest trends in web
-                  design. It willll help you to focus on your product, launch
-                  your website faster and reach more customers.
+                  DukanBuddy can benefit various types of small businesses,
+                  including mom & pop stores, grocery stores, medicine stores,
+                  manufacturing companies, restaurants, cloud kitchens, book
+                  stores, gift shops, hardware stores, salons, and more.
                 </p>
               </div>
               <div className='row gap-y'>
@@ -874,92 +893,398 @@ function App() {
             <div className='container'>
               <div className='section-heading text-center'>
                 <h2 className='heading-line'>Frequently Asked Questions</h2>
-                <p className='lead'>Want to know more about our services?</p>
+                <p className='lead'>Want to know more about our features ?</p>
               </div>
               <div className='row'>
                 <div className='col-lg-8 mx-lg-auto'>
-                  <div data-aos='fade-up'>
-                    <div className='card shadow-box shadow-hover mb-3'>
-                      <div className='card-header py-3'>
-                        <a
-                          href='#'
-                          className='card-title collapsed'
-                          data-toggle='collapse'
-                          data-target='#v1-q1'
-                        >
-                          What does the package include?
-                        </a>
+                  <FreQuestion
+                    question='What are the major problems faced by MSMEs in India ?'
+                    answer={
+                      <div>
+                        <p>
+                          <strong>Lack of Credit -</strong> The most common
+                          problem that all small-scale businesses have faced,
+                          and are still facing, is of credit. Micro, Small and
+                          medium enterprises (MSMEs) struggle to obtain
+                          financial assistance due to several factors like
+                          absence of collateral, lengthy paperwork, and lack of
+                          trust in loan repayment capabilities.
+                        </p>
+                        <p>
+                          <strong>Inadequate Infrastructure -</strong> Poor
+                          roads, limited access to electricity, and unreliable
+                          internet connectivity hinder their operations.
+                          Investment in infrastructure development is necessary
+                          to support the growth of SMEs across the nation.
+                        </p>
+                        <p>
+                          <strong>Adoption to Technology -</strong> Many MSMEs
+                          find it challenging to adopt modern technologies in
+                          their operations. Such reluctance can contribute to
+                          inefficiency and restrict competitiveness.
+                        </p>
+                        <p>
+                          <strong>Marketing -</strong> Increasing marketability
+                          of the products and services is a difficult task not
+                          just for MSMEs, but for large-scale businesses as
+                          well. When it comes to small-scale businesses, the
+                          lack of resources – time, money, and skilled employees
+                          – make it impossible to increase visibility and get
+                          new customers.
+                        </p>
                       </div>
-                      <div id='v1-q1' className='collapse card-body'>
-                        When you buy Dashcore, you get all you see in the demo
-                        but the images. We include SASS files for styling,
-                        complete JS files with comments, all HTML variations.
-                        Besides we include all mobile PSD mockups.
+                    }
+                    targetId='q-1'
+                  />
+                  <FreQuestion
+                    question='What is the future of Kirana stores and other small businesses (MSMEs) in India ?'
+                    answer={
+                      <p>
+                        They are evolving from traditional brick-and-mortar
+                        establishments into advanced retail hubs capable of
+                        satisfying the needs of today consumers while preserving
+                        their inherent charm. As they adopt new technologies and
+                        platforms, Kirana stores are set to prosper, continuing
+                        their role as the dynamo of Indian retail.
+                      </p>
+                    }
+                    targetId='q-2'
+                  />
+                  <FreQuestion
+                    question="How many Kirana's are there in India?"
+                    answer={
+                      <p>
+                        Going by numbers, there are 13 million kirana stores in
+                        India, contributing to 90% of the food and grocery
+                        retail.
+                      </p>
+                    }
+                    targetId='q-3'
+                  />
+                  <FreQuestion
+                    question="What is the impact of MSME sector and how do they contribute in India's economy?"
+                    answer={
+                      <p>
+                        Today, MSMEs contribute up to 33% of the country&apos;s
+                        GDP. They play a vital role in the industrialization of
+                        the rural sector in cost-efficient ways. MSMEs not only
+                        fulfill the daily needs of people in the most accessible
+                        way, but they also provide employment opportunities in
+                        local communities and are often a significant source of
+                        jobs in rural or underserved areas. 110 million people
+                        are employed by MSMEs in India, which helps stimulate
+                        the country&apos;s economic growth.
+                      </p>
+                    }
+                    targetId='q-4'
+                  />
+                  <FreQuestion
+                    question='What is the importance of GST for MSMEs in india?'
+                    answer={
+                      <p>
+                        Registration under GST entitles MSMEs to various
+                        benefits, such as seamless input tax credit, simplified
+                        taxation structure, and increased market access across
+                        India.However, many small businesses need help with
+                        compliance requirements under the GST system.
+                      </p>
+                    }
+                    targetId='q-5'
+                  />
+                  <FreQuestion
+                    question='What are the benefits and govt. actions for adoption of GST by MSMEs in India?'
+                    answer={
+                      <div>
+                        <p>
+                          1. Various actions are taken for MSME growth by the
+                          government as it is conscious of the immense
+                          contribution of the sector. For instance, the initial
+                          exemption level for commodities, which was Rs. 20
+                          lakhs, has been increased to Rs. 40 lakhs.
+                        </p>
+                        <p>
+                          2. The number of indirect taxes would get reduced.
+                        </p>
+                        <p>
+                          3. The purpose is to draw more companies under the GST
+                          ambit. Goods and services consumption would be
+                          motivated.
+                        </p>
+                        <p>
+                          4. It is simpler to find out the tax avoidance under
+                          GST registration.
+                        </p>
+                        <p>
+                          5. Once a GSTIN is allotted then the same could be
+                          used for all the GST aspects.
+                        </p>
+                        <p>
+                          6. The whole process of{" "}
+                          <a href='https://blog.saginfotech.com/gst-registration-online'>
+                            GST Registration
+                          </a>{" "}
+                          could be performed online.
+                        </p>
                       </div>
-                    </div>
-                  </div>
-                  <div data-aos='fade-up'>
-                    <div className='card shadow-box shadow-hover mb-3'>
-                      <div className='card-header py-3'>
-                        <a
-                          href='#'
-                          className='card-title collapsed'
-                          data-toggle='collapse'
-                          data-target='#v1-q2'
-                        >
-                          What is the typical response time for a support
-                          question?
-                        </a>
+                    }
+                    targetId='q-6'
+                  />
+                  <FreQuestion
+                    question='Which shop or business is most profitable in India?'
+                    answer={
+                      <div>
+                        <p>
+                          <strong>Kirana Stores:</strong> One needs to be lying
+                          to say that life could go on without kirana stores!
+                        </p>
+                        <p>
+                          <strong>Pharmacies and Medical Store:</strong> An
+                          essential service that gained high prominence during
+                          the pandemic, medical stores across India have turned
+                          out to be highly profitable even during difficult
+                          times.
+                        </p>
+                        <p>
+                          <strong>Electronics and Mobile Phone Shops:</strong>{" "}
+                          With phones becoming the necessity of the hour, one
+                          could hardly avoid having one in the world of today.
+                          From young adults to senior citizens, gadgets and
+                          tools are a must for everyone! As long as you provide
+                          additional repair and accessory services, you&apos;re
+                          bound to have high customer retention!
+                        </p>
+                        <p>
+                          <strong>Restaurants:</strong> India&apos;s population
+                          of over 1.3 billion people presents a vast and diverse
+                          market for the restaurant industry.With a rich
+                          culinary heritage and diverse regional cuisines, there
+                          is immense opportunity to cater to varied tastes and
+                          preferences.
+                        </p>
+                        <p>
+                          <strong>
+                            Fashion Boutiques and Clothing Stores:
+                          </strong>{" "}
+                          Fashion boutiques and clothing stores offering trendy
+                          apparel, accessories, footwear, and ethnic wear can be
+                          profitable, especially in urban areas with a
+                          fashion-conscious consumer base.
+                        </p>
+                        <p>
+                          <strong>Cosmetics and Beauty Stores:</strong>{" "}
+                          Cosmetics and beauty stores selling skincare products,
+                          makeup, hair care products, and beauty accessories can
+                          be profitable, catering to India&apos;s growing beauty
+                          and grooming market.
+                        </p>
                       </div>
-                      <div id='v1-q2' className='collapse card-body'>
-                        Since you report us a support question we try to make
-                        our best to find out what is going on, depending on the
-                        case it could take more or less time, however a standard
-                        time could be minutes or hours.
+                    }
+                    targetId='q-7'
+                  />
+                  <FreQuestion
+                    question='How to register for Goods and Services Tax (GST)?'
+                    answer={
+                      <p>
+                        f your shop&apos;s annual turnover exceeds the threshold
+                        limit set by the GST authorities (which varies by
+                        state), you must register for GST. Visit the{" "}
+                        <a href='https://www.gst.gov.in/'>GST Portal</a> to
+                        apply for GST registration online. You will need to
+                        provide various documents and details about your
+                        business.
+                      </p>
+                    }
+                    targetId='q-8'
+                  />
+                  <FreQuestion
+                    question='How kirana stores and other small businesses (MSMEs) are leveraging technology?'
+                    answer={
+                      <div>
+                        <p>
+                          MSMEs in India are increasingly leveraging technology
+                          to streamline operations, improve efficiency, and
+                          enhance customer experience. Here are some common ways
+                          MSMEs including kirana stores are using technology-
+                        </p>
+                        <p>
+                          <strong>Point of Sale (POS) Systems:</strong> Many
+                          kirana stores are adopting POS systems to manage sales
+                          transactions, inventory, and customer data digitally.
+                          POS systems help in tracking sales, managing inventory
+                          levels, and generating reports for better
+                          decision-making.
+                        </p>
+                        <p>
+                          <strong>
+                            Barcode Scanners and Inventory Management Software:
+                          </strong>{" "}
+                          Kirana stores are using barcode scanners and inventory
+                          management software to automate inventory tracking and
+                          stock management. This helps in reducing manual
+                          errors, optimizing stock levels, and improving overall
+                          efficiency.
+                        </p>
+                        <p>
+                          <strong>Digital Payments and Mobile Wallets:</strong>{" "}
+                          With the increasing adoption of digital payments in
+                          India, kirana stores are accepting payments through
+                          digital wallets, UPI (Unified Payments Interface), and
+                          mobile banking apps. This offers convenience to
+                          customers and reduces the dependence on cash
+                          transactions.
+                        </p>
+                        <p>
+                          <strong>Online Ordering and Delivery Apps:</strong>{" "}
+                          Some kirana stores have partnered with online ordering
+                          and delivery platforms to reach a wider customer base
+                          and offer home delivery services. Customers can place
+                          orders through mobile apps or websites, and the kirana
+                          store fulfills the orders accordingly.
+                        </p>
+                        <p>
+                          <strong>
+                            Customer Relationship Management (CRM) Software:
+                          </strong>{" "}
+                          Kirana stores are using CRM software to manage
+                          customer data, preferences, and purchase history. This
+                          enables personalized marketing, loyalty programs,and
+                          targeted promotions to retain existing customers and
+                          attract new ones.
+                        </p>
                       </div>
-                    </div>
-                  </div>
-                  <div data-aos='fade-up'>
-                    <div className='card shadow-box shadow-hover mb-3'>
-                      <div className='card-header py-3'>
-                        <a
-                          href='#'
-                          className='card-title collapsed'
-                          data-toggle='collapse'
-                          data-target='#v1-q3'
-                        >
-                          What do I need to know to customize this template?
-                        </a>
-                      </div>
-                      <div id='v1-q3' className='collapse card-body'>
-                        Our documentation gives you all you need to customize
-                        your copy. However, you will need some basic web design
-                        knowledge (HTML, Javascript, and CSS).
-                      </div>
-                    </div>
-                  </div>
-                  <div data-aos='fade-up'>
-                    <div className='card shadow-box shadow-hover mb-3'>
-                      <div className='card-header py-3'>
-                        <a
-                          href='#'
-                          className='card-title collapsed'
-                          data-toggle='collapse'
-                          data-target='#v1-q4'
-                        >
-                          Can I suggest a new feature?
-                        </a>
-                      </div>
-                      <div id='v1-q4' className='collapse card-body'>
-                        Definitely <span className='bold'>Yes</span>, you can
-                        contact us to let us know your needs. If your suggestion
-                        represents any value to both, we can include it as a
-                        part of the theme or you can request a custom build for
-                        an extra cost. Please note it could take some time for
-                        the feature to be implemented.
-                      </div>
-                    </div>
-                  </div>
+                    }
+                    targetId='q-9'
+                  />
+                  <FreQuestion
+                    question='>What is DukanBuddy?'
+                    answer={
+                      <p>
+                        DukanBuddy is a tech solution designed to help small
+                        businesses in India and in other countries, such as mom
+                        & pop stores, grocery stores, medicine stores,
+                        manufacturing companies, restaurants, cloud kitchens,
+                        book stores, gift shops, hardware stores, and salons, to
+                        manage their operations more efficiently, increase
+                        sales, manage customers efficiently, and market their
+                        goods.
+                      </p>
+                    }
+                    targetId='q-10'
+                  />
+                  <FreQuestion
+                    question='How can DukanBuddy benefit my kirana store?'
+                    answer={
+                      <p>
+                        DukanBuddy can help you manage inventory, orders,
+                        deliveries, and customer information, allowing you to
+                        streamline your operations and improve customer service.
+                      </p>
+                    }
+                    targetId='q-11'
+                  />
+                  <FreQuestion
+                    question='Is DukanBuddy easy to use?'
+                    answer={
+                      <p>
+                        Yes, DukanBuddy is designed to be user-friendly, with
+                        intuitive interfaces and easy-to-understand features.
+                      </p>
+                    }
+                    targetId='q-13'
+                  />
+                  <FreQuestion
+                    question='Can DukanBuddy help me with online sales?'
+                    answer={
+                      <p>
+                        Yes,DukanBuddy can help you manage online sales through
+                        features like order management and inventory tracking.
+                      </p>
+                    }
+                    targetId='q-14'
+                  />
+                  <FreQuestion
+                    question='How can I get started with DukanBuddy?'
+                    answer={
+                      <p>
+                        You can get started with DukanBuddy by signing up on our
+                        website and following the onboarding process.
+                      </p>
+                    }
+                    targetId='q-15'
+                  />
+                  <FreQuestion
+                    question="Is DukanBuddy customizable to suit my store's needs?"
+                    answer={
+                      <p>
+                        Yes, DukanBuddy is customizable, allowing you to tailor
+                        the platform to meet your store&apos;s specific
+                        requirements. Please contact us if you need any specific
+                        customization, we will help you out.
+                      </p>
+                    }
+                    targetId='q-16'
+                  />
+                  <FreQuestion
+                    question='How much does DukanBuddy cost?'
+                    answer={
+                      <p>
+                        The cost of DukanBuddy depends on the features and
+                        services you choose. Currently, a beta version has been
+                        released and it&apos;s free to use for pilot users. If
+                        you want to be part of our pilot member to use it, then
+                        please contact our sales team for pricing information.
+                      </p>
+                    }
+                    targetId='q-17'
+                  />
+                  <FreQuestion
+                    question='Is there a minimum contract period for DukanBuddy?'
+                    answer={
+                      <p>
+                        Currently, a beta version has been released and its free
+                        to use for pilot users. If you want to be part of our
+                        pilot team to use it, then please contact our sales team
+                        for pricing information.
+                      </p>
+                    }
+                    targetId='q-18'
+                  />
+                  <FreQuestion
+                    question='Can DukanBuddy help me with marketing my store?'
+                    answer={
+                      <p>
+                        Yes, DukanBuddy can help you with marketing by providing
+                        customer insights and personalized marketing campaigns.
+                      </p>
+                    }
+                    targetId='q-19'
+                  />
+                  <FreQuestion
+                    question='Is DukanBuddy suitable for all types of small businesses?'
+                    answer={
+                      <p>
+                        DukanBuddy is primarily designed for small businesses
+                        and it can very well be used for all small businesses.
+                        Founders of DukanBuddy are very passionate about
+                        democratizing the solutions offered to small businesses
+                        to help them grow, just like a good buddy.
+                      </p>
+                    }
+                    targetId='q-20'
+                  />
+                  <FreQuestion
+                    question='What types of businesses can benefit from using DukanBuddy?'
+                    answer={
+                      <p>
+                        DukanBuddy can benefit various types of small
+                        businesses, including mom & pop stores, grocery stores,
+                        medicine stores, manufacturing companies, restaurants,
+                        cloud kitchens, book stores, gift shops, hardware
+                        stores, salons, and more.
+                      </p>
+                    }
+                    targetId='q-21'
+                  />
                 </div>
               </div>
             </div>
