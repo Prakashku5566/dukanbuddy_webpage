@@ -1,9 +1,10 @@
 // import React from "react";
-import achievement from "../../img/achievement.png";
-import marketing from "../../img/marketing.jpg";
+
+import CommonPage from "./CommonPage";
+
 const BlogPage = () => {
   return (
-    <>
+    <CommonPage>
       <header className='bg-primary text-white p-4'>
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           Embracing Change: Adapting to Emerging Consumer Trends in India for
@@ -29,7 +30,7 @@ const BlogPage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src={achievement}
+              src={"achievement"}
               alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -124,7 +125,7 @@ const BlogPage = () => {
       <footer className='bg-dark text-white text-center p-3 mt-5'>
         <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
       </footer>
-    </>
+    </CommonPage>
   );
 };
 
@@ -152,7 +153,7 @@ const GstBenefitsPage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src={achievement}
+              src={"achievement"}
               alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -280,7 +281,7 @@ const DigitalRevolutionPage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src={marketing}
+              src={"marketing"}
               alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}

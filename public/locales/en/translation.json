@@ -7,7 +7,9 @@
     "SMALL_BUSINESS": "Small Business",
     "SMART_BUSINESS": "to Smart Business",
     "SMART_BUSINESS_DATA": "  SMALL Business se SMART Business ki Journey dukanBuddy ke Saath",
-    "START_NOW": "Start now"
+    "START_NOW": "Start now",
+    "HOME":"Home",
+    "FEATURES":"Features"
   },
   "CARD": {
     "SELECT_LANGUAGE": "Select language"
