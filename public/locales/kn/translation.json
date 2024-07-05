@@ -1,0 +1,15 @@
+{
+  "COMMON": {
+    "SERVICE": "ಸೇವೆಗಳು",
+    "ABOUT": "ಬಗ್ಗೆ",
+    "BLOG": "ಬ್ಲಾಗ್",
+    "CONTACT": "ಸಂಪರ್ಕ",
+    "SMALL_BUSINESS": "ಸಣ್ಣ ವ್ಯಾಪಾರ",
+    "SMART_BUSINESS": "ಸ್ಮಾರ್ಟ್ ವ್ಯಾಪಾರ",
+    "SMART_BUSINESS_DATA": "ಸಣ್ಣ ವ್ಯಾಪಾರದಿಂದ ಸ್ಮಾರ್ಟ್ ವ್ಯಾಪಾರಕ್ಕೆ ಪ್ರಯಾಣ ಡುಕಾನ್Buddy ಜೊತೆ",
+    "START_NOW": "ಈಗ ಪ್ರಾರಂಭಿಸಿ"
+  },
+  "CARD": {
+    "SELECT_LANGUAGE": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+  }
+}

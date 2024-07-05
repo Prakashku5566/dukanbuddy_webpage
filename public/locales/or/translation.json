@@ -1,0 +1,15 @@
+{
+  "COMMON": {
+    "SERVICE": "ସେବାମାନ",
+    "ABOUT": "ବିଷୟରେ",
+    "BLOG": "ବ୍ଲଗ୍",
+    "CONTACT": "ସମ୍ପର୍କ",
+    "SMALL_BUSINESS": "ଛୋଟ ବ୍ୟବସାୟ",
+    "SMART_BUSINESS": "ସ୍ମାର୍ଟ ବ୍ୟବସାୟ",
+    "SMART_BUSINESS_DATA": "ଛୋଟ ବ୍ୟବସାୟରୁ ସ୍ମାର୍ଟ ବ୍ୟବସାୟକୁ ଯାତ୍ରା ଦୁକାନବଡି ସହିତ",
+    "START_NOW": "ବର୍ତ୍ତମାନ ଆରମ୍ଭ କରନ୍ତୁ"
+  },
+  "CARD": {
+    "SELECT_LANGUAGE": "ଭାଷା ଚୟନ କରନ୍ତୁ"
+  }
+}

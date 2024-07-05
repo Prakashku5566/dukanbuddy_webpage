@@ -1,0 +1,15 @@
+{
+  "COMMON": {
+    "SERVICE": "ਸੇਵਾਵਾਂ",
+    "ABOUT": "ਬਾਰੇ",
+    "BLOG": "ਬਲੌਗ",
+    "CONTACT": "ਸੰਪਰਕ",
+    "SMALL_BUSINESS": "ਛੋਟਾ ਵਪਾਰ",
+    "SMART_BUSINESS": "ਸਮਾਰਟ ਵਪਾਰ",
+    "SMART_BUSINESS_DATA": "ਛੋਟੇ ਵਪਾਰ ਤੋਂ ਸਮਾਰਟ ਵਪਾਰ ਦੀ ਯਾਤਰਾ ਡੁਕਾਨ ਬੱਡੀ ਨਾਲ",
+    "START_NOW": "ਹੁਣ ਸ਼ੁਰੂ ਕਰੋ"
+  },
+  "CARD": {
+    "SELECT_LANGUAGE": "ਭਾਸ਼ਾ ਚੁਣੋ"
+  }
+}

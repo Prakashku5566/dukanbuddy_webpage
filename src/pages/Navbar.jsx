@@ -1,5 +1,7 @@
-import logo from "../assets/"; // Adjust the path to your logo image
-
+// import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../../img/logod.png"; // Adjust the path to your logo image
+import App from "../App";
 const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-md main-nav navigation fixed-top sidebar-left'>
@@ -23,36 +25,32 @@ const Navbar = () => {
           <img src={logo} alt='Dukanbuddy' className='logo d-none d-md-block' />
         </a>
         <div className='collapse navbar-collapse' id='main-navbar'>
-          <div className='sidebar-brand'>
-            <a href='index.html'>
-              <img src={logo} alt='Laapp Template' className='logo' />
-            </a>
-          </div>
           <ul className='nav navbar-nav ml-auto'>
             <li className='nav-item'>
-              <a className='nav-link scrollto' href='#home'>
+              <Link to='/' className='nav-link'>
                 Home
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link scrollto' href='#features'>
-                Features
-              </a>
+              <Link to='/about' className='nav-link'>
+                About
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link scrollto' href='#product'>
-                Product
-              </a>
+              <Link to='/blogs' className='nav-link'>
+                Blog
+              </Link>
             </li>
+            {/* Add more navigation links as needed */}
             <li className='nav-item'>
-              <a className='nav-link scrollto' href='#pricing'>
+              <Link to='/pricing' className='nav-link'>
                 Pricing
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link scrollto' href='#trial'>
-                Trial
-              </a>
+              <Link to='/contact' className='nav-link'>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
