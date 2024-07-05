@@ -1,7 +1,6 @@
-import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./pages/Navbar";
+// import Navbar from "./pages/Navbar";
 import App from "./App";
 import About from "./pages/About";
 import ViewAllBlogs from "./pages/viewAllBlogs";
@@ -12,7 +11,8 @@ import {
   DigitalRevolutionPage,
   TheMightyKiranaPage,
   RevolutionizingKiranaStoresPage,
-} from "./pages/blogPageOne"; // Adjust paths as per your actual file structure
+  StrategiesForMSMEsPage,
+} from "./pages/blogPageOne";
 
 // Assuming you have a variable 'blogs' imported or defined somewhere for BlogDetail
 const blogs = []; // Replace with your actual data
@@ -31,6 +31,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         element={<DigitalRevolutionPage />}
       />
       <Route path='/TheMightyKiranaPage' element={<TheMightyKiranaPage />} />
+      <Route
+        path='/RevolutionizingKiranaStoresPage'
+        element={<RevolutionizingKiranaStoresPage />}
+      />
+      <Route
+        path='/StrategiesForMSMEsPage'
+        element={<StrategiesForMSMEsPage />}
+      />
       <Route
         path='/RevolutionizingKiranaStoresPage'
         element={<RevolutionizingKiranaStoresPage />}

@@ -1,5 +1,6 @@
 // import React from "react";
-
+import achievement from "../../img/achievement.png";
+import marketing from "../../img/marketing.jpg";
 const BlogPage = () => {
   return (
     <>
@@ -28,7 +29,7 @@ const BlogPage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src='images/consumerTrend.jpg'
+              src={achievement}
               alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -151,7 +152,7 @@ const GstBenefitsPage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src='images/achievement-creativity-strategy-success-icon.jpg'
+              src={achievement}
               alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -279,7 +280,7 @@ const DigitalRevolutionPage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src='images/marketing-plan-achievement-strategy.jpg'
+              src={marketing}
               alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -566,6 +567,120 @@ const RevolutionizingKiranaStoresPage = () => {
     </>
   );
 };
+const StrategiesForMSMEsPage = () => {
+  return (
+    <>
+      <header className='bg-primary text-white p-4'>
+        <h1 className='text-center' style={{ fontSize: "24px" }}>
+          Navigating the Supply Chain Maze: Strategies for MSMEs in India
+        </h1>
+      </header>
+      <div className='container mt-5'>
+        <div className='row'>
+          <div className='col-md-6'>
+            <p
+              className='mt-4'
+              style={{ color: "rgb(201, 24, 24)", fontWeight: 600 }}
+            >
+              In the realm of business, one key aspect that can make or break
+              success is supply chain management. For Micro, Small, and Medium
+              Enterprises (MSMEs) in India, mastering effective supply chain
+              techniques is crucial for ensuring smooth operations, optimizing
+              inventory, managing vendors efficiently, and ensuring timely
+              deliveries. Lets delve into some practical strategies tailored for
+              MSMEs in India to navigate the complexities of supply chain
+              management.
+            </p>
+          </div>
+          <div className='col-md-6'>
+            <img
+              src='images/stastregies.jpg'
+              alt='Achievement Creativity Strategy Success Icon'
+              className='img-fluid img-thumbnail'
+              style={{ maxWidth: "600px", maxHeight: "400px" }}
+            />
+          </div>
+        </div>
+        <main>
+          <h3 style={{ color: "blue" }}>
+            Inventory Optimization: Keeping the Right Balance
+          </h3>
+          <section>
+            <p>
+              1. Know Your Demand: Understanding customer demand patterns is
+              fundamental to optimizing inventory. Analyze sales data, customer
+              feedback, and market trends to forecast demand accurately. This
+              helps in maintaining optimal stock levels without overstocking or
+              understocking.
+            </p>
+            <p>
+              2. Adopt Just-in-Time (JIT) Inventory: Implementing a just-in-time
+              inventory system minimizes holding costs and reduces the risk of
+              obsolescence. By ordering inventory only when needed, MSMEs can
+              streamline operations, free up capital, and respond swiftly to
+              fluctuations in demand.
+            </p>
+          </section>
+          <section>
+            <h3 style={{ color: "blue" }}>
+              Vendor Management: Building Strong Partnerships
+            </h3>
+            <p>
+              1. Choose Reliable Suppliers: Selecting trustworthy and reliable
+              suppliers is essential for maintaining a smooth supply chain.
+              Evaluate vendors based on factors such as quality, reliability,
+              pricing, and delivery capabilities. Cultivate long-term
+              partnerships with dependable suppliers to ensure consistency and
+              reliability.
+            </p>
+            <p>
+              2. Foster Communication: Effective communication is key to
+              successful vendor management. Maintain open lines of communication
+              with suppliers to convey expectations, discuss challenges, and
+              address any issues promptly. Regularly review performance metrics
+              and provide feedback to foster continuous improvement.
+            </p>
+          </section>
+          <section>
+            <h3 style={{ color: "blue" }}>
+              Leveraging Technology: The Digital Advantage
+            </h3>
+            <p>
+              1. Implement Supply Chain Management Software: Invest in supply
+              chain management software tailored for MSMEs to streamline
+              operations and enhance visibility across the supply chain. These
+              tools help in inventory tracking, demand forecasting, order
+              management, and supplier collaboration, enabling more informed
+              decision-making.
+            </p>
+            <p>
+              2. Embrace Automation: Automation technologies such as barcode
+              scanning, RFID tagging, and automated replenishment systems can
+              significantly improve efficiency and accuracy in inventory
+              management. By automating repetitive tasks, MSMEs can reduce
+              manual errors and optimize resource utilization.
+            </p>
+          </section>
+          <section>
+            <h3 style={{ color: "blue" }}>Conclusion</h3>
+            <p>
+              In the dynamic landscape of MSMEs in India, mastering supply chain
+              management is paramount for sustainable growth and
+              competitiveness. By implementing effective inventory optimization
+              strategies, cultivating strong vendor relationships, and
+              leveraging technology-driven solutions, MSMEs can enhance
+              operational efficiency, minimize costs, and deliver superior
+              customer experiences.
+            </p>
+          </section>
+        </main>
+      </div>
+      <footer className='bg-dark text-white text-center p-3 mt-5'>
+        <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
+      </footer>
+    </>
+  );
+};
 
 export {
   GstBenefitsPage,
@@ -573,4 +688,5 @@ export {
   DigitalRevolutionPage,
   TheMightyKiranaPage,
   RevolutionizingKiranaStoresPage,
+  StrategiesForMSMEsPage,
 };

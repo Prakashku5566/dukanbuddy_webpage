@@ -14,7 +14,11 @@ import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
 import { Link } from "react-router-dom";
 import gst from "../img/1.png";
-// import
+import digital from "../img/2.png";
+import kiranaStore from "../img/3.png";
+import retailLandscape from "../img/4.png";
+import embaricingChange from "../img/5.png";
+import StrategiesForMSMEsPage from "../img/6.png";
 function App() {
   const { t } = useTranslation();
   // const [showBasicModal, setShowBasicModal] = useState(false);
@@ -1080,7 +1084,7 @@ function App() {
                       <div className='col-md-6'>
                         <div className='card fancy-card shadow-lg border-0 rounded'>
                           <div className='row g-0'>
-                            <div className='col-md-5'>
+                            <div className='col-md-12'>
                               <img
                                 src={gst}
                                 className='img-fluid rounded'
@@ -1091,35 +1095,13 @@ function App() {
                                 }}
                                 alt='GST Benefits'
                               />
-                            </div>
-                            <div className='col-md-7'>
-                              <div className='card-body'>
-                                <h5 className='card-title text-primary display-6'>
-                                  The GST Benefits for MSMEs in India: A
-                                  Comprehensive Guide
-                                </h5>
-                                <p className='card-text'>
-                                  The Goods and Services Tax (GST) regime,
-                                  implemented in India on July 1, 2017...
-                                </p>
-                                <div className='d-flex justify-content-between align-items-center mt-3'>
-                                  <div>
-                                    <Link
-                                      to='/GstBenefitsPage'
-                                      className='btn btn-primary'
-                                    >
-                                      Read More
-                                    </Link>
-                                  </div>
-                                  <div>
-                                    <button
-                                      className='btn btn-outline-primary ms-2'
-                                      type='button'
-                                    >
-                                      Share
-                                    </button>
-                                  </div>
-                                </div>
+                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                                <Link
+                                  to='/GstBenefitsPage'
+                                  className='btn btn-primary'
+                                >
+                                  Read More
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -1128,12 +1110,9 @@ function App() {
                       <div className='col-md-6'>
                         <div className='card fancy-card shadow-lg border-0 rounded'>
                           <div className='row g-0'>
-                            <div
-                              className='col-md-5'
-                              style={{ maxWidth: "200px" }}
-                            >
+                            <div className='col-md-12'>
                               <img
-                                src={gst}
+                                src={digital}
                                 className='img-fluid rounded'
                                 style={{
                                   width: "100%",
@@ -1142,36 +1121,13 @@ function App() {
                                 }}
                                 alt='Digital Revolution'
                               />
-                            </div>
-
-                            <div className='col-md-7'>
-                              <div className='card-body'>
-                                <h5 className='card-title text-primary display-6'>
-                                  Unlocking Success: The Digital Revolution of
-                                  Indian MSMEs
-                                </h5>
-                                <p className='card-text'>
-                                  In recent years, India has witnessed a
-                                  significant transformation in the way...
-                                </p>
-                                <div className='d-flex justify-content-between align-items-center mt-3'>
-                                  <div>
-                                    <Link
-                                      to='/DigitalRevolutionPage'
-                                      className='btn btn-primary'
-                                    >
-                                      Read More
-                                    </Link>
-                                  </div>
-                                  <div>
-                                    <button
-                                      className='btn btn-outline-primary ms-2'
-                                      type='button'
-                                    >
-                                      Share
-                                    </button>
-                                  </div>
-                                </div>
+                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                                <Link
+                                  to='/DigitalRevolutionPage'
+                                  className='btn btn-primary'
+                                >
+                                  Read More
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -1179,14 +1135,16 @@ function App() {
                       </div>
                     </div>
                   </div>
+
+                  {/* Second carousel item */}
                   <div className='carousel-item'>
                     <div className='row'>
                       <div className='col-md-6'>
                         <div className='card fancy-card shadow-lg border-0 rounded'>
                           <div className='row g-0'>
-                            <div className='col-md-5'>
+                            <div className='col-md-12'>
                               <img
-                                src={gst}
+                                src={kiranaStore}
                                 className='img-fluid rounded'
                                 style={{
                                   width: "100%",
@@ -1195,35 +1153,13 @@ function App() {
                                 }}
                                 alt='Mighty Kirana'
                               />
-                            </div>
-                            <div className='col-md-7'>
-                              <div className='card-body'>
-                                <h5 className='card-title text-primary display-6'>
-                                  The Mighty Kirana: Unveiling the Vast Retail
-                                  Landscape of Indias Kirana Stores
-                                </h5>
-                                <p className='card-text'>
-                                  Nestled in the heart of every Indian
-                                  locality...
-                                </p>
-                                <div className='d-flex justify-content-between align-items-center mt-3'>
-                                  <div>
-                                    <Link
-                                      to='/TheMightyKiranaPage'
-                                      className='btn btn-primary'
-                                    >
-                                      Read More
-                                    </Link>
-                                  </div>
-                                  <div>
-                                    <button
-                                      className='btn btn-outline-primary ms-2'
-                                      type='button'
-                                    >
-                                      Share
-                                    </button>
-                                  </div>
-                                </div>
+                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                                <Link
+                                  to='/TheMightyKiranaPage'
+                                  className='btn btn-primary'
+                                >
+                                  Read More
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -1232,9 +1168,9 @@ function App() {
                       <div className='col-md-6'>
                         <div className='card fancy-card shadow-lg border-0 rounded'>
                           <div className='row g-0'>
-                            <div className='col-md-5'>
+                            <div className='col-md-12'>
                               <img
-                                src={gst}
+                                src={retailLandscape}
                                 className='img-fluid rounded'
                                 style={{
                                   width: "100%",
@@ -1243,35 +1179,13 @@ function App() {
                                 }}
                                 alt='Revolutionizing Kirana Stores'
                               />
-                            </div>
-                            <div className='col-md-7'>
-                              <div className='card-body'>
-                                <h5 className='card-title text-primary display-6'>
-                                  Revolutionizing Kirana Stores in India: How
-                                  Technology is Reshaping the Retail Landscape
-                                </h5>
-                                {/* <p className='card-text'>
-                                  In the bustling streets of India, Kirana
-                                  stores...
-                                </p> */}
-                                <div className='d-flex justify-content-between align-items-center mt-3'>
-                                  <div>
-                                    <Link
-                                      to='/RevolutionizingKiranaStoresPage'
-                                      className='btn btn-primary'
-                                    >
-                                      Read More
-                                    </Link>
-                                  </div>
-                                  <div>
-                                    <button
-                                      className='btn btn-outline-primary ms-2'
-                                      type='button'
-                                    >
-                                      Share
-                                    </button>
-                                  </div>
-                                </div>
+                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                                <Link
+                                  to='/RevolutionizingKiranaStoresPage'
+                                  className='btn btn-primary'
+                                >
+                                  Read More
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -1279,14 +1193,16 @@ function App() {
                       </div>
                     </div>
                   </div>
+
+                  {/* Third carousel item */}
                   <div className='carousel-item'>
                     <div className='row'>
                       <div className='col-md-6'>
                         <div className='card fancy-card shadow-lg border-0 rounded'>
                           <div className='row g-0'>
-                            <div className='col-md-5'>
+                            <div className='col-md-12'>
                               <img
-                                src={gst}
+                                src={embaricingChange}
                                 className='img-fluid rounded'
                                 style={{
                                   width: "100%",
@@ -1295,34 +1211,10 @@ function App() {
                                 }}
                                 alt='Embracing Change'
                               />
-                            </div>
-                            <div className='col-md-7'>
-                              <div className='card-body'>
-                                <h5 className='card-title text-primary display-6'>
-                                  Embracing Change: Adapting to Emerging
-                                  Consumer Trends in India for MSMEs
-                                </h5>
-                                <p className='card-text'>
-                                  Understanding the need of the consumers
-                                </p>
-                                <div className='d-flex justify-content-between align-items-center mt-3'>
-                                  <div>
-                                    <Link
-                                      to='/FirstBlog'
-                                      className='btn btn-primary'
-                                    >
-                                      Read More
-                                    </Link>
-                                  </div>
-                                  <div>
-                                    <button
-                                      className='btn btn-outline-primary ms-2'
-                                      type='button'
-                                    >
-                                      Share
-                                    </button>
-                                  </div>
-                                </div>
+                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                                <Link to='/blog' className='btn btn-primary'>
+                                  Read More
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -1331,9 +1223,9 @@ function App() {
                       <div className='col-md-6'>
                         <div className='card fancy-card shadow-lg border-0 rounded'>
                           <div className='row g-0'>
-                            <div className='col-md-5'>
+                            <div className='col-md-12'>
                               <img
-                                src={gst}
+                                src={StrategiesForMSMEsPage}
                                 className='img-fluid rounded'
                                 style={{
                                   width: "100%",
@@ -1342,31 +1234,13 @@ function App() {
                                 }}
                                 alt='Supply Chain'
                               />
-                            </div>
-                            <div className='col-md-7'>
-                              <div className='card-body'>
-                                <h5 className='card-title text-primary display-6'>
-                                  Navigating the Supply Chain Maze: Strategies
-                                  for MSMEs in India
-                                </h5>
-                                <p className='card-text'>
-                                  Strategies for MSMEs in India
-                                </p>
-                                <div className='d-flex justify-content-between align-items-center mt-3'>
-                                  <div>
-                                    <Link to='#' className='btn btn-primary'>
-                                      Read More
-                                    </Link>
-                                  </div>
-                                  <div>
-                                    <button
-                                      className='btn btn-outline-primary ms-2'
-                                      type='button'
-                                    >
-                                      Share
-                                    </button>
-                                  </div>
-                                </div>
+                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                                <Link
+                                  to='/StrategiesForMSMEsPage'
+                                  className='btn btn-primary'
+                                >
+                                  Read More
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -1374,12 +1248,13 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className='carousel-item'>
+
+                  {/* <div className='carousel-item'>
                     <div className='row'>
                       <div className='col-md-6'>
                         <div className='card fancy-card shadow-lg border-0 rounded'>
                           <div className='row g-0'>
-                            <div className='col-md-5'>
+                            <div className='col-md-12'>
                               <img
                                 src={gst}
                                 className='img-fluid rounded'
@@ -1390,47 +1265,29 @@ function App() {
                                 }}
                                 alt='GST Food Services'
                               />
-                            </div>
-                            <div className='col-md-7'>
-                              <div className='card-body'>
-                                <h5 className='card-title text-primary display-6'>
-                                  Understanding GST on Food Services and
-                                  Products for Indian MSME Restaurant Owners
-                                </h5>
-                                {/* <p className='card-text'>
-                                  Food Services and Products for Restaurant
-                                  Owners
-                                </p> */}
-                                <div className='d-flex justify-content-between align-items-center mt-3'>
-                                  <div>
-                                    <Link to='#' className='btn btn-primary'>
-                                      Read More
-                                    </Link>
-                                  </div>
-                                  <div>
-                                    <button
-                                      className='btn btn-outline-primary ms-2'
-                                      type='button'
-                                    >
-                                      Share
-                                    </button>
-                                  </div>
-                                </div>
+                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                                <Link to='#' className='btn btn-primary'>
+                                  Read More
+                                </Link>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                      <div className='col-md-6'>
+                       
+                      </div>
+                   </div>
+                  </div> */}
                 </div>
+
                 <a
                   className='carousel-control-prev custom-carousel-prev'
                   href='#blogCarousel'
                   role='button'
                   data-slide='prev'
                 >
-                  <span className='carousel-control-prev-icon'></span>
+                  <span className='carousel-control-prev-icon custom-carousel-prev-icon'></span>
                   <span className='sr-only'>Previous</span>
                 </a>
                 <a
@@ -1439,7 +1296,7 @@ function App() {
                   role='button'
                   data-slide='next'
                 >
-                  <span className='carousel-control-next-icon'></span>
+                  <span className='carousel-control-next-icon custom-carousel-next-icon'></span>
                   <span className='sr-only'>Next</span>
                 </a>
               </div>
