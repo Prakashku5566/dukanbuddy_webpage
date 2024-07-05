@@ -1,8 +1,10 @@
 // import React from "react";
 
+import CommonPage from "./CommonPage";
+
 const BlogPage = () => {
   return (
-    <>
+    <CommonPage>
       <header className='bg-primary text-white p-4'>
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           Embracing Change: Adapting to Emerging Consumer Trends in India for
@@ -123,7 +125,7 @@ const BlogPage = () => {
       <footer className='bg-dark text-white text-center p-3 mt-5'>
         <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
       </footer>
-    </>
+    </CommonPage>
   );
 };
 
