@@ -1,0 +1,15 @@
+{
+  "COMMON": {
+    "SERVICE": "સેવા",
+    "ABOUT": "વિશે",
+    "BLOG": "બ્લોગ",
+    "CONTACT": "સંપર્ક",
+    "SMALL_BUSINESS": "નાનું વ્યવસાય",
+    "SMART_BUSINESS": "સ્માર્ટ વ્યવસાય",
+    "SMART_BUSINESS_DATA": "નાનું વ્યવસાય થી સ્માર્ટ વ્યવસાય સુધીની યાત્રા દુકાનબડી સાથે",
+    "START_NOW": "હમણાં શરૂ કરો"
+  },
+  "CARD": {
+    "SELECT_LANGUAGE": "ભાષા પસંદ કરો"
+  }
+}

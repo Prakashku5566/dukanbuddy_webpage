@@ -1,0 +1,15 @@
+{
+  "COMMON": {
+    "SERVICE": "सेवा",
+    "ABOUT": "बद्दल",
+    "BLOG": "ब्लॉग",
+    "CONTACT": "संपर्क",
+    "SMALL_BUSINESS": "लहान व्यवसाय",
+    "SMART_BUSINESS": "स्मार्ट व्यवसाय",
+    "SMART_BUSINESS_DATA": "दुकानबड्डीसोबत लहान व्यवसाय ते स्मार्ट व्यवसायाची यात्रा",
+    "START_NOW": "आत्ता सुरू करा"
+  },
+  "CARD": {
+    "SELECT_LANGUAGE": "भाषा निवडा"
+  }
+}

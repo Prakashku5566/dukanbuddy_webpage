@@ -1,0 +1,15 @@
+{
+  "COMMON": {
+    "SERVICE": "সেবা",
+    "ABOUT": "প্রায়",
+    "BLOG": "ব্লগ",
+    "CONTACT": "যোগাযোগ",
+    "SMALL_BUSINESS": "ছোট ব্যবসা",
+    "SMART_BUSINESS": "স্মার্ট ব্যবসা",
+    "SMART_BUSINESS_DATA": "ছোট ব্যবসা থেকে স্মার্ট ব্যবসার যাত্রা দোকানবাড্ডির সাথে",
+    "START_NOW": "এখনই শুরু করুন"
+  },
+  "CARD": {
+    "SELECT_LANGUAGE": "ভাষা নির্বাচন কর"
+  }
+}
