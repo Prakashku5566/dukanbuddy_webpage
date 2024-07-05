@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import logo from "../img/logod.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,16 +17,16 @@ import gst from "../img/1.png";
 // import
 function App() {
   const { t } = useTranslation();
-  const [showBasicModal, setShowBasicModal] = useState(false);
-  const [showEnterpriseModal, setShowEnterpriseModal] = useState(false);
-  const [showBusinessModal, setShowBusinessModal] = useState(false);
+  // const [showBasicModal, setShowBasicModal] = useState(false);
+  // const [showEnterpriseModal, setShowEnterpriseModal] = useState(false);
+  // const [showBusinessModal, setShowBusinessModal] = useState(false);
   // Function to toggle modal visibility
-  const toggleModal = (modal) => {
-    if (modal === "basic") setShowBasicModal(!showBasicModal);
-    else if (modal === "enterprise")
-      setShowEnterpriseModal(!showEnterpriseModal);
-    else if (modal === "business") setShowBusinessModal(!showBusinessModal);
-  };
+  // const toggleModal = (modal) => {
+  //   if (modal === "basic") setShowBasicModal(!showBasicModal);
+  //   else if (modal === "enterprise")
+  //     setShowEnterpriseModal(!showEnterpriseModal);
+  //   else if (modal === "business") setShowBusinessModal(!showBusinessModal);
+  // };
   useEffect(() => {
     const savedLanguage = localStorage.getItem("lng");
     if (savedLanguage) {
