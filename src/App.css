@@ -84,7 +84,7 @@
   background: linear-gradient(135deg, #f5f7fa, #dae3f1);
   color: #333;
   transition: transform 0.3s, box-shadow 0.3s;
-  height: 270px; /* Adjust the height for distinction */
+  height: 300px; /* Adjust the height for distinction */
   width: 100%; /* Ensures it takes the full width of the column */
   display: flex;
   flex-direction: column;
@@ -127,71 +127,31 @@
   background-color: #f0f0f0; /* Adjust the shade of gray as needed */
 }
 
-/* Carousel Control Styles */
 .custom-carousel-prev,
 .custom-carousel-next {
-  background-color: #000;
-  border-radius: 50%;
-  width: 20px;
+  background-color: #111111; /* White background */
+  border-radius: 2%;
+  width: -50px; /* Adjust the size as needed */
   height: 40px;
   position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
+  top: 50%; /* Vertically center the buttons */
+  transform: translateY(300%); /* Adjust the vertical position */
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.custom-carousel-prev-icon,
-.custom-carousel-next-icon {
-  filter: invert(1);
-}
-
-.carousel-control-prev {
-  left: -60px; /* Adjust as needed */
-}
-
-.carousel-control-next {
-  right: -60px; /* Adjust as needed */
-}
-.custom-carousel-prev,
-.custom-carousel-next {
-  width: 20px;
-  height: 30px;
-  background-color: #979494; /* Dark color */
-  border-radius: 5px; /* Smaller border-radius */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%; /* Adjust this value to move the buttons down */
-  transform: translateY(50%);
-  z-index: 1;
+  box-shadow: 0 4px 8px rgba(249, 247, 247, 0.1); /* Add shadow effect */
 }
 
 .custom-carousel-prev {
   left: 10px; /* Position more to the side */
+  color: #000;
 }
 
 .custom-carousel-next {
   right: 10px; /* Position more to the side */
+  color: #000;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 50%, 50%;
-  background-image: none;
-}
-
-.custom-carousel-prev-icon:after {
-  content: "<"; /* Custom icon for previous button */
-  color: #fff; /* White color for better visibility */
-}
-
-.custom-carousel-next-icon:after {
-  content: ">"; /* Custom icon for next button */
-  color: #fff; /* White color for better visibility */
-}
 .custom-card {
   background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   color: #333;
@@ -233,4 +193,8 @@
 
 .custom-card .btn:hover {
   background-color: #375a7f; /* Different hover color */
+}
+
+.carousel-indicators li {
+  background-color: #007bff;
 }
