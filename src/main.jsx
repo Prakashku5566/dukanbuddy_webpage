@@ -8,7 +8,7 @@ import ViewAllBlogs from "./pages/viewAllBlogs";
 import BlogDetail from "./pages/detailBlog";
 import {
   GstBenefitsPage,
-  BlogPage,
+  // BlogPage,
   DigitalRevolutionPage,
   TheMightyKiranaPage,
   RevolutionizingKiranaStoresPage,
@@ -25,11 +25,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Routes>
       <Route path='/' element={<App />} />
       <Route path='/about' element={<About />} />
-      <Route path='/blogs' element={<BlogPage />} />
+      <Route path='/blogs' element={<ViewAllBlogs />} />
       <Route path='/features' element={<FeaturesWith />} />
-      <Route path='/GstBenefitsPage' element={<GstBenefitsPage />} />
+      <Route path='/gst-benifit-page' element={<GstBenefitsPage />} />
       <Route
-        path='/DigitalRevolutionPage'
+        path='/digital-revolution-page'
         element={<DigitalRevolutionPage />}
       />
       <Route path='/TheMightyKiranaPage' element={<TheMightyKiranaPage />} />

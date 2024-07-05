@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FaYoutube, FaInstagram, FaShare } from "react-icons/fa";
 import digitalimage from "../../img/digitalimage.png";
 import gst from "../../img/GST.png";
+import CommonPage from "./CommonPage";
 
 const blogs = [
   {
@@ -112,112 +113,116 @@ const ViewAllBlogs = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <Container className='mt-5'>
-      <h2 className='text-center mb-4'>
-        Blogs That Help You Understand the Business
-      </h2>
-      <hr style={{ backgroundColor: "#007bff", height: 2, marginBottom: 30 }} />
-      {Array(Math.ceil(currentBlogs.length / 2))
-        .fill()
-        .map((_, rowIndex) => (
-          <Row className='mb-4' key={rowIndex}>
-            {currentBlogs
-              .slice(rowIndex * 2, rowIndex * 2 + 2)
-              .map((blog, colIndex) => {
-                let imageSrc;
-                if (rowIndex === 0 && colIndex === 0) {
-                  imageSrc = digitalimage;
-                } else if (rowIndex === 0 && colIndex === 1) {
-                  imageSrc = gst;
-                } else {
-                  imageSrc = blog.image;
-                }
+    <CommonPage>
+      <div className='mt-1'>
+        <h2 className='text-center mb-4'>
+          Blogs That Help You Understand the Business
+        </h2>
+        <hr
+          style={{ backgroundColor: "#007bff", height: 2, marginBottom: 30 }}
+        />
+        {Array(Math.ceil(currentBlogs.length / 2))
+          .fill()
+          .map((_, rowIndex) => (
+            <Row className='mb-4' key={rowIndex}>
+              {currentBlogs
+                .slice(rowIndex * 2, rowIndex * 2 + 2)
+                .map((blog, colIndex) => {
+                  let imageSrc;
+                  if (rowIndex === 0 && colIndex === 0) {
+                    imageSrc = digitalimage;
+                  } else if (rowIndex === 0 && colIndex === 1) {
+                    imageSrc = gst;
+                  } else {
+                    imageSrc = blog.image;
+                  }
 
-                return (
-                  <Col md={6} key={colIndex}>
-                    <Card className='fancy-card shadow-lg border-0 rounded'>
-                      <Row className='g-0'>
-                        <Col md={5}>
-                          <Card.Img
-                            variant='top'
-                            src={imageSrc}
-                            className='img-fluid rounded-start'
-                            alt={blog.title}
-                            style={{
-                              height: "270px",
-                              width: "100%",
-                              objectFit: "cover",
-                            }}
-                          />
-                        </Col>
-                        <Col md={7}>
-                          <Card.Body>
-                            <Card.Title className='text-primary display-6'>
-                              {blog.title}
-                            </Card.Title>
-                            <div className='d-flex justify-content-between align-items-center mt-3'>
-                              <div>
-                                <Link
-                                  to={`/blog/${
-                                    indexOfFirstBlog + rowIndex * 2 + colIndex
-                                  }`}
-                                  className='btn btn-primary'
-                                >
-                                  Read More
-                                </Link>
+                  return (
+                    <Col md={6} key={colIndex}>
+                      <Card className='fancy-card shadow-lg border-0 rounded'>
+                        <Row className='g-0'>
+                          <Col md={5}>
+                            <Card.Img
+                              variant='top'
+                              src={imageSrc}
+                              className='img-fluid rounded-start'
+                              alt={blog.title}
+                              style={{
+                                height: "270px",
+                                width: "100%",
+                                objectFit: "cover",
+                              }}
+                            />
+                          </Col>
+                          <Col md={7}>
+                            <Card.Body>
+                              <Card.Title className='text-primary display-6'>
+                                {blog.title}
+                              </Card.Title>
+                              <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div>
+                                  <Link
+                                    to={`/blog/${
+                                      indexOfFirstBlog + rowIndex * 2 + colIndex
+                                    }`}
+                                    className='btn btn-primary'
+                                  >
+                                    Read More
+                                  </Link>
+                                </div>
+                                <div>
+                                  <Button
+                                    className='btn btn-outline-primary ms-2'
+                                    type='button'
+                                  >
+                                    <FaShare /> Share
+                                  </Button>
+                                </div>
                               </div>
-                              <div>
-                                <Button
-                                  className='btn btn-outline-primary ms-2'
-                                  type='button'
-                                >
-                                  <FaShare /> Share
-                                </Button>
-                              </div>
-                            </div>
-                          </Card.Body>
-                        </Col>
-                      </Row>
-                    </Card>
-                  </Col>
-                );
-              })}
-          </Row>
-        ))}
-      <Row className='mt-4'>
-        <Col className='text-center'>
-          <Button variant='danger' className='me-2'>
-            <FaYoutube size={20} /> Subscribe us on YouTube
-          </Button>
-          <Button variant='secondary'>
-            <FaInstagram size={20} /> Follow us on Instagram
-          </Button>
-        </Col>
-      </Row>
-      <Row className='mt-4'>
-        <Col className='d-flex justify-content-center'>
-          <ul className='pagination'>
-            {Array(Math.ceil(blogs.length / blogsPerPage))
-              .fill()
-              .map((_, index) => (
-                <li
-                  key={index}
-                  className={`page-item ${
-                    currentPage === index + 1 ? "active" : ""
-                  }`}
-                >
-                  <Button
-                    onClick={() => paginate(index + 1)}
-                    className='page-link'
+                            </Card.Body>
+                          </Col>
+                        </Row>
+                      </Card>
+                    </Col>
+                  );
+                })}
+            </Row>
+          ))}
+        <Row className='mt-4'>
+          <Col className='text-center'>
+            <Button variant='danger' className='me-2'>
+              <FaYoutube size={20} /> Subscribe us on YouTube
+            </Button>
+            <Button variant='secondary'>
+              <FaInstagram size={20} /> Follow us on Instagram
+            </Button>
+          </Col>
+        </Row>
+        <Row className='mt-4'>
+          <Col className='d-flex justify-content-center'>
+            <ul className='pagination'>
+              {Array(Math.ceil(blogs.length / blogsPerPage))
+                .fill()
+                .map((_, index) => (
+                  <li
+                    key={index}
+                    className={`page-item ${
+                      currentPage === index + 1 ? "active" : ""
+                    }`}
                   >
-                    {index + 1}
-                  </Button>
-                </li>
-              ))}
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+                    <Button
+                      onClick={() => paginate(index + 1)}
+                      className='page-link'
+                    >
+                      {index + 1}
+                    </Button>
+                  </li>
+                ))}
+            </ul>
+          </Col>
+        </Row>
+      </div>
+    </CommonPage>
   );
 };
 
