@@ -16,10 +16,13 @@ export const Blogs = () => {
         <div className='section-heading text-center'>
           <h2 className='heading-line'>Blogs</h2>
           <p className='text-muted lead mx-auto'>
-            DukanBuddy can benefit various types of small businesses, including
-            mom & pop stores, grocery stores, medicine stores, manufacturing
-            companies, restaurants, cloud kitchens, book stores, gift shops,
-            hardware stores, salons, and more.
+            At DukanBuddy, our blog is dedicated to supporting micro, small, and
+            medium businesses with expert advice and practical tips. Discover
+            success stories, industry trends, and innovative strategies to help
+            your business thrive. Stay updated on the latest features and
+            enhancements in our platform, and learn how to optimize your
+            operations and engage customers effectively. Join us to gain
+            valuable insights tailored to your unique business needs.
           </p>
         </div>
         <div id='blogCarousel' className='carousel slide' data-ride='carousel'>
@@ -157,7 +160,7 @@ export const Blogs = () => {
                           alt='Embracing Change'
                         />
                         <div className='card-img-overlay d-flex justify-content-start align-items-end'>
-                          <Link to='/blog' className='btn btn-primary'>
+                          <Link to='/blog-page' className='btn btn-primary'>
                             Read More
                           </Link>
                         </div>
@@ -195,35 +198,33 @@ export const Blogs = () => {
             </div>
 
             {/* <div className='carousel-item'>
-                    <div className='row'>
-                      <div className='col-md-6'>
-                        <div className='card fancy-card shadow-lg border-0 rounded'>
-                          <div className='row g-0'>
-                            <div className='col-md-12'>
-                              <img
-                                src={gst}
-                                className='img-fluid rounded'
-                                style={{
-                                  width: "100%",
-                                  height: "300px",
-                                  objectFit: "cover",
-                                }}
-                                alt='GST Food Services'
-                              />
-                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
-                                <Link to='#' className='btn btn-primary'>
-                                  Read More
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
+              <div className='row'>
+                <div className='col-md-6'>
+                  <div className='card fancy-card shadow-lg border-0 rounded'>
+                    <div className='row g-0'>
+                      <div className='col-md-12'>
+                        <img
+                          src={gst}
+                          className='img-fluid rounded'
+                          style={{
+                            width: "100%",
+                            height: "300px",
+                            objectFit: "cover",
+                          }}
+                          alt='GST Food Services'
+                        />
+                        <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                          <Link to='/blog-page' className='btn btn-primary'>
+                            Read More
+                          </Link>
                         </div>
                       </div>
-                      <div className='col-md-6'>
-                       
-                      </div>
-                   </div>
-                  </div> */}
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-6'></div>
+              </div>
+            </div> */}
           </div>
 
           <a

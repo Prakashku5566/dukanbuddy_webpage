@@ -4,8 +4,11 @@ import CommonPage from "./CommonPage";
 
 const BlogPage = () => {
   return (
-    <CommonPage>
-      <header className='bg-primary text-white p-4'>
+    <>
+      <header
+        className='bg-primary text-white p-4'
+        style={{ marginTop: "80px" }}
+      >
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           Embracing Change: Adapting to Emerging Consumer Trends in India for
           MSMEs
@@ -18,19 +21,19 @@ const BlogPage = () => {
               className='mt-4'
               style={{ color: "rgb(201, 24, 24)", fontWeight: 600 }}
             >
-              In todays dynamic market landscape, consumer preferences are
+              In today's dynamic market landscape, consumer preferences are
               constantly evolving, driven by changing lifestyles, technological
               advancements, and socio-economic factors. For Micro, Small, and
               Medium Enterprises (MSMEs) in India, staying attuned to these
               shifting trends is crucial for sustaining and thriving in the
-              competitive marketplace. Lets explore some of the emerging
+              competitive marketplace. Let's explore some of the emerging
               consumer trends in India and suggest ways for MSMEs to adapt their
               products, services, and business models effectively.
             </p>
           </div>
           <div className='col-md-6'>
             <img
-              src={"achievement"}
+              src='images/achievement.jpg'
               alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -55,7 +58,7 @@ const BlogPage = () => {
           <section>
             <h3>2. Demand for Personalization:</h3>
             <p>
-              Todays consumers crave personalized experiences tailored to their
+              Today's consumers crave personalized experiences tailored to their
               preferences and needs. They seek products and services that
               resonate with their individual tastes, values, and lifestyles.
               Mass customization and personalized recommendations are gaining
@@ -65,11 +68,11 @@ const BlogPage = () => {
           <section>
             <h3>3. Conscious Consumerism:</h3>
             <p>
-              Theres a growing awareness and emphasis on sustainability, ethical
-              sourcing, and social responsibility among Indian consumers. They
-              are actively seeking eco-friendly products, supporting local
-              artisans and brands, and scrutinizing the ethical practices of
-              businesses.
+              There's a growing awareness and emphasis on sustainability,
+              ethical sourcing, and social responsibility among Indian
+              consumers. They are actively seeking eco-friendly products,
+              supporting local artisans and brands, and scrutinizing the ethical
+              practices of businesses.
             </p>
           </section>
           <section>
@@ -77,7 +80,7 @@ const BlogPage = () => {
             <p>
               The COVID-19 pandemic has accelerated the health and wellness
               trend, prompting consumers to prioritize immunity-boosting
-              products, organic foods, and wellness services. Theres a
+              products, organic foods, and wellness services. There's a
               heightened demand for clean-label products, natural ingredients,
               and holistic healthcare solutions.
             </p>
@@ -123,16 +126,19 @@ const BlogPage = () => {
         </main>
       </div>
       <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
+        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
       </footer>
-    </CommonPage>
+    </>
   );
 };
 
 const GstBenefitsPage = () => {
   return (
     <>
-      <header className='bg-primary text-white p-4'>
+      <header
+        className='bg-primary text-white p-4'
+        style={{ marginTop: "80px" }}
+      >
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           The GST Benefits for MSMEs in India: A Comprehensive Guide
         </h1>
@@ -254,7 +260,7 @@ const GstBenefitsPage = () => {
         </main>
       </div>
       <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
+        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
       </footer>
     </>
   );
@@ -262,7 +268,10 @@ const GstBenefitsPage = () => {
 const DigitalRevolutionPage = () => {
   return (
     <>
-      <header className='bg-primary text-white p-4'>
+      <header
+        className='bg-primary text-white p-4'
+        style={{ marginTop: "80px" }}
+      >
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           Unlocking Success: The Digital Revolution of Indian MSMEs
         </h1>
@@ -367,7 +376,7 @@ const DigitalRevolutionPage = () => {
         </main>
       </div>
       <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
+        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
       </footer>
     </>
   );
@@ -375,7 +384,10 @@ const DigitalRevolutionPage = () => {
 const TheMightyKiranaPage = () => {
   return (
     <>
-      <header className='bg-primary text-white p-4'>
+      <header
+        className='bg-primary text-white p-4'
+        style={{ marginTop: "80px" }}
+      >
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           Unveiling the Vast Retail Landscape of Indias Kirana Stores
         </h1>
@@ -461,7 +473,7 @@ const TheMightyKiranaPage = () => {
         </main>
       </div>
       <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
+        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
       </footer>
     </>
   );
@@ -469,7 +481,10 @@ const TheMightyKiranaPage = () => {
 const RevolutionizingKiranaStoresPage = () => {
   return (
     <>
-      <header className='bg-primary text-white p-4'>
+      <header
+        className='bg-primary text-white p-4'
+        style={{ marginTop: "80px" }}
+      >
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           Revolutionizing Kirana Stores in India: How Technology is Reshaping
           the Retail Landscape
@@ -563,7 +578,7 @@ const RevolutionizingKiranaStoresPage = () => {
         </main>
       </div>
       <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
+        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
       </footer>
     </>
   );
@@ -571,7 +586,10 @@ const RevolutionizingKiranaStoresPage = () => {
 const StrategiesForMSMEsPage = () => {
   return (
     <>
-      <header className='bg-primary text-white p-4'>
+      <header
+        className='bg-primary text-white p-4'
+        style={{ marginTop: "80px" }}
+      >
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           Navigating the Supply Chain Maze: Strategies for MSMEs in India
         </h1>
@@ -677,7 +695,7 @@ const StrategiesForMSMEsPage = () => {
         </main>
       </div>
       <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; CogitoFS Pvt. Ltd. All Rights Reserved</p>
+        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
       </footer>
     </>
   );

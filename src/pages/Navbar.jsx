@@ -1,6 +1,6 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import LanguageChanger from "../languagechanger";
+// import LanguageChanger from "../languagechanger";
 import { useTranslation } from "react-i18next";
 import logo from "../../img/logod.png";
 import "../App.css";
@@ -59,11 +59,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/contact'>
+              <Link className='nav-link' to='/contact-page'>
                 {t("COMMON.CONTACT")}
               </Link>
             </li>
-            <LanguageChanger displayType='dropdown' />
+            {/* <li className='nav-item'>
+              <LanguageChanger displayType='dropdown' />
+            </li> */}
           </ul>
         </div>
       </div>
