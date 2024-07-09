@@ -11,10 +11,15 @@ import Shapes from "./pages/Shapes";
 import { WhyYouChoose } from "./pages/CommonPage";
 import { Features } from "./pages/Features";
 import { Blogs } from "./pages/Blogs";
+import { IoTrophyOutline } from "react-icons/io5";
+// import { MdOutlineInventory } from "react-icons/md";
+
 // import rocket from "../img/rocket.png";
-// import inventory from "../img/inventory.png";
+import inventory_1 from "../img/inventory_1.png";
 // import customerManagement from "../img/management.png";
 // import
+import image2 from "../img/screens/app/2.png";
+// C:\Users\Prakash kumar singh\Desktop\Dukanbuddy\dukanbuddy_landingPage\dukanbuddy\img\screens\tablet\2.png
 function App() {
   const { t } = useTranslation();
   // const [showBasicModal, setShowBasicModal] = useState(false);
@@ -74,7 +79,7 @@ function App() {
                     </a> */}
                     <a>
                       Inventory Management | Billing | Accounting | customer
-                      management. much more ..
+                      management.&nbsp;much&nbsp;more&nbsp;..
                     </a>
                     <div>
                       <a
@@ -105,7 +110,8 @@ function App() {
             </div>
             <div className='iphone light phone-small'>
               <div className='screen'>
-                <img src='img/screens/app/2.png' alt='madhu' />
+                {/* <img src='img/screens/app/2.png' alt='madhu' /> */}
+                <img src={image2} alt='madhu' />
               </div>
               <div className='notch'></div>
             </div>
@@ -225,12 +231,18 @@ function App() {
               <div className='row gap-y'>
                 <div className='col-md-6 order-md-last'>
                   <div className='section-heading'>
-                    <i className='fas fa-trophy fa-2x text-danger mb-3'></i>
+                    {/* <i className='fas fa-trophy fa-2x text-danger mb-3'></i> */}
+                    <IoTrophyOutline className='fa-2x text-danger mb-3' />
                     <h2 className='heading-line'>Features you canot miss</h2>
                   </div>
                   <ul className='list-unstyled'>
                     <li className='media flex-column flex-md-row text-center text-md-left'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-mail pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-mail pe-3x'></i> */}
+                      <div className='w-24'>
+                        <img src={inventory_1} />
+                      </div>
+                      {/* <MdOutlineInventory className='' /> */}
+
                       <div className='media-body mt-3 mt-md-0'>
                         <h5 className='bold mt-0 mb-1'>Inventory Management</h5>
                         <p className='m-0'>
