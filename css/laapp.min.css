@@ -9185,6 +9185,8 @@ input {
 button,
 select {
   text-transform: none;
+  border: none;
+  color: blue;
 }
 
 select {
@@ -23304,7 +23306,7 @@ textarea.form-control.form-control-rounded {
 }
 
 .gradient.gradient-primary-light {
-  background-image: linear-gradient(45deg, #3250e4 0, #899aed 100%);
+  background-image: linear-gradient(45deg, #e7e8ee 0, #c7cce9 100%);
 }
 
 .gradient.gradient-primary-dark {

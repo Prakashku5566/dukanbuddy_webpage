@@ -11,7 +11,15 @@ import Shapes from "./pages/Shapes";
 import { WhyYouChoose } from "./pages/CommonPage";
 import { Features } from "./pages/Features";
 import { Blogs } from "./pages/Blogs";
+import { IoTrophyOutline } from "react-icons/io5";
+// import { MdOutlineInventory } from "react-icons/md";
+
+// import rocket from "../img/rocket.png";
+import inventory_1 from "../img/inventory_1.png";
+// import customerManagement from "../img/management.png";
 // import
+import image2 from "../img/screens/app/2.png";
+// C:\Users\Prakash kumar singh\Desktop\Dukanbuddy\dukanbuddy_landingPage\dukanbuddy\img\screens\tablet\2.png
 function App() {
   const { t } = useTranslation();
   // const [showBasicModal, setShowBasicModal] = useState(false);
@@ -24,6 +32,18 @@ function App() {
   //     setShowEnterpriseModal(!showEnterpriseModal);
   //   else if (modal === "business") setShowBusinessModal(!showBusinessModal);
   // };
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://embed.tawk.to/661936d4a0c6737bd12b14fa/1hr97sc8l";
+    script.charset = "UTF-8";
+    script.setAttribute("crossorigin", "*");
+    document.getElementsByTagName("head")[0].appendChild(script);
+
+    return () => {
+      document.getElementsByTagName("head")[0].removeChild(script);
+    };
+  }, []);
   useEffect(() => {
     const savedLanguage = localStorage.getItem("lng");
     if (savedLanguage) {
@@ -43,13 +63,13 @@ function App() {
             <div className='container bring-to-front'>
               <div className='row'>
                 <div className='col-md-6'>
-                  <h1 className='extra-bold display-md-3 font-md'>
+                  <h1 className='font-semibold display-md-5 font-md mt-6'>
                     {t("COMMON.SMALL_BUSINESS")}
                     <span className='d-block display-md-4 light'>
                       {t("COMMON.SMART_BUSINESS")}
                     </span>
                   </h1>
-                  <p className='lead'>{t("COMMON.SMART_BUSINESS_DATA")}</p>
+                  <p className='lead mb-3'>{t("COMMON.SMART_BUSINESS_DATA")}</p>
                   <nav className='nav mt-5'>
                     {/* <a
                       href='#'
@@ -57,13 +77,19 @@ function App() {
                     >
                       <i className='fas fa-tag mr-3'></i> Plans & pricing{" "}
                     </a> */}
-                    <a
-                      href='https://app.dukanbuddy.com/'
-                      target='_blank'
-                      className='nav-link btn btn-rounded btn-outline-contrast'
-                    >
-                      {t("COMMON.START_NOW")}
+                    <a>
+                      Inventory Management | Billing | Accounting | customer
+                      management.&nbsp;much&nbsp;more&nbsp;..
                     </a>
+                    <div>
+                      <a
+                        href='https://app.dukanbuddy.com/'
+                        target='_blank'
+                        className='nav-link btn btn-rounded btn-outline-contrast mt-3'
+                      >
+                        {t("COMMON.START_NOW")}
+                      </a>
+                    </div>
                   </nav>
                 </div>
               </div>
@@ -84,7 +110,8 @@ function App() {
             </div>
             <div className='iphone light phone-small'>
               <div className='screen'>
-                <img src='img/screens/app/2.png' alt='...' />
+                {/* <img src='img/screens/app/2.png' alt='madhu' /> */}
+                <img src={image2} alt='madhu' />
               </div>
               <div className='notch'></div>
             </div>
@@ -148,7 +175,7 @@ function App() {
                     </li>
                   </ul>
                   <a
-                    href='#!'
+                    href='https://app.dukanbuddy.com/'
                     className='more-link btn btn-outline-primary bold'
                   >
                     Learn more
@@ -204,12 +231,18 @@ function App() {
               <div className='row gap-y'>
                 <div className='col-md-6 order-md-last'>
                   <div className='section-heading'>
-                    <i className='fas fa-trophy fa-2x text-danger mb-3'></i>
+                    {/* <i className='fas fa-trophy fa-2x text-danger mb-3'></i> */}
+                    <IoTrophyOutline className='fa-2x text-danger mb-3' />
                     <h2 className='heading-line'>Features you canot miss</h2>
                   </div>
                   <ul className='list-unstyled'>
                     <li className='media flex-column flex-md-row text-center text-md-left'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-mail pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-mail pe-3x'></i> */}
+                      <div className='w-24'>
+                        <img src={inventory_1} />
+                      </div>
+                      {/* <MdOutlineInventory className='' /> */}
+
                       <div className='media-body mt-3 mt-md-0'>
                         <h5 className='bold mt-0 mb-1'>Inventory Management</h5>
                         <p className='m-0'>
@@ -309,20 +342,24 @@ function App() {
                       className='rounded overflow-hidden shadow'
                       data-aos='zoom-in'
                     >
-                      <img src={"piece4"} className='img-responsive' alt='' />
+                      <img
+                        src={"inventory"}
+                        className='img-responsive'
+                        alt=''
+                      />
                     </figure>
                   </div>
                   <figure className='bubble bubble-right rounded overflow-hidden shadow'>
                     <img
-                      src={"piece5"}
+                      src={"rocket"}
                       className='img-responsive'
-                      alt=''
+                      alt='rocket'
                       data-aos='fade-left'
                     />
                   </figure>
                   <div className='iphone light'>
                     <div className='screen shadow-box'>
-                      <img src={"piece6"} alt='...' />
+                      <img src={"customerManagement"} alt='...' />
                     </div>
                     <div className='notch'></div>
                   </div>
@@ -527,8 +564,9 @@ function App() {
                     It all starts by choosing the right tools
                   </h4>
                   <p className='text-muted lead mb-5'>
-                    When you are looking for a template you want it to stand
-                    out. Laapp comes with many customizable components.
+                    At DukanBuddy, selecting the right tools is the first step
+                    to success. Our solutions seamlessly integrate, boost your
+                    marketing, and offer top-notch support.
                   </p>
                   <ul className='list-unstyled why-icon-list'>
                     <li className='list-item'>
@@ -540,8 +578,12 @@ function App() {
                         <div className='media-body'>
                           <h5 className='bold'>Integrations</h5>
                           <p className='my-0'>
-                            Aut debitis deserunt ea explicabo hic id incidunt,
-                            minus
+                            *Easy Connectivity: Smooth integration with existing
+                            systems.
+                            <br />
+                            *Unified Platform: Manage everything in one place.
+                            <br />
+                            *Scalable Solutions: Grow with your business.
                           </p>
                         </div>
                       </div>
@@ -555,8 +597,13 @@ function App() {
                         <div className='media-body'>
                           <h5 className='bold'>Marketing</h5>
                           <p className='my-0'>
-                            Aliquam amet assumenda debitis dicta distinctio
-                            eaque enim
+                            *Targeted Reach: Data-driven strategies to hit your
+                            audience.
+                            <br />
+                            *Brand Building: Strengthen your business presence.
+                            <br />
+                            *Performance Insights: Refine strategies with
+                            detailed analytics.
                           </p>
                         </div>
                       </div>
@@ -570,7 +617,12 @@ function App() {
                         <div className='media-body'>
                           <h5 className='bold'>Support</h5>
                           <p className='my-0'>
-                            Consequatur doloremque illum libero nam. Hic, vitae?
+                            *24/7 Help: Round-the-clock assistance.
+                            <br />
+                            *Training: Access to extensive training materials.
+                            <br />
+                            *Customer Success: Ongoing support for business
+                            growth.
                           </p>
                         </div>
                       </div>
@@ -578,7 +630,10 @@ function App() {
                   </ul>
                   <hr className='my-5' />
                   <div className='text-center text-md-left'>
-                    <a href='#!' className='btn btn-primary text-contrast'>
+                    <a
+                      href='/contact-page'
+                      className='btn btn-primary text-contrast'
+                    >
                       Know More
                     </a>
                   </div>
@@ -911,10 +966,10 @@ function App() {
                   <a className='nav-item py-2 text-contrast' href='#f&q'>
                     F&Q
                   </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
-                    Services
+                  <a className='nav-item py-2 text-contrast' href='/'>
+                    Home
                   </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
+                  <a className='nav-item py-2 text-contrast' href='#blogs'>
                     Blog
                   </a>
                 </nav>
@@ -934,10 +989,16 @@ function App() {
               </div> */}
               <div className='col-md-2'>
                 <nav className='nav flex-column'>
-                  <a className='nav-item py-2 text-contrast' href='#'>
+                  <a
+                    className='nav-item py-2 text-contrast'
+                    href='/carees-page'
+                  >
                     Careers
                   </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
+                  <a
+                    className='nav-item py-2 text-contrast'
+                    href='/contact-page'
+                  >
                     Contact
                   </a>
                   {/* <a className='nav-item py-2 text-contrast' href='#'>
@@ -987,7 +1048,7 @@ function App() {
               <div className='col-md-4'>
                 <p className='mt-2 mb-0 text-center text-md-left'>
                   {/* © 2024                          //<a href='https://5studios.net'>5studios</a> */}
-                  © 2024 CogitoFS Pvt. Ltd. All Rights Reserved
+                  © 2024 Pensare.AI Pvt. Ltd. All Rights Reserved
                 </p>
               </div>
             </div>
