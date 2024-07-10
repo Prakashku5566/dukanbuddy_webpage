@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
@@ -29,6 +29,20 @@ import unlockKey from "../img/key.png";
 
 function App() {
   const { t } = useTranslation();
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  console.log("is mobile", isMobile);
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
@@ -178,16 +192,21 @@ function App() {
           {/* <!-- Powered Design Blocks --> */}
           <section className='section powered-design' id='product'>
             <div className='shapes-container'>
-              <div className='shape shape-circle shape-circle-1'>
-                <div data-aos='fade-up-left' data-aos-duration='1500'></div>
-              </div>
-              <div className='shape shape-circle shape-circle-2'>
-                <div
-                  data-aos='fade-up-left'
-                  data-aos-duration='1200'
-                  data-aos-delay='500'
-                ></div>
-              </div>
+              {!isMobile && (
+                <>
+                  <div className='shape shape-circle shape-circle-1'>
+                    <div data-aos='fade-up-left' data-aos-duration='1500'></div>
+                  </div>
+                  <div className='shape shape-circle shape-circle-2'>
+                    <div
+                      data-aos='fade-up-left'
+                      data-aos-duration='1200'
+                      data-aos-delay='500'
+                    ></div>
+                  </div>
+                </>
+              )}
+
               <div className='shape shape-ring animation--rotating-diagonal'>
                 <div></div>
               </div>
