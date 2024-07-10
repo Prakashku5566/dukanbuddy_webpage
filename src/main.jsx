@@ -26,6 +26,7 @@ import {
 // const blogs = [];
 import CareerPage from "./pages/career";
 import ContactPage from "./pages/contact";
+import { Footer } from "./pages/Footer";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <Navbar /> {/* Assuming you pass t and logo as props */}
@@ -61,12 +62,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         element={<BestAffordableScannersPage />}
       />
       <Route path='/funding-option' element={<FundingOptionsPage />} />
-      <Route path='/text-guide' element={<TaxGuidePage />} />
+      <Route path='/tax-guide' element={<TaxGuidePage />} />
       <Route path='/government-schemes' element={<GovernmentSchemesPage />} />
       <Route
         path='/business-registration'
         element={<BusinessRegistrationGuidePage />}
       />
     </Routes>
+    <Footer />
   </Router>
 );

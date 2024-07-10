@@ -9,7 +9,11 @@ import { useTranslation } from "react-i18next";
 export const Features = () => {
   const { t } = useTranslation();
   return (
-    <section className='section alter3-features' id='features'>
+    <section
+      className='section alter3-features'
+      id='features'
+      style={{ backgroundColor: "#a398d8" }}
+    >
       <div className='shapes-container'>
         <div className='shape shape-ring shape-ring-1'>
           <div className='animation animation--rotating'></div>

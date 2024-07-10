@@ -27,3 +27,17 @@ export const WhyYouChoose = () => {
     </div>
   );
 };
+
+export const CommonPageBlogs = ({ children }) => {
+  return (
+    <main className='overflow-hidden position-relative'>
+      <header className='header alter3-header section gradient  text-contrast'>
+        <Shapes />
+        <div className='container bring-to-front p-4'>{children}</div>
+      </header>
+    </main>
+  );
+};
+CommonPageBlogs.propTypes = {
+  children: PropTypes.node.isRequired,
+};

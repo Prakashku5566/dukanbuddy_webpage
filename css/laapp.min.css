@@ -16633,14 +16633,14 @@ button.bg-light:hover {
 }
 
 .bg-dark {
-  background-color: #181715 !important;
+  background-color: #35415f88 !important;
 }
 
 a.bg-dark:focus,
 a.bg-dark:hover,
 button.bg-dark:focus,
 button.bg-dark:hover {
-  background-color: #000 !important;
+  background-color: #35415f88 !important;
 }
 
 .bg-alternate {
@@ -21504,7 +21504,7 @@ textarea.form-control.form-control-rounded {
 }
 
 .bg-dark.edge.top-left::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 100 310' fill='rgb(24,23,21)' fill-opacity='1'%3E%3Cpolygon points='0,310 100,310 100,0'%3E%3C/polygon%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 100 310' fill='rgb(24,23,21)' fill-opacity='1'%3E%3Cpolygon points='0,310 100,310 100,0'%3E%3C/polygon%3E%3C/svg%3E"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -23387,7 +23387,7 @@ textarea.form-control.form-control-rounded {
 
 .gradient.gradient-primary-auxiliary {
   background-image: linear-gradient(
-    45deg,
+    128deg,
     #fe2983 0,
     #3c56f4fa 50%,
     #7a7be7 110%
@@ -25831,7 +25831,7 @@ blockquote.team-quote:before {
 }
 
 .speech-bubble.bg-dark:after {
-  border-top-color: #181715;
+  border-top-color: #35415f88;
 }
 
 .speech-bubble.bg-alternate:after {
@@ -26544,7 +26544,7 @@ main {
     height: auto;
   }
   .navigation.fixed-top .nav-link {
-    color: #ffeae5;
+    color: #e6ebf2;
   }
   .navigation.fixed-top .nav-link.active,
   .navigation.fixed-top .nav-link:hover {
@@ -27518,9 +27518,8 @@ section.shadow {
 .why-choose-us .shape-pipes {
   width: 100px;
   height: 10px;
-  background-color: #ffeae5;
+  background-color: #4c5fd1;
 }
-
 .why-choose-us .shape-pipes,
 .why-choose-us .shape-pipes:after,
 .why-choose-us .shape-pipes:before {

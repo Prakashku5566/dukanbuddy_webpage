@@ -21,6 +21,14 @@ const BlogPage = () => {
               style={{ color: "rgb(201, 24, 24)", fontWeight: 600 }}
             >
               {t("BLOG_PAGE.INTRO")}
+              In today&apos;s dynamic market landscape, consumer preferences are
+              constantly evolving, driven by changing lifestyles, technological
+              advancements, and socio-economic factors. For Micro, Small, and
+              Medium Enterprises (MSMEs) in India, staying attuned to these
+              shifting trends is crucial for sustaining and thriving in the
+              competitive marketplace. Let&apos;s explore some of the emerging
+              consumer trends in India and suggest ways for MSMEs to adapt their
+              products, services, and business models effectively.
             </p>
           </div>
           <div className='col-md-6'>
@@ -50,6 +58,34 @@ const BlogPage = () => {
           <section>
             <h3>{t("BLOG_PAGE.TREND_4_TITLE")}</h3>
             <p>{t("BLOG_PAGE.TREND_4_DESC")}</p>
+            <h3>2. Demand for Personalization:</h3>
+            <p>
+              Today&apos;s consumers crave personalized experiences tailored to
+              their preferences and needs. They seek products and services that
+              resonate with their individual tastes, values, and lifestyles.
+              Mass customization and personalized recommendations are gaining
+              traction across various industries.
+            </p>
+          </section>
+          <section>
+            <h3>3. Conscious Consumerism:</h3>
+            <p>
+              There&apos;s a growing awareness and emphasis on sustainability,
+              ethical sourcing, and social responsibility among Indian
+              consumers. They are actively seeking eco-friendly products,
+              supporting local artisans and brands, and scrutinizing the ethical
+              practices of businesses.
+            </p>
+          </section>
+          <section>
+            <h3>4. Health and Wellness Focus:</h3>
+            <p>
+              The COVID-19 pandemic has accelerated the health and wellness
+              trend, prompting consumers to prioritize immunity-boosting
+              products, organic foods, and wellness services. There&apos;s a
+              heightened demand for clean-label products, natural ingredients,
+              and holistic healthcare solutions.
+            </p>
           </section>
           <h2 style={{ color: "blue" }}>{t("BLOG_PAGE.STRATEGIES_TITLE")}</h2>
           <section>
@@ -70,9 +106,6 @@ const BlogPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
@@ -101,12 +134,12 @@ const GstBenefitsPage = () => {
             </p>
           </div>
           <div className='col-md-6'>
-            {/* <img
-              src={"achievement"}
-              alt={t("GSTPAGE.IMAGE_ALT")}
+            <img
+              src='../../img/1.png'
+              alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
-            /> */}
+            />
           </div>
         </div>
 
@@ -149,9 +182,6 @@ const GstBenefitsPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
@@ -219,9 +249,6 @@ const DigitalRevolutionPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
@@ -280,9 +307,6 @@ const TheMightyKiranaPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
@@ -341,9 +365,6 @@ const RevolutionizingKiranaStoresPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
@@ -401,9 +422,6 @@ const StrategiesForMSMEsPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
-import logo from "../img/logod.png";
+// import logo from "../img/logod.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 import Feature from "./pages/CoreFeatures";
@@ -16,10 +16,22 @@ import { IoTrophyOutline } from "react-icons/io5";
 
 // import rocket from "../img/rocket.png";
 import inventory_1 from "../img/inventory_1.png";
-// import customerManagement from "../img/management.png";
-// import
+import economy_1 from "../img/economy_1.png";
+import managment_1 from "../img/management_1.png";
+import supplierImage from "../img/supplier.jpeg";
+import payrollImage from "../img/payroll.png";
+import subscriptionIcon from "../img/subscription.jpg";
+import cashbookIcon from "../img/cashbook.png";
+import multiStore from "../img/multistore.png";
+import expenseManage from "../img/expenseManage.png";
+import procurement from "../img/Procurement.png";
+import security_permission from "../img/security_permission.png";
+import mobileApp from "../img/smartphone.png";
 import image2 from "../img/screens/app/2.png";
-// C:\Users\Prakash kumar singh\Desktop\Dukanbuddy\dukanbuddy_landingPage\dukanbuddy\img\screens\tablet\2.png
+import emailIcon from "../img/email.png";
+import unlockKey from "../img/key.png";
+
+// c:\Users\Prakash kumar singh\Downloads\key.png
 function App() {
   const { t } = useTranslation();
   // const [showBasicModal, setShowBasicModal] = useState(false);
@@ -237,12 +249,9 @@ function App() {
                   </div>
                   <ul className='list-unstyled'>
                     <li className='media flex-column flex-md-row text-center text-md-left'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-mail pe-3x'></i> */}
-                      <div className='w-24'>
+                      <div className='p-2'>
                         <img src={inventory_1} />
                       </div>
-                      {/* <MdOutlineInventory className='' /> */}
-
                       <div className='media-body mt-3 mt-md-0'>
                         <h5 className='bold mt-0 mb-1'>
                           {" "}
@@ -254,7 +263,10 @@ function App() {
                       </div>
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-users pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-users pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={economy_1} />
+                      </div>
                       <div className='media-body mt-3 mt-md-0'>
                         <h5 className='bold mt-0 mb-1'>
                           {" "}
@@ -266,28 +278,41 @@ function App() {
                       </div>
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={managment_1} />
+                      </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.CUSTOMER_MANAGEMENT")}
                         paragraph={t("FEATURE_CANOT_MISS.DETAILD_RECORDS")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* supplierImage */}
+                      <div className='p-2'>
+                        <img src={supplierImage} />
+                      </div>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.SUPPLIER_MANAGEMENT")}
                         paragraph={t("FEATURE_CANOT_MISS.STREAMLINE_SUPPLIER")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={payrollImage} />
+                      </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.PAYROLL_MANAGEMENT")}
                         paragraph={t("FEATURE_CANOT_MISS.EMPLOYEE_SALARY")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={subscriptionIcon} />
+                      </div>
                       <Feature
                         heading={t(
                           "FEATURE_CANOT_MISS.SUBSCRIPTION_MANAGEMENT"
@@ -296,14 +321,20 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={cashbookIcon} />
+                      </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.CASHBOOK")}
                         paragraph={t("FEATURE_CANOT_MISS.DIGITAL_CASHBOOK")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={multiStore} />
+                      </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.MULTI_STORE_MANAGEMENT")}
                         paragraph={t(
@@ -312,14 +343,20 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={expenseManage} />
+                      </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.EXPENSE_MANAGEMENT")}
                         paragraph={t("FEATURE_CANOT_MISS.BUSINESS_EXPENSE")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={procurement} />
+                      </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.PROCUREMENT")}
                         paragraph={t(
@@ -328,7 +365,10 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={security_permission} />
+                      </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.SECURITY_PERMISSION")}
                         paragraph={t(
@@ -337,7 +377,11 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={mobileApp} />
+                      </div>
+                      {/* mobileApp */}
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.MOBILE_APP")}
                         paragraph={t("FEATURE_CANOT_MISS.MOBILE_APP_DETAILS")}
@@ -352,23 +396,41 @@ function App() {
                       data-aos='zoom-in'
                     >
                       <img
-                        src={"inventory"}
+                        src={inventory_1}
                         className='img-responsive'
-                        alt=''
+                        alt='Inventory'
                       />
                     </figure>
                   </div>
                   <figure className='bubble bubble-right rounded overflow-hidden shadow'>
                     <img
-                      src={"rocket"}
+                      src={mobileApp}
                       className='img-responsive'
                       alt='rocket'
                       data-aos='fade-left'
                     />
                   </figure>
+                  <figure className='bubble bubble-right rounded overflow-hidden shadow'>
+                    <img
+                      src={mobileApp}
+                      className='img-responsive'
+                      alt='rocket'
+                      data-aos='fade-left'
+                    />
+                  </figure>
+
                   <div className='iphone light'>
-                    <div className='screen shadow-box'>
-                      <img src={"customerManagement"} alt='...' />
+                    <div className='screen shadow-box justify-between flex'>
+                      <img
+                        src={managment_1}
+                        alt='Customer Managment'
+                        className='ml-4'
+                      />
+                      <img
+                        src={supplierImage}
+                        alt='Customer Managment'
+                        className='ml-6'
+                      />
                     </div>
                     <div className='notch'></div>
                   </div>
@@ -651,7 +713,10 @@ function App() {
                 <div className='col-md-6'>
                   <div className='rotated-mockups device-twin'>
                     <div className='browser absolute shadow-lg'>
-                      <img src='img/screens/tablet/1.png' alt='...' />
+                      <img
+                        src='img/screens/tablet/retailRocket.png'
+                        alt='...'
+                      />
                     </div>
                     <div className='front iphone light'>
                       <div className='screen'>
@@ -902,7 +967,10 @@ function App() {
               <div className='row'>
                 <div className='col-md-6 mx-auto'>
                   <div className='section-heading text-center'>
-                    <i className='pe pe-7s-unlock fa-3x text-alternate'></i>
+                    {/* <i className='pe pe-7s-unlock fa-3x text-alternate'></i> */}
+                    <div>
+                      <img src={unlockKey} />
+                    </div>
                     <h2 className='heading-line bold mt-4'>
                       {t("FREETRIAL.START_FREE")}
                     </h2>
@@ -936,7 +1004,10 @@ function App() {
                 <div className='col-md-6'>
                   <div className='rounded media bg-contrast shadow-lg p-4'>
                     <div className='icon-shape mr-4'>
-                      <i className='pe pe-7s-cash pe-3x'></i>
+                      {/* <i className='pe pe-7s-cash pe-3x'></i> */}
+                      <span>
+                        <img src={emailIcon} />
+                      </span>
                     </div>
                     <div className='media-body'>
                       <h4 className='text-primary'>
@@ -959,109 +1030,6 @@ function App() {
           </section>
         </main>
         {/* <!-- Footer --> */}
-        <footer className='site-footer section bg-dark text-contrast edge top-left'>
-          <div className='container py-3'>
-            <div className='row gap-y text-center text-md-left'>
-              <div className='col-md-4 mr-auto'>
-                <img src={logo} alt='Logo' className='logo' />
-                {/* <p>
-                  Laapp, a carefully crafted and powerful HTML5 template, it is
-                  perfect to showcase your App or Startup
-                </p> */}
-              </div>
-              <div className='col-md-2'>
-                <nav className='nav flex-column'>
-                  <a className='nav-item py-2 text-contrast' href='#f&q'>
-                    {t("FOOTER_CONTACT.F&Q")}
-                  </a>
-                  <a className='nav-item py-2 text-contrast' href='/'>
-                    {t("COMMON.HOME")}
-                  </a>
-                  <a className='nav-item py-2 text-contrast' href='#blogs'>
-                    {t("COMMON.BLOG")}
-                  </a>
-                </nav>
-              </div>
-              {/* <div className='col-md-2'>
-                <nav className='nav flex-column'>
-                  <a className='nav-item py-2 text-contrast' href='f&q'>
-                    Features
-                  </a> */}
-              {/* <a className='nav-item py-2 text-contrast' href='#'>
-                    API
-                  </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
-                    Customers
-                  </a> */}
-              {/* </nav>
-              </div> */}
-              <div className='col-md-2'>
-                <nav className='nav flex-column'>
-                  <a
-                    className='nav-item py-2 text-contrast'
-                    href='/carees-page'
-                  >
-                    {t("FOOTER_CONTACT.CAREERS")}
-                  </a>
-                  <a
-                    className='nav-item py-2 text-contrast'
-                    href='/contact-page'
-                  >
-                    {t("COMMON.CONTACT")}
-                  </a>
-                  {/* <a className='nav-item py-2 text-contrast' href='#'>
-                    Search
-                  </a> */}
-                </nav>
-              </div>
-              <div className='col-md-2'>
-                <h6 className='py-2 small'> {t("FOOTER_CONTACT.FOLLOW_US")}</h6>
-                <nav className='nav justify-content-around'>
-                  <a
-                    href='https://facebook.com/5studios.net'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='btn btn-circle btn-sm brand-facebook'
-                  >
-                    <i className='fab fa-facebook'></i>
-                  </a>
-                  <a
-                    href='https://www.linkedin.com/company/cogitofs/'
-                    className='btn btn-circle btn-sm brand-twitter'
-                    title='linkdin'
-                  >
-                    <i className='fab fa-twitter'></i>
-                  </a>
-                  <a
-                    href='https://www.instagram.com/dukanbuddy?igsh=MWkybXg1YjM0dWlwZA%3D%3D&utm_source=qr'
-                    className='btn btn-circle btn-sm brand-instagram'
-                    title='instagram'
-                  >
-                    <i className='fab fa-instagram'></i>
-                  </a>
-                  {/* <li class='list-inline-item'>
-                    <a
-                      href='https://www.instagram.com/dukanbuddy?igsh=MWkybXg1YjM0dWlwZA%3D%3D&utm_source=qr'
-                      target='_blank'
-                      title='instagram'
-                    >
-                      <i class='fa fa-instagram'></i>
-                    </a>
-                  </li> */}
-                </nav>
-              </div>
-            </div>
-            <hr className='mt-5 op-5' />
-            <div className='row small'>
-              <div className='col-md-4'>
-                <p className='mt-2 mb-0 text-center text-md-left'>
-                  {/* © 2024                          //<a href='https://5studios.net'>5studios</a> */}
-                  © 2024 Pensare.AI Pvt. Ltd. All Rights Reserved
-                </p>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </>
   );
