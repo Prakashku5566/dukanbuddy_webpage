@@ -24,12 +24,12 @@ export const Footer = () => {
               <a className='nav-item py-2 text-contrast' href='#f&q'>
                 {t("FOOTER_CONTACT.F&Q")}
               </a>
-              <a className='nav-item py-2 text-contrast' href='/'>
+              <link className='nav-item py-2 text-contrast' href='/'>
                 {t("COMMON.HOME")}
-              </a>
-              <a className='nav-item py-2 text-contrast' href='/blogs'>
+              </link>
+              <link className='nav-item py-2 text-contrast' to='/blogs'>
                 {t("COMMON.BLOG")}
-              </a>
+              </link>
             </nav>
           </div>
           {/* <div className='col-md-2'>
