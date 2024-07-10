@@ -23387,9 +23387,9 @@ textarea.form-control.form-control-rounded {
 
 .gradient.gradient-primary-auxiliary {
   background-image: linear-gradient(
-    128deg,
-    #fe2983 0,
-    #3c56f4fa 50%,
+ 128deg,
+    #a0b2d0 0,
+    #082eb7 50%,
     #7a7be7 110%
   );
 }
@@ -26387,7 +26387,9 @@ main {
 
 .navigation.navbar-sticky {
   position: fixed !important;
-  background-color: #353db0;
+ 
+  background-color: #fff;
+
   left: 0;
   top: 0;
   right: 0;
@@ -26551,7 +26553,7 @@ main {
     color: #ffd3cb;
   }
   .navigation.navbar-sticky {
-    background-color: #353db0;
+    background-color: #dee2e6;
     top: 0;
   }
   .navigation.navbar-sticky .nav-link {
