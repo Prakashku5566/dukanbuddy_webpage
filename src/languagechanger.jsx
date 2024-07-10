@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 function LanguageChanger({ displayType = "buttons" }) {
   const [showAll, setShowAll] = useState(false);
   const { t, i18n } = useTranslation();
+  const [isTop, setIsTop] = useState(true);
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsTop(false);
+    } else {
+      setIsTop(true);
+    }
+  };
   const languages = [
     { code: "en1", label: "English" },
     { code: "hi", label: "हिंदी" },
@@ -25,9 +33,14 @@ function LanguageChanger({ displayType = "buttons" }) {
   };
 
   const displayedLanguages = showAll ? languages : languages.slice(0, 6);
-
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className='App' style={{ backgroundColor: "transparent" }}>
+    <div className='App'>
       {displayType === "buttons" ? (
         <div>
           {displayedLanguages.map((language, index) => (
@@ -48,8 +61,12 @@ function LanguageChanger({ displayType = "buttons" }) {
               padding: "5px",
               borderRadius: "0.5rem",
               border: "none",
-              color: "#4c5fd1",
-              marginTop: "8px",
+              color: isTop ? "#ffeae5" : "#4c5fd1",
+              marginTop: "10px",
+              outline: "none",
+              backgroundColor: "transparent",
+              fontWeight: "600",
+              fontSize: "1rem",
             }}
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue=''

@@ -23387,9 +23387,9 @@ textarea.form-control.form-control-rounded {
 
 .gradient.gradient-primary-auxiliary {
   background-image: linear-gradient(
-    128deg,
-    #fe2983 0,
-    #3c56f4fa 50%,
+ 128deg,
+    #a0b2d0 0,
+    #082eb7 50%,
     #7a7be7 110%
   );
 }
