@@ -4,6 +4,7 @@ import linkedin from "../../img/linkedin.png";
 import instagram from "../../img/instagram.png";
 import "../App.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -46,12 +47,15 @@ export const Footer = () => {
               </div> */}
           <div className='col-md-2'>
             <nav className='nav flex-column'>
-              <a className='nav-item py-2 text-contrast' href='/carees-page'>
+              <Link className='nav-item py-2 text-contrast' href='/carees-page'>
                 {t("FOOTER_CONTACT.CAREERS")}
-              </a>
-              <a className='nav-item py-2 text-contrast' href='/contact-page'>
+              </Link>
+              <Link
+                className='nav-item py-2 text-contrast'
+                href='/contact-page'
+              >
                 {t("COMMON.CONTACT")}
-              </a>
+              </Link>
               {/* <a className='nav-item py-2 text-contrast' href='#'>
                     Search
                   </a> */}
