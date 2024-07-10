@@ -26182,7 +26182,7 @@ main {
 }
 
 .navigation {
-  background-color: #353db0;
+  background-color: #fff;
   min-height: 90px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -26316,7 +26316,7 @@ main {
 .navigation .collapse {
   -webkit-transition: left 0.4s ease 0s;
   transition: left 0.4s ease 0s;
-  background-color: #353db0;
+  background-color: #fff;
   width: 250px;
   position: fixed;
   margin: 0;
