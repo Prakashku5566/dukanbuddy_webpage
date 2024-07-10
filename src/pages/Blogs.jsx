@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 import gst from "../../img/1.png";
 import digital from "../../img/2.png";
 import kiranaStore from "../../img/3.png";
@@ -7,6 +7,8 @@ import retailLandscape from "../../img/4.png";
 import embaricingChange from "../../img/5.png";
 import StrategiesForMSMEsPage from "../../img/6.png";
 export const Blogs = () => {
+  const { t } = useTranslation();
+
   return (
     <section className='section blogs'>
       <div className='shapes-container'>
@@ -14,12 +16,9 @@ export const Blogs = () => {
       </div>
       <div className='container pb-8 bring-to-front'>
         <div className='section-heading text-center'>
-          <h2 className='heading-line'>Blogs</h2>
+          <h2 className='heading-line'>{t("BLOGS.BLOG")}</h2>
           <p className='text-muted lead mx-auto'>
-            DukanBuddy can benefit various types of small businesses, including
-            mom & pop stores, grocery stores, medicine stores, manufacturing
-            companies, restaurants, cloud kitchens, book stores, gift shops,
-            hardware stores, salons, and more.
+            {t("BLOGS.SHOULD_CHOOSE_DETAILS")}
           </p>
         </div>
         <div id='blogCarousel' className='carousel slide' data-ride='carousel'>
@@ -45,7 +44,7 @@ export const Blogs = () => {
                             to='/gst-benifit-page'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -71,7 +70,7 @@ export const Blogs = () => {
                             to='/digital-revolution-page'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -103,7 +102,7 @@ export const Blogs = () => {
                             to='/TheMightyKiranaPage'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -129,7 +128,7 @@ export const Blogs = () => {
                             to='/RevolutionizingKiranaStoresPage'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -157,8 +156,8 @@ export const Blogs = () => {
                           alt='Embracing Change'
                         />
                         <div className='card-img-overlay d-flex justify-content-start align-items-end'>
-                          <Link to='/blog' className='btn btn-primary'>
-                            Read More
+                          <Link to='/blog-page' className='btn btn-primary'>
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -184,7 +183,7 @@ export const Blogs = () => {
                             to='/StrategiesForMSMEsPage'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -195,35 +194,33 @@ export const Blogs = () => {
             </div>
 
             {/* <div className='carousel-item'>
-                    <div className='row'>
-                      <div className='col-md-6'>
-                        <div className='card fancy-card shadow-lg border-0 rounded'>
-                          <div className='row g-0'>
-                            <div className='col-md-12'>
-                              <img
-                                src={gst}
-                                className='img-fluid rounded'
-                                style={{
-                                  width: "100%",
-                                  height: "300px",
-                                  objectFit: "cover",
-                                }}
-                                alt='GST Food Services'
-                              />
-                              <div className='card-img-overlay d-flex justify-content-start align-items-end'>
-                                <Link to='#' className='btn btn-primary'>
-                                  Read More
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
+              <div className='row'>
+                <div className='col-md-6'>
+                  <div className='card fancy-card shadow-lg border-0 rounded'>
+                    <div className='row g-0'>
+                      <div className='col-md-12'>
+                        <img
+                          src={gst}
+                          className='img-fluid rounded'
+                          style={{
+                            width: "100%",
+                            height: "300px",
+                            objectFit: "cover",
+                          }}
+                          alt='GST Food Services'
+                        />
+                        <div className='card-img-overlay d-flex justify-content-start align-items-end'>
+                          <Link to='/blog-page' className='btn btn-primary'>
+                            Read More
+                          </Link>
                         </div>
                       </div>
-                      <div className='col-md-6'>
-                       
-                      </div>
-                   </div>
-                  </div> */}
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-6'></div>
+              </div>
+            </div> */}
           </div>
 
           <a
@@ -247,7 +244,7 @@ export const Blogs = () => {
         </div>
         <div className='text-center mt-4'>
           <Link to='/blogs' className='btn btn-primary'>
-            View All Blogs
+            {t("BLOGS.VIEW_ALL_BLOGS")}
           </Link>
         </div>
       </div>

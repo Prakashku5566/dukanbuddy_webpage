@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
-import logo from "../img/logod.png";
+// import logo from "../img/logod.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 import Feature from "./pages/CoreFeatures";
@@ -11,7 +11,27 @@ import Shapes from "./pages/Shapes";
 import { WhyYouChoose } from "./pages/CommonPage";
 import { Features } from "./pages/Features";
 import { Blogs } from "./pages/Blogs";
-// import
+import { IoTrophyOutline } from "react-icons/io5";
+// import { MdOutlineInventory } from "react-icons/md";
+
+// import rocket from "../img/rocket.png";
+import inventory_1 from "../img/inventory_1.png";
+import economy_1 from "../img/economy_1.png";
+import managment_1 from "../img/management_1.png";
+import supplierImage from "../img/supplier.jpeg";
+import payrollImage from "../img/payroll.png";
+import subscriptionIcon from "../img/subscription.jpg";
+import cashbookIcon from "../img/cashbook.png";
+import multiStore from "../img/multistore.png";
+import expenseManage from "../img/expenseManage.png";
+import procurement from "../img/Procurement.png";
+import security_permission from "../img/security_permission.png";
+import mobileApp from "../img/smartphone.png";
+import image2 from "../img/screens/app/2.png";
+import emailIcon from "../img/email.png";
+import unlockKey from "../img/key.png";
+
+// c:\Users\Prakash kumar singh\Downloads\key.png
 function App() {
   const { t } = useTranslation();
   // const [showBasicModal, setShowBasicModal] = useState(false);
@@ -24,6 +44,18 @@ function App() {
   //     setShowEnterpriseModal(!showEnterpriseModal);
   //   else if (modal === "business") setShowBusinessModal(!showBusinessModal);
   // };
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://embed.tawk.to/661936d4a0c6737bd12b14fa/1hr97sc8l";
+    script.charset = "UTF-8";
+    script.setAttribute("crossorigin", "*");
+    document.getElementsByTagName("head")[0].appendChild(script);
+
+    return () => {
+      document.getElementsByTagName("head")[0].removeChild(script);
+    };
+  }, []);
   useEffect(() => {
     const savedLanguage = localStorage.getItem("lng");
     if (savedLanguage) {
@@ -43,13 +75,13 @@ function App() {
             <div className='container bring-to-front'>
               <div className='row'>
                 <div className='col-md-6'>
-                  <h1 className='extra-bold display-md-3 font-md'>
+                  <h1 className='font-semibold display-md-5 font-md mt-6'>
                     {t("COMMON.SMALL_BUSINESS")}
                     <span className='d-block display-md-4 light'>
                       {t("COMMON.SMART_BUSINESS")}
                     </span>
                   </h1>
-                  <p className='lead'>{t("COMMON.SMART_BUSINESS_DATA")}</p>
+                  <p className='lead mb-3'>{t("COMMON.SMART_BUSINESS_DATA")}</p>
                   <nav className='nav mt-5'>
                     {/* <a
                       href='#'
@@ -57,13 +89,19 @@ function App() {
                     >
                       <i className='fas fa-tag mr-3'></i> Plans & pricing{" "}
                     </a> */}
-                    <a
-                      href='https://app.dukanbuddy.com/'
-                      target='_blank'
-                      className='nav-link btn btn-rounded btn-outline-contrast'
-                    >
-                      {t("COMMON.START_NOW")}
+                    <a>
+                      Inventory Management | Billing | Accounting | customer
+                      management.&nbsp;much&nbsp;more&nbsp;..
                     </a>
+                    <div>
+                      <a
+                        href='https://app.dukanbuddy.com/'
+                        target='_blank'
+                        className='nav-link btn btn-rounded btn-outline-contrast mt-3'
+                      >
+                        {t("COMMON.START_NOW")}
+                      </a>
+                    </div>
                   </nav>
                 </div>
               </div>
@@ -84,7 +122,8 @@ function App() {
             </div>
             <div className='iphone light phone-small'>
               <div className='screen'>
-                <img src='img/screens/app/2.png' alt='...' />
+                {/* <img src='img/screens/app/2.png' alt='madhu' /> */}
+                <img src={image2} alt='madhu' />
               </div>
               <div className='notch'></div>
             </div>
@@ -105,26 +144,23 @@ function App() {
                       icon={faHandshake}
                       className='fa-3x accent mb-3'
                     />
-                    <h3 className='text-alternate heading-line'>Our Mission</h3>
+                    <h3 className='text-alternate heading-line'>
+                      {" "}
+                      {t("OURMISSION.OUR_MISSION")}
+                    </h3>
                     <p className='lead'>
-                      At CogitoFS, we envision a future where every MSME in
-                      India prospers without financial constraints. Our mission
-                      is to:
+                      {t("OURMISSION.Pensare.AI")}
                       <ul>
-                        <li>
-                          Revolutionize the MSME landscape with innovative
-                          lending products
-                        </li>
-                        <li>Provide cutting-edge CRM solutions</li>
-                        <li>Offer comprehensive financial education</li>
+                        <li>{t("OURMISSION.REVOLUTION_MSME")}</li>
+                        <li> {t("OURMISSION.CRM_SOLUTION")}</li>
+                        <li> {t("OURMISSION.FINACIAL_EDUCATION")}</li>
                       </ul>
-                      Our commitment includes:
+                      {t("OURMISSION.COMMITMENT")}
                       <ul>
-                        <li>Relentless product and solution innovation</li>
-                        <li>Unwavering dedication to improving MSME lives</li>
+                        <li> {t("OURMISSION.RELENTLESS")}</li>
+                        <li> {t("OURMISSION.UNWAVERING")}</li>
                       </ul>
-                      We enable MSMEs to focus on their businesses while we
-                      handle the rest.
+                      {t("OURMISSION.FOCUS_BUSINESS")}
                     </p>
                   </div>
                   <ul className='nav'>
@@ -148,10 +184,10 @@ function App() {
                     </li>
                   </ul>
                   <a
-                    href='#!'
+                    href='https://app.dukanbuddy.com/'
                     className='more-link btn btn-outline-primary bold'
                   >
-                    Learn more
+                    {t("OURMISSION.LEARN_MORE")}
                   </a>
                 </div>
               </div>
@@ -204,101 +240,151 @@ function App() {
               <div className='row gap-y'>
                 <div className='col-md-6 order-md-last'>
                   <div className='section-heading'>
-                    <i className='fas fa-trophy fa-2x text-danger mb-3'></i>
-                    <h2 className='heading-line'>Features you canot miss</h2>
+                    {/* <i className='fas fa-trophy fa-2x text-danger mb-3'></i> */}
+                    <IoTrophyOutline className='fa-2x text-danger mb-3' />
+                    <h2 className='heading-line'>
+                      {" "}
+                      {t("FEATURE_CANOT_MISS.FEATURE_CANOT")}
+                    </h2>
                   </div>
                   <ul className='list-unstyled'>
                     <li className='media flex-column flex-md-row text-center text-md-left'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-mail pe-3x'></i>
+                      <div className='p-2'>
+                        <img src={inventory_1} />
+                      </div>
                       <div className='media-body mt-3 mt-md-0'>
-                        <h5 className='bold mt-0 mb-1'>Inventory Management</h5>
+                        <h5 className='bold mt-0 mb-1'>
+                          {" "}
+                          {t("FEATURE_CANOT_MISS.INVENTORY_MANAGEMENT")}
+                        </h5>
                         <p className='m-0'>
-                          Easily track your stock levels, set reorder points,
-                          and manage vendors. Stay updated with real-time
-                          inventory data to avoid stockouts and overstocking.
+                          {t("FEATURE_CANOT_MISS.TRACK_YOUR_STOCK")}
                         </p>
                       </div>
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-users pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-users pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={economy_1} />
+                      </div>
                       <div className='media-body mt-3 mt-md-0'>
-                        <h5 className='bold mt-0 mb-1'>Sales & Billing</h5>
+                        <h5 className='bold mt-0 mb-1'>
+                          {" "}
+                          {t("FEATURE_CANOT_MISS.SALE_BILLING")}
+                        </h5>
                         <p className='m-0'>
-                          Simplify your sales process with quick billing,
-                          invoicing, and sales tracking. Generate professional
-                          invoices and keep accurate sales records effortlessly.
+                          {t("FEATURE_CANOT_MISS.SALE_PROCESS")}
                         </p>
                       </div>
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={managment_1} />
+                      </div>
                       <Feature
-                        heading='Customer Management'
-                        paragraph='Keep detailed records of your customers, manage loyalty programs, and track customer interactions to provide personalized services, send payment reminders and many more awesome features'
+                        heading={t("FEATURE_CANOT_MISS.CUSTOMER_MANAGEMENT")}
+                        paragraph={t("FEATURE_CANOT_MISS.DETAILD_RECORDS")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* supplierImage */}
+                      <div className='p-2'>
+                        <img src={supplierImage} />
+                      </div>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <Feature
-                        heading='Supplier Management'
-                        paragraph='Streamline your supplier relationships by keeping track of orders, payments, and communication in one place.'
+                        heading={t("FEATURE_CANOT_MISS.SUPPLIER_MANAGEMENT")}
+                        paragraph={t("FEATURE_CANOT_MISS.STREAMLINE_SUPPLIER")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={payrollImage} />
+                      </div>
                       <Feature
-                        heading='Payroll Management'
-                        paragraph='Manage employee( full time and Part time) salaries with ease. Track attendance, calculate wages based on hours worked or shifts, and ensure timely and accurate payroll processing.'
+                        heading={t("FEATURE_CANOT_MISS.PAYROLL_MANAGEMENT")}
+                        paragraph={t("FEATURE_CANOT_MISS.EMPLOYEE_SALARY")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={subscriptionIcon} />
+                      </div>
                       <Feature
-                        heading='Subscription Management'
-                        paragraph='Offer subscription plans to your customers. Automate renewals, manage billing cycles, and keep track of subscription statuses to provide a seamless experience.'
+                        heading={t(
+                          "FEATURE_CANOT_MISS.SUBSCRIPTION_MANAGEMENT"
+                        )}
+                        paragraph={t("FEATURE_CANOT_MISS.SUBSCRIPTION_PLANS")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={cashbookIcon} />
+                      </div>
                       <Feature
-                        heading='Cashbook'
-                        paragraph='Maintain a digital cashbook to record daily transactions. Monitor cash inflows and outflows, reconcile accounts, and get a clear picture of your business finances.'
+                        heading={t("FEATURE_CANOT_MISS.CASHBOOK")}
+                        paragraph={t("FEATURE_CANOT_MISS.DIGITAL_CASHBOOK")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={multiStore} />
+                      </div>
                       <Feature
-                        heading='Multi-Store Management [Coming soon*]'
-                        paragraph='If you own multiple stores, manage them all from a single dashboard. Monitor performance, transfer stock, and streamline operations across locations.'
+                        heading={t("FEATURE_CANOT_MISS.MULTI_STORE_MANAGEMENT")}
+                        paragraph={t(
+                          "FEATURE_CANOT_MISS.MULTIPLE_STORE_DETAILS"
+                        )}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={expenseManage} />
+                      </div>
                       <Feature
-                        heading='Expense Management'
-                        paragraph='Keep track of all business expenses, categorize them, and manage budgets effectively to control costs and improve profitability.
-'
+                        heading={t("FEATURE_CANOT_MISS.EXPENSE_MANAGEMENT")}
+                        paragraph={t("FEATURE_CANOT_MISS.BUSINESS_EXPENSE")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={procurement} />
+                      </div>
                       <Feature
-                        heading='Procurement'
-                        paragraph='Streamline your procurement process by managing purchase orders, supplier contracts, and inventory replenishment efficiently.'
+                        heading={t("FEATURE_CANOT_MISS.PROCUREMENT")}
+                        paragraph={t(
+                          "FEATURE_CANOT_MISS.STREAMLINE_PROCUREMENT"
+                        )}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={security_permission} />
+                      </div>
                       <Feature
-                        heading='Security & Permissions'
-                        paragraph='Ensure data security with role-based access control. Assign specific permissions to employees based on their roles to maintain data integrity.'
+                        heading={t("FEATURE_CANOT_MISS.SECURITY_PERMISSION")}
+                        paragraph={t(
+                          "FEATURE_CANOT_MISS.SECURITY_PERMISSION_DETAILS"
+                        )}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i>
+                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
+                      <div className='p-2'>
+                        <img src={mobileApp} />
+                      </div>
+                      {/* mobileApp */}
                       <Feature
-                        heading='Mobile App (Coming soon *)'
-                        paragraph='Access all the features of DukanBuddy on the go with our mobile app. Manage your business anytime, anywhere with ease.'
+                        heading={t("FEATURE_CANOT_MISS.MOBILE_APP")}
+                        paragraph={t("FEATURE_CANOT_MISS.MOBILE_APP_DETAILS")}
                       />
                     </li>
                   </ul>
@@ -309,20 +395,42 @@ function App() {
                       className='rounded overflow-hidden shadow'
                       data-aos='zoom-in'
                     >
-                      <img src={"piece4"} className='img-responsive' alt='' />
+                      <img
+                        src={inventory_1}
+                        className='img-responsive'
+                        alt='Inventory'
+                      />
                     </figure>
                   </div>
                   <figure className='bubble bubble-right rounded overflow-hidden shadow'>
                     <img
-                      src={"piece5"}
+                      src={mobileApp}
                       className='img-responsive'
-                      alt=''
+                      alt='rocket'
                       data-aos='fade-left'
                     />
                   </figure>
+                  <figure className='bubble bubble-right rounded overflow-hidden shadow'>
+                    <img
+                      src={mobileApp}
+                      className='img-responsive'
+                      alt='rocket'
+                      data-aos='fade-left'
+                    />
+                  </figure>
+
                   <div className='iphone light'>
-                    <div className='screen shadow-box'>
-                      <img src={"piece6"} alt='...' />
+                    <div className='screen shadow-box justify-between flex'>
+                      <img
+                        src={managment_1}
+                        alt='Customer Managment'
+                        className='ml-4'
+                      />
+                      <img
+                        src={supplierImage}
+                        alt='Customer Managment'
+                        className='ml-6'
+                      />
                     </div>
                     <div className='notch'></div>
                   </div>
@@ -524,11 +632,10 @@ function App() {
               <div className='row gap-y'>
                 <div className='col-md-6'>
                   <h4 className='bold text-alternate'>
-                    It all starts by choosing the right tools
+                    {t("CHOOSE_RIGHT_TOOL.CHOOSING_RIGHT_TOOL")}
                   </h4>
                   <p className='text-muted lead mb-5'>
-                    When you are looking for a template you want it to stand
-                    out. Laapp comes with many customizable components.
+                    {t("CHOOSE_RIGHT_TOOL.CHOOSING_RIGHT_TOOL_DETAILS")}
                   </p>
                   <ul className='list-unstyled why-icon-list'>
                     <li className='list-item'>
@@ -538,10 +645,15 @@ function App() {
                           <i className='icon text-alternate fas fa-plug fa-3x'></i>
                         </div>
                         <div className='media-body'>
-                          <h5 className='bold'>Integrations</h5>
+                          <h5 className='bold'>
+                            {t("CHOOSE_RIGHT_TOOL.INTEGRATION")}
+                          </h5>
                           <p className='my-0'>
-                            Aut debitis deserunt ea explicabo hic id incidunt,
-                            minus
+                            {t("CHOOSE_RIGHT_TOOL.INTEGRATION_ONE")}
+                            <br />
+                            {t("CHOOSE_RIGHT_TOOL.INTEGRATION_TWO")}
+                            <br />
+                            {t("CHOOSE_RIGHT_TOOL.INTEGRATION_THREE")}
                           </p>
                         </div>
                       </div>
@@ -553,10 +665,16 @@ function App() {
                           <i className='icon text-alternate fas fa-heart fa-3x'></i>
                         </div>
                         <div className='media-body'>
-                          <h5 className='bold'>Marketing</h5>
+                          <h5 className='bold'>
+                            {" "}
+                            {t("CHOOSE_RIGHT_TOOL.MARKETING")}
+                          </h5>
                           <p className='my-0'>
-                            Aliquam amet assumenda debitis dicta distinctio
-                            eaque enim
+                            {t("CHOOSE_RIGHT_TOOL.MARKETING_ONE")}
+                            <br />
+                            {t("CHOOSE_RIGHT_TOOL.MARKETING_TWO")}
+                            <br />
+                            {t("CHOOSE_RIGHT_TOOL.MARKETING_THREE")}
                           </p>
                         </div>
                       </div>
@@ -568,9 +686,15 @@ function App() {
                           <i className='icon text-alternate fas fa-headphones fa-3x'></i>
                         </div>
                         <div className='media-body'>
-                          <h5 className='bold'>Support</h5>
+                          <h5 className='bold'>
+                            {t("CHOOSE_RIGHT_TOOL.SUPPORT")}
+                          </h5>
                           <p className='my-0'>
-                            Consequatur doloremque illum libero nam. Hic, vitae?
+                            {t("CHOOSE_RIGHT_TOOL.SUPPORT_ONE")}
+                            <br />
+                            {t("CHOOSE_RIGHT_TOOL.SUPPORT_TWO")}
+                            <br />
+                            {t("CHOOSE_RIGHT_TOOL.SUPPORT_THREE")}
                           </p>
                         </div>
                       </div>
@@ -578,15 +702,21 @@ function App() {
                   </ul>
                   <hr className='my-5' />
                   <div className='text-center text-md-left'>
-                    <a href='#!' className='btn btn-primary text-contrast'>
-                      Know More
+                    <a
+                      href='/contact-page'
+                      className='btn btn-primary text-contrast'
+                    >
+                      {t("CHOOSE_RIGHT_TOOL.SUPPORT_KNOW_MORE")}
                     </a>
                   </div>
                 </div>
                 <div className='col-md-6'>
                   <div className='rotated-mockups device-twin'>
                     <div className='browser absolute shadow-lg'>
-                      <img src='img/screens/tablet/1.png' alt='...' />
+                      <img
+                        src='img/screens/tablet/retailRocket.png'
+                        alt='...'
+                      />
                     </div>
                     <div className='front iphone light'>
                       <div className='screen'>
@@ -837,16 +967,16 @@ function App() {
               <div className='row'>
                 <div className='col-md-6 mx-auto'>
                   <div className='section-heading text-center'>
-                    <i className='pe pe-7s-unlock fa-3x text-alternate'></i>
+                    {/* <i className='pe pe-7s-unlock fa-3x text-alternate'></i> */}
+                    <div>
+                      <img src={unlockKey} />
+                    </div>
                     <h2 className='heading-line bold mt-4'>
-                      Start your 15 days free trial now!
+                      {t("FREETRIAL.START_FREE")}
                     </h2>
                     <p className='lead text-muted'>
-                      By signing up you will get 15 days free trial. You wonot
-                      be charged until the trial period ends,{" "}
-                      <span className='italic'>
-                        donot let this offer pass in front of your eyes
-                      </span>
+                      {t("FREETRIAL.SIGNING_UP")}
+                      <span className='italic'>{t("FREETRIAL.OFFER")}</span>
                     </p>
                   </div>
                 </div>
@@ -856,13 +986,13 @@ function App() {
                   href='https://app.dukanbuddy.com/'
                   className='btn btn-alternate btn-lg py-3 px-4 bold mr-0 mr-md-3 mb-3 mb-md-0'
                 >
-                  Sign up
+                  {t("FREETRIAL.SIGN_UP")}
                 </a>
                 <a
                   href='mailto:contact@dukanbuddy.com'
                   className='btn btn-outline-dark btn-lg py-3 px-4 bold'
                 >
-                  Contact us
+                  {t("FREETRIAL.CONTACT_US")}
                 </a>
               </div>
             </div>
@@ -874,19 +1004,23 @@ function App() {
                 <div className='col-md-6'>
                   <div className='rounded media bg-contrast shadow-lg p-4'>
                     <div className='icon-shape mr-4'>
-                      <i className='pe pe-7s-cash pe-3x'></i>
+                      {/* <i className='pe pe-7s-cash pe-3x'></i> */}
+                      <span>
+                        <img src={emailIcon} />
+                      </span>
                     </div>
                     <div className='media-body'>
-                      <h4 className='text-primary'>Contact Customer Care</h4>
+                      <h4 className='text-primary'>
+                        {t("FOOTER_CONTACT.CONTACT_CUSTOMER_CARE")}
+                      </h4>
                       <a
                         href='mailto:contact@dukanbuddy.com'
                         className='more-link d-flex align-items-center mt-0'
                       >
-                        Contact@dukanbuddy.com
+                        contact@dukanbuddy.com
                       </a>
                       <p className='mt-4'>
-                        Looking for a custom quote? Need to tell us more about
-                        your business? Want a demonstration? Drop us a line.
+                        {t("FOOTER_CONTACT.CONTACT_CUSTOMER_CARE_DETAILS")}
                       </p>
                     </div>
                   </div>
@@ -896,103 +1030,6 @@ function App() {
           </section>
         </main>
         {/* <!-- Footer --> */}
-        <footer className='site-footer section bg-dark text-contrast edge top-left'>
-          <div className='container py-3'>
-            <div className='row gap-y text-center text-md-left'>
-              <div className='col-md-4 mr-auto'>
-                <img src={logo} alt='Logo' className='logo' />
-                {/* <p>
-                  Laapp, a carefully crafted and powerful HTML5 template, it is
-                  perfect to showcase your App or Startup
-                </p> */}
-              </div>
-              <div className='col-md-2'>
-                <nav className='nav flex-column'>
-                  <a className='nav-item py-2 text-contrast' href='#f&q'>
-                    F&Q
-                  </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
-                    Services
-                  </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
-                    Blog
-                  </a>
-                </nav>
-              </div>
-              {/* <div className='col-md-2'>
-                <nav className='nav flex-column'>
-                  <a className='nav-item py-2 text-contrast' href='f&q'>
-                    Features
-                  </a> */}
-              {/* <a className='nav-item py-2 text-contrast' href='#'>
-                    API
-                  </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
-                    Customers
-                  </a> */}
-              {/* </nav>
-              </div> */}
-              <div className='col-md-2'>
-                <nav className='nav flex-column'>
-                  <a className='nav-item py-2 text-contrast' href='#'>
-                    Careers
-                  </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
-                    Contact
-                  </a>
-                  {/* <a className='nav-item py-2 text-contrast' href='#'>
-                    Search
-                  </a> */}
-                </nav>
-              </div>
-              <div className='col-md-2'>
-                <h6 className='py-2 small'>Follow us</h6>
-                <nav className='nav justify-content-around'>
-                  <a
-                    href='https://facebook.com/5studios.net'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='btn btn-circle btn-sm brand-facebook'
-                  >
-                    <i className='fab fa-facebook'></i>
-                  </a>
-                  <a
-                    href='https://www.linkedin.com/company/cogitofs/'
-                    className='btn btn-circle btn-sm brand-twitter'
-                    title='linkdin'
-                  >
-                    <i className='fab fa-twitter'></i>
-                  </a>
-                  <a
-                    href='https://www.instagram.com/dukanbuddy?igsh=MWkybXg1YjM0dWlwZA%3D%3D&utm_source=qr'
-                    className='btn btn-circle btn-sm brand-instagram'
-                    title='instagram'
-                  >
-                    <i className='fab fa-instagram'></i>
-                  </a>
-                  {/* <li class='list-inline-item'>
-                    <a
-                      href='https://www.instagram.com/dukanbuddy?igsh=MWkybXg1YjM0dWlwZA%3D%3D&utm_source=qr'
-                      target='_blank'
-                      title='instagram'
-                    >
-                      <i class='fa fa-instagram'></i>
-                    </a>
-                  </li> */}
-                </nav>
-              </div>
-            </div>
-            <hr className='mt-5 op-5' />
-            <div className='row small'>
-              <div className='col-md-4'>
-                <p className='mt-2 mb-0 text-center text-md-left'>
-                  {/* © 2024                          //<a href='https://5studios.net'>5studios</a> */}
-                  © 2024 CogitoFS Pvt. Ltd. All Rights Reserved
-                </p>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </>
   );

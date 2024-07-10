@@ -5,20 +5,28 @@ import App from "./App";
 import Navbar from "./pages/Navbar";
 import About from "./pages/About";
 import ViewAllBlogs from "./pages/viewAllBlogs";
-import BlogDetail from "./pages/detailBlog";
+// import BlogDetail from "./pages/detailBlog";
 import {
   GstBenefitsPage,
-  // BlogPage,
+  BlogPage,
   DigitalRevolutionPage,
   TheMightyKiranaPage,
   RevolutionizingKiranaStoresPage,
   StrategiesForMSMEsPage,
 } from "./pages/blogPageOne"; // Adjust paths as per your actual file structure
-import { FeaturesWith } from "./pages/Features";
+import { Features } from "./pages/Features";
 
-// Assuming you have a variable 'blogs' imported or defined somewhere for BlogDetail
-const blogs = []; // Replace with your actual data
-
+import {
+  BestAffordableScannersPage,
+  FundingOptionsPage,
+  TaxGuidePage,
+  GovernmentSchemesPage,
+  BusinessRegistrationGuidePage,
+} from "./pages/allBlogPage";
+// const blogs = [];
+import CareerPage from "./pages/career";
+import ContactPage from "./pages/contact";
+import { Footer } from "./pages/Footer";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <Navbar /> {/* Assuming you pass t and logo as props */}
@@ -26,8 +34,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path='/' element={<App />} />
       <Route path='/about' element={<About />} />
       <Route path='/blogs' element={<ViewAllBlogs />} />
-      <Route path='/features' element={<FeaturesWith />} />
+      <Route path='/features' element={<Features />} />
+      <Route path='/carees-page' element={<CareerPage />} />
+      <Route path='/contact-page' element={<ContactPage />} />
       <Route path='/gst-benifit-page' element={<GstBenefitsPage />} />
+      <Route path='/blog-page' element={<BlogPage />} />
       <Route
         path='/digital-revolution-page'
         element={<DigitalRevolutionPage />}
@@ -46,7 +57,18 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         element={<RevolutionizingKiranaStoresPage />}
       />
       <Route path='/ViewAllBlogs' element={<ViewAllBlogs />} />
-      <Route path='/blog/:id' element={<BlogDetail blogs={blogs} />} />
+      <Route
+        path='/best-affordable-scanners-page'
+        element={<BestAffordableScannersPage />}
+      />
+      <Route path='/funding-option' element={<FundingOptionsPage />} />
+      <Route path='/tax-guide' element={<TaxGuidePage />} />
+      <Route path='/government-schemes' element={<GovernmentSchemesPage />} />
+      <Route
+        path='/business-registration'
+        element={<BusinessRegistrationGuidePage />}
+      />
     </Routes>
+    <Footer />
   </Router>
 );

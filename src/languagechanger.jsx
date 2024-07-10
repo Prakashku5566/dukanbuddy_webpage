@@ -27,7 +27,7 @@ function LanguageChanger({ displayType = "buttons" }) {
   const displayedLanguages = showAll ? languages : languages.slice(0, 6);
 
   return (
-    <div className='App'>
+    <div className='App' style={{ backgroundColor: "transparent" }}>
       {displayType === "buttons" ? (
         <div>
           {displayedLanguages.map((language, index) => (
@@ -43,10 +43,13 @@ function LanguageChanger({ displayType = "buttons" }) {
         <div>
           <select
             style={{
-              height: "2.5rem",
+              height: "2rem",
               width: "9.5rem",
               padding: "5px",
               borderRadius: "0.5rem",
+              border: "none",
+              color: "#4c5fd1",
+              marginTop: "8px",
             }}
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue=''

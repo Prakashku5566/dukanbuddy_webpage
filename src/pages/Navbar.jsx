@@ -4,14 +4,11 @@ import LanguageChanger from "../languagechanger";
 import { useTranslation } from "react-i18next";
 import logo from "../../img/logod.png";
 import "../App.css";
-// C:\Users\Prakash kumar singh\Desktop\Dukanbuddy\dukanbuddy_landingPage\dukanbuddy\img\logod.png
-// import logo from "../../img/logod.png"; // Adjust the path to your logo image
-// // import App from "../App";
 const Navbar = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className='navbar navbar-expand-md main-nav navigation fixed-top sidebar-left'>
+    <nav className='navbar navbar-expand-md main-nav navigation fixed-top sidebar-left '>
       <div className='container'>
         <button
           className='navbar-toggler'
@@ -59,11 +56,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/contact'>
+              <Link className='nav-link' to='/contact-page'>
                 {t("COMMON.CONTACT")}
               </Link>
             </li>
-            <LanguageChanger displayType='dropdown' />
+            <li className='nav-item'>
+              <LanguageChanger displayType='dropdown' />
+            </li>
           </ul>
         </div>
       </div>

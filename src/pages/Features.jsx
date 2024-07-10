@@ -3,11 +3,17 @@ import aiIcon from "../../src/assets/ai.png";
 import customer from "../../src/assets/people.png";
 import inventory from "../../src/assets/distribution.png";
 import "../App.css";
+import { useTranslation } from "react-i18next";
 // import CommonPage from "./CommonPage";
 // import somwthing from '../../'
 export const Features = () => {
+  const { t } = useTranslation();
   return (
-    <section className='section alter3-features' id='features'>
+    <section
+      className='section alter3-features'
+      id='features'
+      style={{ backgroundColor: "#a398d8" }}
+    >
       <div className='shapes-container'>
         <div className='shape shape-ring shape-ring-1'>
           <div className='animation animation--rotating'></div>
@@ -25,30 +31,30 @@ export const Features = () => {
           <div className='col-lg-5 order-lg-last'>
             <div className='section-heading'>
               <p className='px-2 text-alternate text-uppercase bold'>
-                Powerful features await for you
+                {t("FEATURES.POWERFUL_FEATURES")}
               </p>
               {/* <h2 className='heading-line'>
                       A complete feature stack ready to help you
                     </h2> */}
               <p className='lead text-muted my-4 semi-bold'>
-                We also Provide Customer Managment Employee Management
+                {t("FEATURES.WE_ALSO_PROVIDE")}
               </p>
               <ul>
                 <li>
-                  <strong>Customer Management:</strong> Keep track of customers
-                  and their last shopping dates.
+                  <strong> {t("FEATURES.CUSTOMER_MANAGEMENT")}</strong>{" "}
+                  {t("FEATURES.TRACK_CUSTOMER")}
                 </li>
                 <li>
-                  <strong>Automated Reminders:</strong> Send timely shopping
-                  reminders to customers.
+                  <strong> {t("FEATURES.AUTOMATED_REMINDERS")}</strong>{" "}
+                  {t("FEATURES.TIMELY_SHOPPING")}
                 </li>
                 <li>
-                  <strong>Employee Management:</strong> Easily manage employee
-                  details, wages, and salaries.
+                  <strong> {t("FEATURES.EMPLOYEE_MANAGEMENT")}</strong>{" "}
+                  {t("FEATURES.MANAGE_SALARY")}
                 </li>
                 <li>
-                  <strong>User-Friendly Interface:</strong> Navigate
-                  effortlessly with our intuitive design.
+                  <strong> {t("FEATURES.USER_FRIENDLY")}</strong>{" "}
+                  {t("FEATURES.NAVIGATE_EFFORTLESSLY")}
                 </li>
               </ul>
               {/* <a
@@ -71,13 +77,19 @@ export const Features = () => {
                           className='icon m-0 pe pe-7s-paint-bucket pe-3x'
                         />
                       </div>
-                      <h4 className='bold mb-5'>Accounting</h4>
+                      <h4 className='bold mb-5'>
+                        {" "}
+                        {t("FEATURES_CARD.ACCOUNTING")}
+                      </h4>
                       <p className='text-muted lead'>
-                        Increase cash flow by:
+                        {t("FEATURES_CARD.INCREASE_CASH")}
                         <ul>
-                          <li>Sending payment reminders</li>
-                          <li>Handling GST and Non-GST bills</li>
-                          <li>Tracking sales and profit</li>
+                          <li>
+                            {" "}
+                            {t("FEATURES_CARD.SENDING_PAYMENT_REMINDERS")}
+                          </li>
+                          <li> {t("FEATURES_CARD.HANDLING_GST")}</li>
+                          <li> {t("FEATURES_CARD.TRACKING_SALES")}</li>
                         </ul>
                       </p>
                     </div>
@@ -89,18 +101,14 @@ export const Features = () => {
                       <div className='icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3'>
                         <img src={customer} className='h-w-54' />
                       </div>
-                      <h4 className='bold mb-5'>360° Customer View</h4>
+                      <h4 className='bold mb-5'>
+                        {t("FEATURES_CARD.CUSTOMER_VIEW")}
+                      </h4>
                       <p className='text-muted lead'>
                         <ul>
-                          <li>
-                            Send marketing Emails/SMS to attract new customers.
-                          </li>
-                          <li>
-                            Understand customer’s buying trends and preferences.
-                          </li>
-                          <li>
-                            Build meaningful relationships with your customers.
-                          </li>
+                          <li>{t("FEATURES_CARD.SEND_EMAILS")}</li>
+                          <li>{t("FEATURES_CARD.UNDERSTAND_TRENDS")}</li>
+                          <li>{t("FEATURES_CARD.BUILD_RELATIONSHIP")}</li>
                         </ul>
                       </p>
                     </div>
@@ -114,12 +122,15 @@ export const Features = () => {
                       <div className='icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3'>
                         <img src={inventory} className='h-w-54' />
                       </div>
-                      <h4 className='bold mb-5'>Inventory Management</h4>
+                      <h4 className='bold mb-5'>
+                        {" "}
+                        {t("FEATURES_CARD.INVENTORY_MANAGEMENT")}
+                      </h4>
                       <p className='text-muted lead'>
                         <ul>
-                          <li>One click stock order placement.</li>
-                          <li>Real time order tracking.</li>
-                          <li>Easy handling of Returns.</li>
+                          <li> {t("FEATURES_CARD.ONE_CLICK_STOCK")}</li>
+                          <li> {t("FEATURES_CARD.REAL_TIME_ORDER")}</li>
+                          <li>{t("FEATURES_CARD.EASY_HANDLING")}</li>
                         </ul>
                       </p>
                     </div>
@@ -131,17 +142,14 @@ export const Features = () => {
                       <div className='icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3'>
                         <img src={aiIcon} className='h-w-54' />
                       </div>
-                      <h4 className='bold mb-5'>AI driven Market Insights</h4>
+                      <h4 className='bold mb-5'>
+                        {" "}
+                        {t("FEATURES_CARD.AI_DRIVEN")}
+                      </h4>
                       <p className='text-muted lead'>
                         <ul>
-                          <li>
-                            Know changing demands with changing seasons,
-                            festivals, and occasions.
-                          </li>
-                          <li>
-                            Receive competitive product suggestions to increase
-                            your margin.
-                          </li>
+                          <li>{t("FEATURES_CARD.CHANGING_DEMANDS")}</li>
+                          <li>{t("FEATURES_CARD.RECEIVE_COMPETITIVE")}</li>
                         </ul>
                       </p>
                     </div>
