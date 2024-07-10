@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 import gst from "../../img/1.png";
 import digital from "../../img/2.png";
 import kiranaStore from "../../img/3.png";
@@ -7,6 +7,8 @@ import retailLandscape from "../../img/4.png";
 import embaricingChange from "../../img/5.png";
 import StrategiesForMSMEsPage from "../../img/6.png";
 export const Blogs = () => {
+  const { t } = useTranslation();
+
   return (
     <section className='section blogs'>
       <div className='shapes-container'>
@@ -14,15 +16,9 @@ export const Blogs = () => {
       </div>
       <div className='container pb-8 bring-to-front'>
         <div className='section-heading text-center'>
-          <h2 className='heading-line'>Blogs</h2>
+          <h2 className='heading-line'>{t("BLOGS.BLOG")}</h2>
           <p className='text-muted lead mx-auto'>
-            At DukanBuddy, our blog is dedicated to supporting micro, small, and
-            medium businesses with expert advice and practical tips. Discover
-            success stories, industry trends, and innovative strategies to help
-            your business thrive. Stay updated on the latest features and
-            enhancements in our platform, and learn how to optimize your
-            operations and engage customers effectively. Join us to gain
-            valuable insights tailored to your unique business needs.
+            {t("BLOGS.SHOULD_CHOOSE_DETAILS")}
           </p>
         </div>
         <div id='blogCarousel' className='carousel slide' data-ride='carousel'>
@@ -48,7 +44,7 @@ export const Blogs = () => {
                             to='/gst-benifit-page'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -74,7 +70,7 @@ export const Blogs = () => {
                             to='/digital-revolution-page'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -106,7 +102,7 @@ export const Blogs = () => {
                             to='/TheMightyKiranaPage'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -132,7 +128,7 @@ export const Blogs = () => {
                             to='/RevolutionizingKiranaStoresPage'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -161,7 +157,7 @@ export const Blogs = () => {
                         />
                         <div className='card-img-overlay d-flex justify-content-start align-items-end'>
                           <Link to='/blog-page' className='btn btn-primary'>
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -187,7 +183,7 @@ export const Blogs = () => {
                             to='/StrategiesForMSMEsPage'
                             className='btn btn-primary'
                           >
-                            Read More
+                            {t("BLOGS.READ_MORE")}
                           </Link>
                         </div>
                       </div>
@@ -248,7 +244,7 @@ export const Blogs = () => {
         </div>
         <div className='text-center mt-4'>
           <Link to='/blogs' className='btn btn-primary'>
-            View All Blogs
+            {t("BLOGS.VIEW_ALL_BLOGS")}
           </Link>
         </div>
       </div>

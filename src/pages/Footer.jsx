@@ -3,7 +3,11 @@ import facebook from "../../img/facebook.png";
 import linkedin from "../../img/linkedin.png";
 import instagram from "../../img/instagram.png";
 import "../App.css";
+import { useTranslation } from "react-i18next";
+
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className='site-footer section bg-dark text-contrast edge top-left'>
       <div className='container py-3'>
@@ -17,13 +21,13 @@ export const Footer = () => {
           <div className='col-md-2'>
             <nav className='nav flex-column'>
               <a className='nav-item py-2 text-contrast' href='#f&q'>
-                F&Q
+                {t("FOOTER_CONTACT.F&Q")}
               </a>
               <a className='nav-item py-2 text-contrast' href='/'>
-                Home
+                {t("COMMON.HOME")}
               </a>
               <a className='nav-item py-2 text-contrast' href='#blogs'>
-                Blog
+                {t("COMMON.BLOG")}
               </a>
             </nav>
           </div>
@@ -43,10 +47,10 @@ export const Footer = () => {
           <div className='col-md-2'>
             <nav className='nav flex-column'>
               <a className='nav-item py-2 text-contrast' href='/carees-page'>
-                Careers
+                {t("FOOTER_CONTACT.CAREERS")}
               </a>
               <a className='nav-item py-2 text-contrast' href='/contact-page'>
-                Contact
+                {t("COMMON.CONTACT")}
               </a>
               {/* <a className='nav-item py-2 text-contrast' href='#'>
                     Search

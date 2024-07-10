@@ -1,12 +1,9 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-// import LanguageChanger from "../languagechanger";
+import LanguageChanger from "../languagechanger";
 import { useTranslation } from "react-i18next";
 import logo from "../../img/logod.png";
 import "../App.css";
-// C:\Users\Prakash kumar singh\Desktop\Dukanbuddy\dukanbuddy_landingPage\dukanbuddy\img\logod.png
-// import logo from "../../img/logod.png"; // Adjust the path to your logo image
-// // import App from "../App";
 const Navbar = () => {
   const { t } = useTranslation();
 
@@ -63,9 +60,9 @@ const Navbar = () => {
                 {t("COMMON.CONTACT")}
               </Link>
             </li>
-            {/* <li className='nav-item'>
+            <li className='nav-item'>
               <LanguageChanger displayType='dropdown' />
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>

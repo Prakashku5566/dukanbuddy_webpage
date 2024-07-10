@@ -144,26 +144,23 @@ function App() {
                       icon={faHandshake}
                       className='fa-3x accent mb-3'
                     />
-                    <h3 className='text-alternate heading-line'>Our Mission</h3>
+                    <h3 className='text-alternate heading-line'>
+                      {" "}
+                      {t("OURMISSION.OUR_MISSION")}
+                    </h3>
                     <p className='lead'>
-                      At CogitoFS, we envision a future where every MSME in
-                      India prospers without financial constraints. Our mission
-                      is to:
+                      {t("OURMISSION.Pensare.AI")}
                       <ul>
-                        <li>
-                          Revolutionize the MSME landscape with innovative
-                          lending products
-                        </li>
-                        <li>Provide cutting-edge CRM solutions</li>
-                        <li>Offer comprehensive financial education</li>
+                        <li>{t("OURMISSION.REVOLUTION_MSME")}</li>
+                        <li> {t("OURMISSION.CRM_SOLUTION")}</li>
+                        <li> {t("OURMISSION.FINACIAL_EDUCATION")}</li>
                       </ul>
-                      Our commitment includes:
+                      {t("OURMISSION.COMMITMENT")}
                       <ul>
-                        <li>Relentless product and solution innovation</li>
-                        <li>Unwavering dedication to improving MSME lives</li>
+                        <li> {t("OURMISSION.RELENTLESS")}</li>
+                        <li> {t("OURMISSION.UNWAVERING")}</li>
                       </ul>
-                      We enable MSMEs to focus on their businesses while we
-                      handle the rest.
+                      {t("OURMISSION.FOCUS_BUSINESS")}
                     </p>
                   </div>
                   <ul className='nav'>
@@ -190,7 +187,7 @@ function App() {
                     href='https://app.dukanbuddy.com/'
                     className='more-link btn btn-outline-primary bold'
                   >
-                    Learn more
+                    {t("OURMISSION.LEARN_MORE")}
                   </a>
                 </div>
               </div>
@@ -245,7 +242,10 @@ function App() {
                   <div className='section-heading'>
                     {/* <i className='fas fa-trophy fa-2x text-danger mb-3'></i> */}
                     <IoTrophyOutline className='fa-2x text-danger mb-3' />
-                    <h2 className='heading-line'>Features you canot miss</h2>
+                    <h2 className='heading-line'>
+                      {" "}
+                      {t("FEATURE_CANOT_MISS.FEATURE_CANOT")}
+                    </h2>
                   </div>
                   <ul className='list-unstyled'>
                     <li className='media flex-column flex-md-row text-center text-md-left'>
@@ -253,11 +253,12 @@ function App() {
                         <img src={inventory_1} />
                       </div>
                       <div className='media-body mt-3 mt-md-0'>
-                        <h5 className='bold mt-0 mb-1'>Inventory Management</h5>
+                        <h5 className='bold mt-0 mb-1'>
+                          {" "}
+                          {t("FEATURE_CANOT_MISS.INVENTORY_MANAGEMENT")}
+                        </h5>
                         <p className='m-0'>
-                          Easily track your stock levels, set reorder points,
-                          and manage vendors. Stay updated with real-time
-                          inventory data to avoid stockouts and overstocking.
+                          {t("FEATURE_CANOT_MISS.TRACK_YOUR_STOCK")}
                         </p>
                       </div>
                     </li>
@@ -267,11 +268,12 @@ function App() {
                         <img src={economy_1} />
                       </div>
                       <div className='media-body mt-3 mt-md-0'>
-                        <h5 className='bold mt-0 mb-1'>Sales & Billing</h5>
+                        <h5 className='bold mt-0 mb-1'>
+                          {" "}
+                          {t("FEATURE_CANOT_MISS.SALE_BILLING")}
+                        </h5>
                         <p className='m-0'>
-                          Simplify your sales process with quick billing,
-                          invoicing, and sales tracking. Generate professional
-                          invoices and keep accurate sales records effortlessly.
+                          {t("FEATURE_CANOT_MISS.SALE_PROCESS")}
                         </p>
                       </div>
                     </li>
@@ -281,8 +283,8 @@ function App() {
                         <img src={managment_1} />
                       </div>
                       <Feature
-                        heading='Customer Management'
-                        paragraph='Keep detailed records of your customers, manage loyalty programs, and track customer interactions to provide personalized services, send payment reminders and many more awesome features'
+                        heading={t("FEATURE_CANOT_MISS.CUSTOMER_MANAGEMENT")}
+                        paragraph={t("FEATURE_CANOT_MISS.DETAILD_RECORDS")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -292,8 +294,8 @@ function App() {
                       </div>
                       {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <Feature
-                        heading='Supplier Management'
-                        paragraph='Streamline your supplier relationships by keeping track of orders, payments, and communication in one place.'
+                        heading={t("FEATURE_CANOT_MISS.SUPPLIER_MANAGEMENT")}
+                        paragraph={t("FEATURE_CANOT_MISS.STREAMLINE_SUPPLIER")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -302,8 +304,8 @@ function App() {
                         <img src={payrollImage} />
                       </div>
                       <Feature
-                        heading='Payroll Management'
-                        paragraph='Manage employee( full time and Part time) salaries with ease. Track attendance, calculate wages based on hours worked or shifts, and ensure timely and accurate payroll processing.'
+                        heading={t("FEATURE_CANOT_MISS.PAYROLL_MANAGEMENT")}
+                        paragraph={t("FEATURE_CANOT_MISS.EMPLOYEE_SALARY")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -312,8 +314,10 @@ function App() {
                         <img src={subscriptionIcon} />
                       </div>
                       <Feature
-                        heading='Subscription Management'
-                        paragraph='Offer subscription plans to your customers. Automate renewals, manage billing cycles, and keep track of subscription statuses to provide a seamless experience.'
+                        heading={t(
+                          "FEATURE_CANOT_MISS.SUBSCRIPTION_MANAGEMENT"
+                        )}
+                        paragraph={t("FEATURE_CANOT_MISS.SUBSCRIPTION_PLANS")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -322,8 +326,8 @@ function App() {
                         <img src={cashbookIcon} />
                       </div>
                       <Feature
-                        heading='Cashbook'
-                        paragraph='Maintain a digital cashbook to record daily transactions. Monitor cash inflows and outflows, reconcile accounts, and get a clear picture of your business finances.'
+                        heading={t("FEATURE_CANOT_MISS.CASHBOOK")}
+                        paragraph={t("FEATURE_CANOT_MISS.DIGITAL_CASHBOOK")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -332,8 +336,10 @@ function App() {
                         <img src={multiStore} />
                       </div>
                       <Feature
-                        heading='Multi-Store Management [Coming soon*]'
-                        paragraph='If you own multiple stores, manage them all from a single dashboard. Monitor performance, transfer stock, and streamline operations across locations.'
+                        heading={t("FEATURE_CANOT_MISS.MULTI_STORE_MANAGEMENT")}
+                        paragraph={t(
+                          "FEATURE_CANOT_MISS.MULTIPLE_STORE_DETAILS"
+                        )}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -342,9 +348,8 @@ function App() {
                         <img src={expenseManage} />
                       </div>
                       <Feature
-                        heading='Expense Management'
-                        paragraph='Keep track of all business expenses, categorize them, and manage budgets effectively to control costs and improve profitability.
-'
+                        heading={t("FEATURE_CANOT_MISS.EXPENSE_MANAGEMENT")}
+                        paragraph={t("FEATURE_CANOT_MISS.BUSINESS_EXPENSE")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -353,8 +358,10 @@ function App() {
                         <img src={procurement} />
                       </div>
                       <Feature
-                        heading='Procurement'
-                        paragraph='Streamline your procurement process by managing purchase orders, supplier contracts, and inventory replenishment efficiently.'
+                        heading={t("FEATURE_CANOT_MISS.PROCUREMENT")}
+                        paragraph={t(
+                          "FEATURE_CANOT_MISS.STREAMLINE_PROCUREMENT"
+                        )}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -363,8 +370,10 @@ function App() {
                         <img src={security_permission} />
                       </div>
                       <Feature
-                        heading='Security & Permissions'
-                        paragraph='Ensure data security with role-based access control. Assign specific permissions to employees based on their roles to maintain data integrity.'
+                        heading={t("FEATURE_CANOT_MISS.SECURITY_PERMISSION")}
+                        paragraph={t(
+                          "FEATURE_CANOT_MISS.SECURITY_PERMISSION_DETAILS"
+                        )}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
@@ -374,8 +383,8 @@ function App() {
                       </div>
                       {/* mobileApp */}
                       <Feature
-                        heading='Mobile App (Coming soon *)'
-                        paragraph='Access all the features of DukanBuddy on the go with our mobile app. Manage your business anytime, anywhere with ease.'
+                        heading={t("FEATURE_CANOT_MISS.MOBILE_APP")}
+                        paragraph={t("FEATURE_CANOT_MISS.MOBILE_APP_DETAILS")}
                       />
                     </li>
                   </ul>
@@ -623,12 +632,10 @@ function App() {
               <div className='row gap-y'>
                 <div className='col-md-6'>
                   <h4 className='bold text-alternate'>
-                    It all starts by choosing the right tools
+                    {t("CHOOSE_RIGHT_TOOL.CHOOSING_RIGHT_TOOL")}
                   </h4>
                   <p className='text-muted lead mb-5'>
-                    At DukanBuddy, selecting the right tools is the first step
-                    to success. Our solutions seamlessly integrate, boost your
-                    marketing, and offer top-notch support.
+                    {t("CHOOSE_RIGHT_TOOL.CHOOSING_RIGHT_TOOL_DETAILS")}
                   </p>
                   <ul className='list-unstyled why-icon-list'>
                     <li className='list-item'>
@@ -638,14 +645,15 @@ function App() {
                           <i className='icon text-alternate fas fa-plug fa-3x'></i>
                         </div>
                         <div className='media-body'>
-                          <h5 className='bold'>Integrations</h5>
+                          <h5 className='bold'>
+                            {t("CHOOSE_RIGHT_TOOL.INTEGRATION")}
+                          </h5>
                           <p className='my-0'>
-                            *Easy Connectivity: Smooth integration with existing
-                            systems.
+                            {t("CHOOSE_RIGHT_TOOL.INTEGRATION_ONE")}
                             <br />
-                            *Unified Platform: Manage everything in one place.
+                            {t("CHOOSE_RIGHT_TOOL.INTEGRATION_TWO")}
                             <br />
-                            *Scalable Solutions: Grow with your business.
+                            {t("CHOOSE_RIGHT_TOOL.INTEGRATION_THREE")}
                           </p>
                         </div>
                       </div>
@@ -657,15 +665,16 @@ function App() {
                           <i className='icon text-alternate fas fa-heart fa-3x'></i>
                         </div>
                         <div className='media-body'>
-                          <h5 className='bold'>Marketing</h5>
+                          <h5 className='bold'>
+                            {" "}
+                            {t("CHOOSE_RIGHT_TOOL.MARKETING")}
+                          </h5>
                           <p className='my-0'>
-                            *Targeted Reach: Data-driven strategies to hit your
-                            audience.
+                            {t("CHOOSE_RIGHT_TOOL.MARKETING_ONE")}
                             <br />
-                            *Brand Building: Strengthen your business presence.
+                            {t("CHOOSE_RIGHT_TOOL.MARKETING_TWO")}
                             <br />
-                            *Performance Insights: Refine strategies with
-                            detailed analytics.
+                            {t("CHOOSE_RIGHT_TOOL.MARKETING_THREE")}
                           </p>
                         </div>
                       </div>
@@ -677,14 +686,15 @@ function App() {
                           <i className='icon text-alternate fas fa-headphones fa-3x'></i>
                         </div>
                         <div className='media-body'>
-                          <h5 className='bold'>Support</h5>
+                          <h5 className='bold'>
+                            {t("CHOOSE_RIGHT_TOOL.SUPPORT")}
+                          </h5>
                           <p className='my-0'>
-                            *24/7 Help: Round-the-clock assistance.
+                            {t("CHOOSE_RIGHT_TOOL.SUPPORT_ONE")}
                             <br />
-                            *Training: Access to extensive training materials.
+                            {t("CHOOSE_RIGHT_TOOL.SUPPORT_TWO")}
                             <br />
-                            *Customer Success: Ongoing support for business
-                            growth.
+                            {t("CHOOSE_RIGHT_TOOL.SUPPORT_THREE")}
                           </p>
                         </div>
                       </div>
@@ -696,7 +706,7 @@ function App() {
                       href='/contact-page'
                       className='btn btn-primary text-contrast'
                     >
-                      Know More
+                      {t("CHOOSE_RIGHT_TOOL.SUPPORT_KNOW_MORE")}
                     </a>
                   </div>
                 </div>
@@ -962,14 +972,11 @@ function App() {
                       <img src={unlockKey} />
                     </div>
                     <h2 className='heading-line bold mt-4'>
-                      Start your 15 days free trial now!
+                      {t("FREETRIAL.START_FREE")}
                     </h2>
                     <p className='lead text-muted'>
-                      By signing up you will get 15 days free trial. You wonot
-                      be charged until the trial period ends,{" "}
-                      <span className='italic'>
-                        donot let this offer pass in front of your eyes
-                      </span>
+                      {t("FREETRIAL.SIGNING_UP")}
+                      <span className='italic'>{t("FREETRIAL.OFFER")}</span>
                     </p>
                   </div>
                 </div>
@@ -979,13 +986,13 @@ function App() {
                   href='https://app.dukanbuddy.com/'
                   className='btn btn-alternate btn-lg py-3 px-4 bold mr-0 mr-md-3 mb-3 mb-md-0'
                 >
-                  Sign up
+                  {t("FREETRIAL.SIGN_UP")}
                 </a>
                 <a
                   href='mailto:contact@dukanbuddy.com'
                   className='btn btn-outline-dark btn-lg py-3 px-4 bold'
                 >
-                  Contact us
+                  {t("FREETRIAL.CONTACT_US")}
                 </a>
               </div>
             </div>
@@ -1003,16 +1010,17 @@ function App() {
                       </span>
                     </div>
                     <div className='media-body'>
-                      <h4 className='text-primary'>Contact Customer Care</h4>
+                      <h4 className='text-primary'>
+                        {t("FOOTER_CONTACT.CONTACT_CUSTOMER_CARE")}
+                      </h4>
                       <a
                         href='mailto:contact@dukanbuddy.com'
                         className='more-link d-flex align-items-center mt-0'
                       >
-                        Contact@dukanbuddy.com
+                        contact@dukanbuddy.com
                       </a>
                       <p className='mt-4'>
-                        Looking for a custom quote? Need to tell us more about
-                        your business? Want a demonstration? Drop us a line.
+                        {t("FOOTER_CONTACT.CONTACT_CUSTOMER_CARE_DETAILS")}
                       </p>
                     </div>
                   </div>
