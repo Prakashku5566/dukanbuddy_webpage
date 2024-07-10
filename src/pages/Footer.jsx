@@ -27,7 +27,7 @@ export const Footer = () => {
               <a className='nav-item py-2 text-contrast' href='/'>
                 {t("COMMON.HOME")}
               </a>
-              <a className='nav-item py-2 text-contrast' href='#blogs'>
+              <a className='nav-item py-2 text-contrast' href='/blogs'>
                 {t("COMMON.BLOG")}
               </a>
             </nav>
@@ -47,13 +47,10 @@ export const Footer = () => {
               </div> */}
           <div className='col-md-2'>
             <nav className='nav flex-column'>
-              <Link className='nav-item py-2 text-contrast' href='/carees-page'>
+              <Link className='nav-item py-2 text-contrast' to='/carees-page'>
                 {t("FOOTER_CONTACT.CAREERS")}
               </Link>
-              <Link
-                className='nav-item py-2 text-contrast'
-                href='/contact-page'
-              >
+              <Link className='nav-item py-2 text-contrast' to='/contact-page'>
                 {t("COMMON.CONTACT")}
               </Link>
               {/* <a className='nav-item py-2 text-contrast' href='#'>
