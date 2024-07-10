@@ -12,7 +12,7 @@ const blogs = [
   {
     id: 1,
     image: gst,
-    link: "/best-affordable-scanners-page",
+    link: "/gst-benifit-page",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const blogs = [
   {
     id: 3,
     image: tax,
-    link: "/text-guide",
+    link: "/tax-guide",
   },
   {
     id: 4,

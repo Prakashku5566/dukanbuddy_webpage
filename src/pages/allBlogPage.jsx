@@ -1,7 +1,13 @@
+// import CommonPage, { CommonPageBlogs } from "./CommonPage";
+// C:\Users\Prakash kumar singh\Desktop\Dukanbuddy\dukanbuddy_landingPage\dukanbuddy\img\1.png
+// import gstImage from "../../img/1.png";
 const BestAffordableScannersPage = () => {
   return (
     <>
-      <header className='bg-primary text-white p-4'>
+      <header
+        className='bg-primary text-white p-4'
+        style={{ marginTop: "80px" }}
+      >
         <h1 className='text-center' style={{ fontSize: "24px" }}>
           5 Best and Affordable Scanners for Your Business
         </h1>
@@ -117,9 +123,9 @@ const BestAffordableScannersPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
+      {/* <footer className='bg-dark text-white text-center p-3 mt-5'>
         <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
+      </footer> */}
     </>
   );
 };
@@ -153,12 +159,12 @@ const FundingOptionsPage = () => {
             </p>
           </div>
           <div className='col-md-6'>
-            {/* <img
-              src='images/funding.jpg'
+            <img
+              src='../../img/7.png'
               alt='Funding Options'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
-            /> */}
+            />
           </div>
         </div>
         <main>
@@ -251,9 +257,9 @@ const FundingOptionsPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
+      {/* <footer className='bg-dark text-white text-center p-3 mt-5'>
         <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
+      </footer> */}
     </>
   );
 };
@@ -287,7 +293,7 @@ const TaxGuidePage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src='images/taxes.jpg'
+              src='../../img/13.png'
               alt='Tax Guide for MSMEs'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -393,9 +399,9 @@ const TaxGuidePage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
+      {/* <footer className='bg-dark text-white text-center p-3 mt-5'>
         <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
+      </footer> */}
     </>
   );
 };
@@ -429,7 +435,7 @@ const GovernmentSchemesPage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src='images/government_schemes.jpg'
+              src='../../img/10.png'
               alt='Government Schemes for MSMEs'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -561,12 +567,13 @@ const GovernmentSchemesPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
+      {/* <footer className='bg-dark text-white text-center p-3 mt-5'>
         <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
+      </footer> */}
     </>
   );
 };
+
 const BusinessRegistrationGuidePage = () => {
   return (
     <>
@@ -598,7 +605,7 @@ const BusinessRegistrationGuidePage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src='images/business_registration.jpg'
+              src='../../img/11.png'
               alt='Registering Your Small Business'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -751,9 +758,6 @@ const BusinessRegistrationGuidePage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };

@@ -11,7 +11,7 @@ const Navbar = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className='navbar navbar-expand-md main-nav navigation fixed-top sidebar-left'>
+    <nav className='navbar navbar-expand-md main-nav navigation fixed-top sidebar-left '>
       <div className='container'>
         <button
           className='navbar-toggler'

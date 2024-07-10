@@ -21,12 +21,12 @@ const BlogPage = () => {
               className='mt-4'
               style={{ color: "rgb(201, 24, 24)", fontWeight: 600 }}
             >
-              In today's dynamic market landscape, consumer preferences are
+              In today&apos;s dynamic market landscape, consumer preferences are
               constantly evolving, driven by changing lifestyles, technological
               advancements, and socio-economic factors. For Micro, Small, and
               Medium Enterprises (MSMEs) in India, staying attuned to these
               shifting trends is crucial for sustaining and thriving in the
-              competitive marketplace. Let's explore some of the emerging
+              competitive marketplace. Let&apos;s explore some of the emerging
               consumer trends in India and suggest ways for MSMEs to adapt their
               products, services, and business models effectively.
             </p>
@@ -58,8 +58,8 @@ const BlogPage = () => {
           <section>
             <h3>2. Demand for Personalization:</h3>
             <p>
-              Today's consumers crave personalized experiences tailored to their
-              preferences and needs. They seek products and services that
+              Today&apos;s consumers crave personalized experiences tailored to
+              their preferences and needs. They seek products and services that
               resonate with their individual tastes, values, and lifestyles.
               Mass customization and personalized recommendations are gaining
               traction across various industries.
@@ -68,7 +68,7 @@ const BlogPage = () => {
           <section>
             <h3>3. Conscious Consumerism:</h3>
             <p>
-              There's a growing awareness and emphasis on sustainability,
+              There&apos;s a growing awareness and emphasis on sustainability,
               ethical sourcing, and social responsibility among Indian
               consumers. They are actively seeking eco-friendly products,
               supporting local artisans and brands, and scrutinizing the ethical
@@ -80,7 +80,7 @@ const BlogPage = () => {
             <p>
               The COVID-19 pandemic has accelerated the health and wellness
               trend, prompting consumers to prioritize immunity-boosting
-              products, organic foods, and wellness services. There's a
+              products, organic foods, and wellness services. There&apos;s a
               heightened demand for clean-label products, natural ingredients,
               and holistic healthcare solutions.
             </p>
@@ -125,9 +125,6 @@ const BlogPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
@@ -159,7 +156,7 @@ const GstBenefitsPage = () => {
           </div>
           <div className='col-md-6'>
             <img
-              src={"achievement"}
+              src='../../img/1.png'
               alt='Achievement Creativity Strategy Success Icon'
               className='img-fluid img-thumbnail'
               style={{ maxWidth: "600px", maxHeight: "400px" }}
@@ -259,9 +256,6 @@ const GstBenefitsPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
@@ -375,15 +369,12 @@ const DigitalRevolutionPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
 const TheMightyKiranaPage = () => {
   return (
-    <>
+    <CommonPage>
       <header
         className='bg-primary text-white p-4'
         style={{ marginTop: "80px" }}
@@ -472,10 +463,7 @@ const TheMightyKiranaPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
-    </>
+    </CommonPage>
   );
 };
 const RevolutionizingKiranaStoresPage = () => {
@@ -577,9 +565,6 @@ const RevolutionizingKiranaStoresPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
@@ -694,9 +679,6 @@ const StrategiesForMSMEsPage = () => {
           </section>
         </main>
       </div>
-      <footer className='bg-dark text-white text-center p-3 mt-5'>
-        <p>&copy; Pensare.AI Pvt. Ltd. All Rights Reserved</p>
-      </footer>
     </>
   );
 };
