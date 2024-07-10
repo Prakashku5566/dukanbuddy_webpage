@@ -26387,7 +26387,9 @@ main {
 
 .navigation.navbar-sticky {
   position: fixed !important;
-  background-color: #353db0;
+ 
+  background-color: #fff;
+
   left: 0;
   top: 0;
   right: 0;
@@ -26551,7 +26553,7 @@ main {
     color: #ffd3cb;
   }
   .navigation.navbar-sticky {
-    background-color: #353db0;
+    background-color: #dee2e6;
     top: 0;
   }
   .navigation.navbar-sticky .nav-link {
