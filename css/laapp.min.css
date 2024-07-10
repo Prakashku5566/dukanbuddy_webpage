@@ -27184,9 +27184,9 @@ section.shadow {
 }
 
 .faqs-dd .card-header {
-  border-radius: 0.25rem;
-  background-color: #353db0;
-  border-bottom: 0;
+    border-radius: .25rem;
+    background-color: #fff;
+    border-bottom: 0;
 }
 
 .faqs-dd .card-title {
