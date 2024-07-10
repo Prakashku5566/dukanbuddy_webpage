@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import "./App.css";
-// import logo from "../img/logod.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 import Feature from "./pages/CoreFeatures";
@@ -12,9 +11,6 @@ import { WhyYouChoose } from "./pages/CommonPage";
 import { Features } from "./pages/Features";
 import { Blogs } from "./pages/Blogs";
 import { IoTrophyOutline } from "react-icons/io5";
-// import { MdOutlineInventory } from "react-icons/md";
-
-// import rocket from "../img/rocket.png";
 import inventory_1 from "../img/inventory_1.png";
 import economy_1 from "../img/economy_1.png";
 import managment_1 from "../img/management_1.png";
@@ -31,19 +27,8 @@ import image2 from "../img/screens/app/2.png";
 import emailIcon from "../img/email.png";
 import unlockKey from "../img/key.png";
 
-// c:\Users\Prakash kumar singh\Downloads\key.png
 function App() {
   const { t } = useTranslation();
-  // const [showBasicModal, setShowBasicModal] = useState(false);
-  // const [showEnterpriseModal, setShowEnterpriseModal] = useState(false);
-  // const [showBusinessModal, setShowBusinessModal] = useState(false);
-  // Function to toggle modal visibility
-  // const toggleModal = (modal) => {
-  //   if (modal === "basic") setShowBasicModal(!showBasicModal);
-  //   else if (modal === "enterprise")
-  //     setShowEnterpriseModal(!showEnterpriseModal);
-  //   else if (modal === "business") setShowBusinessModal(!showBusinessModal);
-  // };
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
@@ -83,12 +68,6 @@ function App() {
                   </h1>
                   <p className='lead mb-3'>{t("COMMON.SMART_BUSINESS_DATA")}</p>
                   <nav className='nav mt-5'>
-                    {/* <a
-                      href='#'
-                      className='nav-link mr-3 btn btn-rounded btn-contrast'
-                    >
-                      <i className='fas fa-tag mr-3'></i> Plans & pricing{" "}
-                    </a> */}
                     <a>
                       Inventory Management | Billing | Accounting | customer
                       management.&nbsp;much&nbsp;more&nbsp;..
@@ -122,7 +101,6 @@ function App() {
             </div>
             <div className='iphone light phone-small'>
               <div className='screen'>
-                {/* <img src='img/screens/app/2.png' alt='madhu' /> */}
                 <img src={image2} alt='madhu' />
               </div>
               <div className='notch'></div>
@@ -139,7 +117,6 @@ function App() {
               <div className='row'>
                 <div className='col-md-6'>
                   <div className='section-heading'>
-                    {/* <i className='fas fa-handshake fa-3x accent mb-3'></i> */}
                     <FontAwesomeIcon
                       icon={faHandshake}
                       className='fa-3x accent mb-3'
@@ -152,15 +129,18 @@ function App() {
                       {t("OURMISSION.Pensare.AI")}
                       <ul>
                         <li>{t("OURMISSION.REVOLUTION_MSME")}</li>
-                        <li> {t("OURMISSION.CRM_SOLUTION")}</li>
-                        <li> {t("OURMISSION.FINACIAL_EDUCATION")}</li>
+                        {/* <li> {t("OURMISSION.CRM_SOLUTION")}</li> */}
+                        <li> {t("OURMISSION.STREAMLINE_OPERATION")}</li>
+                        <li> {t("OURMISSION.CUTTING-EDGE")}</li>
+                        <li> {t("OURMISSION.COMPETATIVE")}</li>
+                        <li>{t("OURMISSION.TRUST_DKB")}</li>
                       </ul>
-                      {t("OURMISSION.COMMITMENT")}
+                      {/* {t("OURMISSION.COMMITMENT")}
                       <ul>
                         <li> {t("OURMISSION.RELENTLESS")}</li>
                         <li> {t("OURMISSION.UNWAVERING")}</li>
-                      </ul>
-                      {t("OURMISSION.FOCUS_BUSINESS")}
+                      </ul> */}
+                      {/* {t("OURMISSION.FOCUS_BUSINESS")} */}
                     </p>
                   </div>
                   <ul className='nav'>
@@ -240,7 +220,6 @@ function App() {
               <div className='row gap-y'>
                 <div className='col-md-6 order-md-last'>
                   <div className='section-heading'>
-                    {/* <i className='fas fa-trophy fa-2x text-danger mb-3'></i> */}
                     <IoTrophyOutline className='fa-2x text-danger mb-3' />
                     <h2 className='heading-line'>
                       {" "}
@@ -263,7 +242,6 @@ function App() {
                       </div>
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-users pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={economy_1} />
                       </div>
@@ -278,7 +256,6 @@ function App() {
                       </div>
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={managment_1} />
                       </div>
@@ -288,18 +265,15 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* supplierImage */}
                       <div className='p-2'>
                         <img src={supplierImage} />
                       </div>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.SUPPLIER_MANAGEMENT")}
                         paragraph={t("FEATURE_CANOT_MISS.STREAMLINE_SUPPLIER")}
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={payrollImage} />
                       </div>
@@ -309,7 +283,6 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={subscriptionIcon} />
                       </div>
@@ -321,7 +294,6 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={cashbookIcon} />
                       </div>
@@ -331,7 +303,6 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={multiStore} />
                       </div>
@@ -343,7 +314,6 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={expenseManage} />
                       </div>
@@ -353,7 +323,6 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={procurement} />
                       </div>
@@ -365,7 +334,6 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={security_permission} />
                       </div>
@@ -377,7 +345,6 @@ function App() {
                       />
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
-                      {/* <i className='mx-auto mr-md-3 accent pe pe-7s-graph1 pe-3x'></i> */}
                       <div className='p-2'>
                         <img src={mobileApp} />
                       </div>

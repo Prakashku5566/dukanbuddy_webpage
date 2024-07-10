@@ -14,7 +14,10 @@ const ContactPage = () => {
 
       <div className='row justify-content-center'>
         <div className='col-lg-6'>
-          <div className='card h-100'>
+          <div
+            className='card h-100'
+            style={{ border: "2px solid", borderRadius: "3%" }}
+          >
             <div className='card-body d-flex flex-column'>
               <h2 className='text-primary'>Get in Touch</h2>
               <p className='text-primary'>

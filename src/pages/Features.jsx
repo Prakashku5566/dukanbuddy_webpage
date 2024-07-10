@@ -12,7 +12,7 @@ export const Features = () => {
     <section
       className='section alter3-features'
       id='features'
-      style={{ backgroundColor: "#a398d8" }}
+      style={{ backgroundColor: "#9aa2e2" }}
     >
       <div className='shapes-container'>
         <div className='shape shape-ring shape-ring-1'>
