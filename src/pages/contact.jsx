@@ -1,5 +1,9 @@
 // import { useEffect } from "react";
 import CommonPage from "./CommonPage";
+// import inventory from "../../src/assets/distribution.png";
+
+import phone from "../assets/phone.png";
+import whatsapp from "../assets/whatsapp.png";
 
 const ContactPage = () => {
   return (
@@ -31,7 +35,21 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h5 className='text-primary'>Phone:</h5>
-                  <p className='text-primary'>+91 6372-184-169</p>
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <img
+                      src={whatsapp}
+                      alt='WhatsApp'
+                      style={{ marginRight: "8px" }}
+                    />
+                    <img
+                      src={phone}
+                      alt='Phone'
+                      style={{ marginRight: "8px" }}
+                    />
+                    <p className='text-primary' style={{ margin: 0 }}>
+                      +91 6372-184-169
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
