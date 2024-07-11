@@ -26,6 +26,8 @@ import mobileApp from "../img/smartphone.png";
 import image2 from "../img/screens/app/2.png";
 import emailIcon from "../img/email.png";
 import unlockKey from "../img/key.png";
+import whatsapp from "./assets/whatsapp.png";
+import phone from "./assets/phone.png";
 
 function App() {
   const { t } = useTranslation();
@@ -1010,6 +1012,64 @@ function App() {
                       </p>
                     </div>
                   </div>
+                </div>
+                <div className='col-md-6'>
+                  <div className='rounded media bg-contrast shadow-lg p-4'>
+                    <div className='icon-shape mr-4'>
+                      {/* <i className='pe pe-7s-cash pe-3x'></i> */}
+                      <span>
+                        <img src={emailIcon} />
+                      </span>
+                    </div>
+                    <div className='media-body'>
+                      <h4 className='text-primary'>{`Get in Touch`}</h4>
+                      <div className='mt-4 d-flex justify-content-between'>
+                        <div>
+                          <h5 className='text-primary'>Email:</h5>
+                          <p className='text-primary'>Contact@dukanbuddy.com</p>
+                        </div>
+                        <div>
+                          <h5 className='text-primary'>Phone:</h5>
+                          <div
+                            style={{ display: "flex", alignItems: "center" }}
+                          >
+                            <img
+                              src={whatsapp}
+                              alt='WhatsApp'
+                              style={{ marginRight: "8px" }}
+                            />
+                            <img
+                              src={phone}
+                              alt='Phone'
+                              style={{ marginRight: "8px" }}
+                            />
+                            <p className='text-primary' style={{ margin: 0 }}>
+                              +91 6372-184-169
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <h2 className='text-primary'>Get in Touch</h2>
+                  <div>
+                    <h5 className='text-primary'>Phone:</h5>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <img
+                        src={whatsapp}
+                        alt='WhatsApp'
+                        style={{ marginRight: "8px" }}
+                      />
+                      <img
+                        src={phone}
+                        alt='Phone'
+                        style={{ marginRight: "8px" }}
+                      />
+                      <p className='text-primary' style={{ margin: 0 }}>
+                        +91 6372-184-169
+                      </p>
+                    </div>
+                  </div> */}
                 </div>
               </div>
             </div>
