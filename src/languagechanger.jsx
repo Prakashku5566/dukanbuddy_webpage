@@ -5,14 +5,24 @@ function LanguageChanger({ displayType = "buttons" }) {
   const [showAll, setShowAll] = useState(false);
   const { t, i18n } = useTranslation();
   const [isTop, setIsTop] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsTop(false);
-    } else {
-      setIsTop(true);
-    }
+    setIsTop(window.scrollY === 0);
+    setIsScrolling(window.scrollY > 0);
   };
+
+  const getColor = () => {
+    if (isScrolling) {
+      return "#4c5fd1"; // Blue color when scrolling
+    }
+    if (isHovered) {
+      return isTop ? "#ffeae5" : "#4c5fd1";
+    }
+    return "white";
+  };
+
   const languages = [
     { code: "en1", label: "English" },
     { code: "hi", label: "हिंदी" },
@@ -27,18 +37,21 @@ function LanguageChanger({ displayType = "buttons" }) {
     { code: "or", label: "ଓଡିଆ" },
     { code: "ur", label: "اردو" },
   ];
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     localStorage.setItem("lng", lng);
   };
 
   const displayedLanguages = showAll ? languages : languages.slice(0, 6);
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div className='App'>
       {displayType === "buttons" ? (
@@ -58,16 +71,19 @@ function LanguageChanger({ displayType = "buttons" }) {
             style={{
               height: "2rem",
               width: "9.5rem",
-              padding: "5px",
+              padding: "6px",
               borderRadius: "0.5rem",
               border: "none",
-              color: isTop ? "#ffeae5" : "#4c5fd1",
+              color: getColor(),
               marginTop: "10px",
               outline: "none",
               backgroundColor: "transparent",
-              fontWeight: "600",
-              fontSize: "1rem",
+              fontWeight: "700",
+              fontSize: "0.9rem",
+              fontfamily: "Lato",
             }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue=''
           >
@@ -75,7 +91,11 @@ function LanguageChanger({ displayType = "buttons" }) {
               {t("CARD.SELECT_LANGUAGE")}
             </option>
             {languages.map((language) => (
-              <option key={language.code} value={language.code}>
+              <option
+                key={language.code}
+                value={language.code}
+                style={{ color: "#4c5fd1" }}
+              >
                 {language.label}
               </option>
             ))}
