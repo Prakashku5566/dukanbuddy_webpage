@@ -973,6 +973,7 @@ function App() {
               <div className='nav flex-column flex-md-row align-items-center justify-content-center'>
                 <a
                   href='https://app.dukanbuddy.com/'
+                  target='_blank'
                   className='btn btn-alternate btn-lg py-3 px-5 bold mr-0 mr-md-3 mb-3 mb-md-0'
                 >
                   {t("FREETRIAL.SIGN_UP")}
