@@ -15,9 +15,7 @@ export const Footer = () => {
         <div className='row gap-y text-center text-md-left'>
           <div className='col-md-4 mr-auto'>
             <img src={logo} alt='Logo' className='logo' />
-            <div className='mt-3'>
-              DukanBuddy Your perfect Smart business partner
-            </div>
+            <div className='mt-3'>Your perfect Smart business partner</div>
           </div>
           <div className='col-md-2'>
             <nav className='nav flex-column'>

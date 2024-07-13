@@ -85,14 +85,14 @@ function App() {
                   <p className='lead mb-3'>{t("COMMON.SMART_BUSINESS_DATA")}</p>
                   <nav className='nav mt-5'>
                     <a>
-                      Inventory Management | Billing | Accounting | customer
-                      management.&nbsp;much&nbsp;more&nbsp;..
+                      Inventory Management | Billing | Accounting | Customer
+                      Management.&nbsp;And&nbsp;more&nbsp;..
                     </a>
                     <div>
                       <a
                         href='https://app.dukanbuddy.com/'
                         target='_blank'
-                        className='nav-link btn btn-rounded btn-outline-contrast mt-3'
+                        className='bold btn btn-lg btn-outline-contrast mr-md-3 mt-3 nav-link px-5 py-3'
                       >
                         {t("COMMON.START_NOW")}
                       </a>
@@ -181,7 +181,8 @@ function App() {
                   </ul>
                   <a
                     href='https://app.dukanbuddy.com/'
-                    className='more-link btn btn-outline-primary bold'
+                    target='_blank'
+                    className='bold btn btn-lg btn-outline-primary more-link px-0.5 py-2'
                   >
                     {t("OURMISSION.LEARN_MORE")}
                   </a>
@@ -972,7 +973,8 @@ function App() {
               <div className='nav flex-column flex-md-row align-items-center justify-content-center'>
                 <a
                   href='https://app.dukanbuddy.com/'
-                  className='btn btn-alternate btn-lg py-3 px-4 bold mr-0 mr-md-3 mb-3 mb-md-0'
+                  target='_blank'
+                  className='btn btn-alternate btn-lg py-3 px-5 bold mr-0 mr-md-3 mb-3 mb-md-0'
                 >
                   {t("FREETRIAL.SIGN_UP")}
                 </a>
