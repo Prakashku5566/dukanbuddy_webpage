@@ -92,7 +92,10 @@ function App() {
                       <a
                         href='https://app.dukanbuddy.com/'
                         target='_blank'
-                        className='bold btn btn-lg btn-outline-contrast mr-md-3 mt-3 nav-link px-5 py-3'
+                        className='bold btn btn-lg mr-md-3 mt-3 nav-link px-5 py-3 
+               text-blue-900 bg-white border border-blue-900 
+               hover:bg-blue-900 hover:text-white hover:border-white 
+               transition-all duration-300'
                       >
                         {t("COMMON.START_NOW")}
                       </a>
@@ -105,13 +108,13 @@ function App() {
           <section className='isometric-mockups'>
             <div className='tablet ipad landscape'>
               <div className='screen'>
-                <img src='img/screens/tablet/1.png' alt='...' />
+                <img src='img/screens/tablet/1.jpg' alt='...' />
               </div>
               <div className='button'></div>
             </div>
             <div className='iphone light phone-big'>
               <div className='screen'>
-                <img src='img/screens/app/4.png' alt='...' />
+                <img src='img/screens/app/4.jpg' alt='...' />
               </div>
               <div className='notch'></div>
             </div>
@@ -702,10 +705,7 @@ function App() {
                 <div className='col-md-6'>
                   <div className='rotated-mockups device-twin'>
                     <div className='browser absolute shadow-lg'>
-                      <img
-                        src='img/screens/tablet/retailRocket.png'
-                        alt='...'
-                      />
+                      <img src='img/screens/tablet/6.jpg' alt='...' />
                     </div>
                     <div className='front iphone light'>
                       <div className='screen'>
