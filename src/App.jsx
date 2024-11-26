@@ -108,13 +108,13 @@ function App() {
           <section className='isometric-mockups'>
             <div className='tablet ipad landscape'>
               <div className='screen'>
-                <img src='img/screens/tablet/12.jpg' alt='...' />
+                <img src='img/screens/tablet/12.jpg' alt='tab-image-12' />
               </div>
               <div className='button'></div>
             </div>
             <div className='iphone light phone-big'>
               <div className='screen'>
-                <img src='img/screens/app/4.jpg' alt='...' />
+                <img src='img/screens/app/4.jpg' alt='app-image-4' />
               </div>
               <div className='notch'></div>
             </div>
