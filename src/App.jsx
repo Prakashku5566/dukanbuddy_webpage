@@ -28,7 +28,7 @@ import emailIcon from "../img/email.png";
 import unlockKey from "../img/key.png";
 import whatsapp from "./assets/whatsapp.png";
 import phone from "./assets/phone.png";
-import tab_image4 from "../public/img/screens/app/tab_image4.png";
+import tab_image4 from "../img/screens/tab_image4.png";
 // ../img/screens/tab-image4.jpg
 
 function App() {
