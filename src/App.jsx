@@ -114,7 +114,7 @@ function App() {
             </div>
             <div className='iphone light phone-big'>
               <div className='screen'>
-                <img src='img/screens/app/4.jpg' alt='app-image-4' />
+                <img src='img/screens/app/tab-image4.jpg' alt='app-image-4' />
               </div>
               <div className='notch'></div>
             </div>
