@@ -28,7 +28,7 @@ import emailIcon from "../img/email.png";
 import unlockKey from "../img/key.png";
 import whatsapp from "./assets/whatsapp.png";
 import phone from "./assets/phone.png";
-import tab_image4 from "../img/screens/tab_image4.png";
+// import tab_image4 from "../img/screens/tab_image4.png";
 // ../img/screens/tab-image4.jpg
 
 function App() {
@@ -116,7 +116,10 @@ function App() {
             </div>
             <div className='iphone light phone-big'>
               <div className='screen'>
-                <img src={tab_image4} alt='app-image-4' />
+                <img
+                  src='https://i.ibb.co/Tt9F7gY/tab-image4.jpg'
+                  alt='app-image-4'
+                />
               </div>
               <div className='notch'></div>
             </div>
