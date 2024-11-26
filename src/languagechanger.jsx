@@ -61,7 +61,7 @@ function LanguageChanger({ displayType = "buttons" }) {
               padding: "5px",
               borderRadius: "0.5rem",
               border: "none",
-              color: isTop ? "#ffeae5" : "#4c5fd1",
+              color: isTop ? "##ffff" : "#4c5fd1",
               marginTop: "10px",
               outline: "none",
               backgroundColor: "transparent",
