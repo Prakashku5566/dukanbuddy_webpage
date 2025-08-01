@@ -1,11 +1,26 @@
 import CommonPage, { WhyYouChoose } from "./CommonPage";
+import { Helmet } from "react-helmet";
 // import Shapes from "./Shapes";
 const About = () => {
   return (
-    // <main className='overflow-hidden position-relative'>
-    //   <header className='header alter3-header section gradient gradient-primary-auxiliary text-contrast'>
-    //     <Shapes />
-    //     <div className='container bring-to-front p-7'>
+    <>
+
+    <Helmet>
+        <title>About Us | Dukanbuddy - Empowering MSMEs with AI-driven Finance</title>
+        <meta
+          name="description"
+          content="Learn about Dukanbuddy’s mission to revolutionize MSME and healthcare finance in India using AI and machine learning. Founded by global finance experts."
+        />
+        <meta property="og:title" content="About Dukanbuddy" />
+        <meta
+          property="og:description"
+          content="Discover how Dukanbuddy empowers Indian MSMEs with smart finance and technology-driven lending solutions."
+        />
+        <meta property="og:image" content="https://dukanbuddy.com/og-image.jpg" />
+        <meta property="og:url" content="https://dukanbuddy.com/about" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://dukanbuddy.com/about" />
+      </Helmet>
     <CommonPage>
       <h1 className='text-center mb-4'>About Us</h1>
       <p className='lead text-center mb-5'>
@@ -83,10 +98,7 @@ const About = () => {
         </p>
       </div> */}
     </CommonPage>
-
-    //     </div>
-    //   </header>
-    // </main>
+</>
   );
 };
 
