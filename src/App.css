@@ -40,3 +40,210 @@
 .read-the-docs {
   color: #888;
 } */
+
+.h-w-54 {
+  height: 46px;
+  width: 52px;
+}
+.custom-carousel-prev,
+.custom-carousel-next {
+  color: rgb(20, 20, 202); /* Dark color for arrows */
+  width: auto;
+  padding: 0.5rem;
+  background-color: rgba(109, 56, 242, 0.1); /* Smaller background opacity */
+  border-radius: 50%; /* Smaller border-radius */
+  margin-left: -5%; /* Move more to the side */
+}
+
+.custom-carousel-prev:hover,
+.custom-carousel-next:hover {
+  background-color: rgba(
+    101,
+    86,
+    86,
+    0.3
+  ); /* Adjusted hover background opacity */
+}
+
+.custom-carousel-prev-icon,
+.custom-carousel-next-icon {
+  color: rgb(20, 20, 202); /* Dark color for arrows */
+}
+.btn-readmore {
+  background-color: #007bff; /* Blue background color */
+  border-color: #007bff; /* Matching border color */
+  color: #ffffff; /* White text color */
+}
+
+.btn-readmore:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3; /* Matching border color on hover */
+}
+/* Card Styles */
+.fancy-card {
+  background: linear-gradient(135deg, #f5f7fa, #dae3f1);
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 300px; /* Adjust the height for distinction */
+  width: 100%; /* Ensures it takes the full width of the column */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fancy-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fancy-card .card-body {
+  padding: 2rem;
+  flex: 1;
+}
+
+.fancy-card .card-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.fancy-card .card-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.fancy-card .btn {
+  background-color: #6e8efb;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  align-self: flex-end;
+}
+
+.fancy-card .btn:hover {
+  background-color: #a3bffa;
+}
+
+.bg-gray {
+  background-color: #f0f0f0; /* Adjust the shade of gray as needed */
+}
+
+.custom-carousel-prev,
+.custom-carousel-next {
+  background-color: #111111; /* White background */
+  border-radius: 2%;
+  width: -50px; /* Adjust the size as needed */
+  height: 40px;
+  position: absolute;
+  top: 50%; /* Vertically center the buttons */
+  transform: translateY(300%); /* Adjust the vertical position */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(249, 247, 247, 0.1); /* Add shadow effect */
+}
+
+.custom-carousel-prev {
+  left: 10px; /* Position more to the side */
+  color: #000;
+}
+
+.custom-carousel-next {
+  right: 10px; /* Position more to the side */
+  color: #000;
+}
+
+.custom-card {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 200px; /* Adjust the height for distinction */
+  width: 100%; /* Ensures it takes the full width of the column */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card .card-body {
+  padding: 1.5rem; /* Slightly less padding for distinction */
+  flex: 1;
+}
+
+.custom-card .card-title {
+  font-weight: bold;
+  margin-bottom: 0.75rem; /* Adjust margin for distinction */
+}
+
+.custom-card .card-text {
+  font-size: 1rem; /* Slightly smaller font size */
+  margin-bottom: 1.25rem; /* Adjust margin for distinction */
+}
+
+.custom-card .btn {
+  background-color: #4e73df; /* Different shade of blue */
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  align-self: flex-end;
+}
+
+.custom-card .btn:hover {
+  background-color: #375a7f; /* Different hover color */
+}
+
+.carousel-indicators li {
+  background-color: #007bff;
+}
+/* Add this CSS to style the Tawk.to chat section */
+#tawkchat-minimize {
+  /* Example styles */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+#tawkchat-chat-container {
+  /* Example styles */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9998; /* Ensure it's above other elements except the minimize button */
+}
+.navbar-toggler {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px 0;
+  background-color: #333; /* Change this to your desired color */
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
