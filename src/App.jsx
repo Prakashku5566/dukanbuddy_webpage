@@ -94,6 +94,7 @@ function App() {
                       <a
                         href='https://app.dukanbuddy.com/'
                         target='_blank'
+                        rel='noopener noreferrer'
                         className='bold btn btn-lg mr-md-3 mt-3 nav-link px-5 py-3 
                text-blue-900 bg-white border border-blue-900 
                hover:bg-blue-900 hover:text-white hover:border-white 
