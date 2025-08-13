@@ -1,10 +1,21 @@
 import { useTranslation } from "react-i18next";
+import SeoMeta from "./SeoMeta";
 
 const BestAffordableScannersPage = () => {
   const { t } = useTranslation();
 
   return (
     <>
+      <SeoMeta
+        title='Best Affordable Barcode Scanners for MSMEs in India | Dukanbuddy'
+        description='Discover the top 5 affordable barcode scanners in India for MSMEs, from TVS, Zebra, Honeywell, Motorola, and TaoTronics. Compare prices and features.'
+        canonicalUrl='https://dukanbuddy.com/best-affordable-scanners'
+        ogTitle='Best Barcode Scanners for MSMEs'
+        ogDescription='Compare the best budget-friendly barcode scanners for Indian MSMEs. Features, prices, and buying guide.'
+        ogImage='https://dukanbuddy.com/images/scanners.jpg'
+        ogUrl='https://dukanbuddy.com/best-affordable-scanners'
+        ogType='article'
+      />
       <header
         className='bg-primary text-white p-4'
         style={{ marginTop: "80px" }}

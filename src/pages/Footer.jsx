@@ -30,19 +30,7 @@ export const Footer = () => {
               </Link>
             </nav>
           </div>
-          {/* <div className='col-md-2'>
-                <nav className='nav flex-column'>
-                  <a className='nav-item py-2 text-contrast' href='f&q'>
-                    Features
-                  </a> */}
-          {/* <a className='nav-item py-2 text-contrast' href='#'>
-                    API
-                  </a>
-                  <a className='nav-item py-2 text-contrast' href='#'>
-                    Customers
-                  </a> */}
-          {/* </nav>
-              </div> */}
+
           <div className='col-md-2'>
             <nav className='nav flex-column'>
               <Link className='nav-item py-2 text-contrast' to='/carees-page'>
@@ -51,9 +39,6 @@ export const Footer = () => {
               <Link className='nav-item py-2 text-contrast' to='/contact-page'>
                 {t("COMMON.CONTACT")}
               </Link>
-              {/* <a className='nav-item py-2 text-contrast' href='#'>
-                    Search
-                  </a> */}
             </nav>
           </div>
           <div className='col-md-2'>
@@ -66,7 +51,7 @@ export const Footer = () => {
                 className='btn btn-circle btn-sm brand-facebook'
               >
                 {/* <i className='fab fa-facebook'></i> */}
-                <img src={facebook} />
+                <img src={facebook} alt='Facebook of Dukanbuddy' />
               </a>
               <a
                 href='https://www.linkedin.com/company/cogitofs/'
@@ -74,25 +59,15 @@ export const Footer = () => {
                 title='linkdin'
               >
                 {/* <i className='fab fa-twitter'></i> */}
-                <img src={linkedin} />
+                <img src={linkedin} alt='Linkedin Of Dukanbuddy' />
               </a>
               <a
                 href='https://www.instagram.com/dukanbuddy?igsh=MWkybXg1YjM0dWlwZA%3D%3D&utm_source=qr'
                 className='btn btn-circle btn-sm '
                 title='instagram'
               >
-                {/* <i className='fab fa-instagram'></i> */}
-                <img src={instagram} />
+                <img src={instagram} alt='Instagram Of Dukanbuddy' />
               </a>
-              {/* <li class='list-inline-item'>
-                    <a
-                      href='https://www.instagram.com/dukanbuddy?igsh=MWkybXg1YjM0dWlwZA%3D%3D&utm_source=qr'
-                      target='_blank'
-                      title='instagram'
-                    >
-                      <i class='fa fa-instagram'></i>
-                    </a>
-                  </li> */}
             </nav>
           </div>
         </div>
@@ -100,8 +75,7 @@ export const Footer = () => {
         <div className='row small'>
           <div className='col-md-4'>
             <p className='mt-2 mb-0 text-center text-md-left'>
-              {/* © 2024                          //<a href='https://5studios.net'>5studios</a> */}
-              © 2024 Pensare.AI Pvt. Ltd. All Rights Reserved
+              © 2025 Pensare.AI Pvt. Ltd. All Rights Reserved
             </p>
           </div>
         </div>
