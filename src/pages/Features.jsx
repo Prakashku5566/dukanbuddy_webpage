@@ -1,0 +1,158 @@
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useTranslation } from "react-i18next";
+import accountIcon from "../../src/assets/business_13582738.png";
+import aiIcon from "../../src/assets/ai.png";
+import customer from "../../src/assets/people.png";
+import inventory from "../../src/assets/distribution.png";
+import "../App.css";
+import SeoMeta from "./SeoMeta";
+
+AOS.init({
+  duration: 1000,
+  once: true,
+});
+
+const CardComponent = ({ icon, title, content, delay }) => (
+  <div data-aos='fade-down' data-aos-delay={delay}>
+    <div className='card border-0 shadow mb-5 tilt'>
+      <div className='card-body py-5 px-4'>
+        <div className='icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3'>
+          <img src={icon} className='h-w-54' alt={title} />
+        </div>
+        <h4 className='bold mb-5'>{title}</h4>
+        <p className='text-muted lead'>
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
+export const Features = () => {
+  const { t } = useTranslation();
+  return (
+    <>
+      <SeoMeta
+        title='Powerful Features of Dukanbuddy | AI-Driven MSME Business Solutions'
+        description="Discover Dukanbuddy's powerful features for MSMEs — including customer management, automated reminders, employee management, inventory tracking, AI-driven insights, and accounting tools to grow your business effortlessly."
+        canonicalUrl='https://dukanbuddy.com/features'
+        ogTitle='Dukanbuddy Features — Smart Tools for MSMEs'
+        ogDescription='Explore how Dukanbuddy helps MSMEs manage customers, automate reminders, track inventory, handle accounting, and gain AI-powered insights to grow faster.'
+        ogImage='https://dukanbuddy.com/img/features-banner.png'
+        ogUrl='https://dukanbuddy.com/features'
+        ogType='website'
+      />
+      <section
+        className='section alter3-features'
+        id='features'
+        style={{ backgroundColor: "#9aa2e2" }}
+      >
+        <div className='shapes-container'>
+          <div className='shape shape-ring shape-ring-1'>
+            <div className='animation animation--rotating'></div>
+          </div>
+          <div className='shape shape-ring shape-ring-2'>
+            <div className='animation animation--rotating'></div>
+          </div>
+          <div className='shape shape-circle animation--clockwise'>
+            <div></div>
+          </div>
+          <div className='shape background-shape-main'></div>
+        </div>
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-lg-5 order-lg-last'>
+              <div className='section-heading'>
+                <p className='px-2 text-alternate text-uppercase bold'>
+                  {t("FEATURES.POWERFUL_FEATURES")}
+                </p>
+                <p className='lead text-muted my-4 semi-bold'>
+                  {t("FEATURES.WE_ALSO_PROVIDE")}
+                </p>
+                <ul>
+                  <li>
+                    <strong> {t("FEATURES.CUSTOMER_MANAGEMENT")}</strong>{" "}
+                    {t("FEATURES.TRACK_CUSTOMER")}
+                  </li>
+                  <li>
+                    <strong> {t("FEATURES.AUTOMATED_REMINDERS")}</strong>{" "}
+                    {t("FEATURES.TIMELY_SHOPPING")}
+                  </li>
+                  <li>
+                    <strong> {t("FEATURES.EMPLOYEE_MANAGEMENT")}</strong>{" "}
+                    {t("FEATURES.MANAGE_SALARY")}
+                  </li>
+                  <li>
+                    <strong> {t("FEATURES.USER_FRIENDLY")}</strong>{" "}
+                    {t("FEATURES.NAVIGATE_EFFORTLESSLY")}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className='col-lg-7 pr-lg-6'>
+              <div className='row'>
+                <div className='col-lg-6 rotated-cards'>
+                  <CardComponent
+                    icon={accountIcon}
+                    title={t("FEATURES_CARD.ACCOUNTING")}
+                    content={[
+                      t("FEATURES_CARD.INCREASE_CASH"),
+                      t("FEATURES_CARD.SENDING_PAYMENT_REMINDERS"),
+                      t("FEATURES_CARD.HANDLING_GST"),
+                      t("FEATURES_CARD.TRACKING_SALES"),
+                    ]}
+                    delay={0}
+                  />
+                  <CardComponent
+                    icon={customer}
+                    title={t("FEATURES_CARD.CUSTOMER_VIEW")}
+                    content={[
+                      t("FEATURES_CARD.SEND_EMAILS"),
+                      t("FEATURES_CARD.UNDERSTAND_TRENDS"),
+                      t("FEATURES_CARD.BUILD_RELATIONSHIP"),
+                    ]}
+                    delay={500}
+                  />
+                </div>
+                <div className='col-lg-6 rotated-cards'>
+                  <CardComponent
+                    icon={inventory}
+                    title={t("FEATURES_CARD.INVENTORY_MANAGEMENT")}
+                    content={[
+                      t("FEATURES_CARD.ONE_CLICK_STOCK"),
+                      t("FEATURES_CARD.REAL_TIME_ORDER"),
+                      t("FEATURES_CARD.EASY_HANDLING"),
+                    ]}
+                    delay={800}
+                  />
+                  <CardComponent
+                    icon={aiIcon}
+                    title={t("FEATURES_CARD.AI_DRIVEN")}
+                    content={[
+                      t("FEATURES_CARD.CHANGING_DEMANDS"),
+                      t("FEATURES_CARD.RECEIVE_COMPETITIVE"),
+                    ]}
+                    delay={1200}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export const FeaturesWith = () => (
+  <main className='overflow-hidden position-relative'>
+    <header className='header alter3-header section gradient card-header text-contrast'>
+      <Features />
+    </header>
+  </main>
+);
