@@ -44,7 +44,8 @@ export const Blogs = () => {
                             to='/gst-benifit-page'
                             className='btn btn-primary'
                           >
-                            {t("BLOGS.READ_MORE")}
+                            {/* {t("BLOGS.READ_MORE")} */}
+                            Read more about GST benefits
                           </Link>
                         </div>
                       </div>
@@ -70,7 +71,8 @@ export const Blogs = () => {
                             to='/digital-revolution-page'
                             className='btn btn-primary'
                           >
-                            {t("BLOGS.READ_MORE")}
+                            {/* {t("BLOGS.READ_MORE")} */}
+                            Read more about the digital revolution
                           </Link>
                         </div>
                       </div>
@@ -102,7 +104,8 @@ export const Blogs = () => {
                             to='/TheMightyKiranaPage'
                             className='btn btn-primary'
                           >
-                            {t("BLOGS.READ_MORE")}
+                            {/* {t("BLOGS.READ_MORE")} */}
+                            Discover The Mighty Kirana story
                           </Link>
                         </div>
                       </div>
@@ -128,7 +131,8 @@ export const Blogs = () => {
                             to='/RevolutionizingKiranaStoresPage'
                             className='btn btn-primary'
                           >
-                            {t("BLOGS.READ_MORE")}
+                            {/* {t("BLOGS.READ_MORE")} */}
+                            Discover innovations in Kirana retail
                           </Link>
                         </div>
                       </div>
@@ -157,7 +161,8 @@ export const Blogs = () => {
                         />
                         <div className='card-img-overlay d-flex justify-content-start align-items-end'>
                           <Link to='/blog-page' className='btn btn-primary'>
-                            {t("BLOGS.READ_MORE")}
+                            {/* {t("BLOGS.READ_MORE")} */}
+                            Explore our latest blog posts
                           </Link>
                         </div>
                       </div>
@@ -183,7 +188,8 @@ export const Blogs = () => {
                             to='/StrategiesForMSMEsPage'
                             className='btn btn-primary'
                           >
-                            {t("BLOGS.READ_MORE")}
+                            {/* {t("BLOGS.READ_MORE")} */}
+                            Learn effective strategies for MSMEs
                           </Link>
                         </div>
                       </div>

@@ -28,6 +28,7 @@ import emailIcon from "../img/email.png";
 import unlockKey from "../img/key.png";
 import whatsapp from "./assets/whatsapp.png";
 import phone from "./assets/phone.png";
+import SeoMeta from "./pages/SeoMeta";
 // import tab_image4 from "../img/screens/tab_image4.png";
 // ../img/screens/tab-image4.jpg
 
@@ -68,6 +69,16 @@ function App() {
 
   return (
     <>
+      <SeoMeta
+        title='DukanBuddy | Smart Business Platform for Small and MSMEs'
+        description='DukanBuddy offers smart inventory, billing, customer management, and more to help small businesses and MSMEs grow efficiently.'
+        canonicalUrl='https://dukanbuddy.com/'
+        ogImage='https://dukanbuddy.com/og-image.jpg'
+        ogUrl='https://dukanbuddy.com/'
+        ogType='website'
+        ogTitle='DukanBuddy | Empowering Small Businesses with Smart Solutions'
+        ogDescription='Discover how DukanBuddy simplifies billing, inventory, customer and payroll management for micro, small, and medium enterprises.'
+      />
       <div>
         <main className='overflow-hidden position-relative'>
           <header
@@ -100,7 +111,8 @@ function App() {
                hover:bg-blue-900 hover:text-white hover:border-white 
                transition-all duration-300'
                       >
-                        {t("COMMON.START_NOW")}
+                        {/* {t("COMMON.START_NOW")} */}
+                        Start using DukanBuddy
                       </a>
                     </div>
                   </nav>
@@ -111,7 +123,10 @@ function App() {
           <section className='isometric-mockups'>
             <div className='tablet ipad landscape'>
               <div className='screen'>
-                <img src='https://i.ibb.co/FB88p7V/12.jpg' alt='tab-image-12' />
+                <img
+                  src='https://i.ibb.co/r2hg8LHN/11111.webp'
+                  alt='tab-image-12'
+                />
               </div>
               <div className='button'></div>
             </div>
@@ -132,7 +147,7 @@ function App() {
             </div>
             <div className='tablet ipad portrait'>
               <div className='screen'>
-                <img src='img/screens/tablet/2.png' alt='...' />
+                <img src='img/screens/tablet/2.png' alt='tablet-image' />
               </div>
               <div className='button'></div>
             </div>
@@ -170,22 +185,22 @@ function App() {
                   </div>
                   <ul className='nav'>
                     <li className='nav-item mr-3 py-2 op-5'>
-                      <img src={"logo1"} className='icon' alt='' />
+                      <img src={"logo1"} className='icon' alt='logo1' />
                     </li>
                     <li className='nav-item mr-3 py-2 op-5'>
-                      <img src={"logo2"} className='icon' alt='' />
+                      <img src={"logo2"} className='icon' alt='logo2' />
                     </li>
                     <li className='nav-item mr-3 py-2 op-5'>
-                      <img src={"logo3"} className='icon' alt='' />
+                      <img src={"logo3"} className='icon' alt='logo3' />
                     </li>
                     <li className='nav-item mr-3 py-2 op-5'>
-                      <img src={"logo4"} className='icon' alt='' />
+                      <img src={"logo4"} className='icon' alt='logo4' />
                     </li>
                     <li className='nav-item mr-3 py-2 op-5'>
-                      <img src={"logo5"} className='icon' alt='' />
+                      <img src={"logo5"} className='icon' alt='logo5' />
                     </li>
                     <li className='nav-item mr-3 py-2 op-5'>
-                      <img src={"logo6"} className='icon' alt='' />
+                      <img src={"logo6"} className='icon' alt='logo6' />
                     </li>
                   </ul>
                   <a
@@ -193,7 +208,8 @@ function App() {
                     target='_blank'
                     className='bold btn btn-lg btn-outline-primary more-link px-0.5 py-2'
                   >
-                    {t("OURMISSION.LEARN_MORE")}
+                    {/* {t("OURMISSION.LEARN_MORE")} */}
+                    Start using DukanBuddy
                   </a>
                 </div>
               </div>
@@ -260,7 +276,7 @@ function App() {
                   <ul className='list-unstyled'>
                     <li className='media flex-column flex-md-row text-center text-md-left'>
                       <div className='p-2'>
-                        <img src={inventory_1} />
+                        <img src={inventory_1} alt='inventory-1' />
                       </div>
                       <div className='media-body mt-3 mt-md-0'>
                         <h5 className='bold mt-0 mb-1'>
@@ -274,7 +290,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={economy_1} />
+                        <img src={economy_1} alt='economy-1' />
                       </div>
                       <div className='media-body mt-3 mt-md-0'>
                         <h5 className='bold mt-0 mb-1'>
@@ -288,7 +304,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={managment_1} />
+                        <img src={managment_1} alt='managment-1' />
                       </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.CUSTOMER_MANAGEMENT")}
@@ -297,7 +313,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={supplierImage} />
+                        <img src={supplierImage} alt='supplierImage' />
                       </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.SUPPLIER_MANAGEMENT")}
@@ -306,7 +322,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={payrollImage} />
+                        <img src={payrollImage} alt='payrollImage' />
                       </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.PAYROLL_MANAGEMENT")}
@@ -315,7 +331,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={subscriptionIcon} />
+                        <img src={subscriptionIcon} alt='subscriptionIcon' />
                       </div>
                       <Feature
                         heading={t(
@@ -326,7 +342,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={cashbookIcon} />
+                        <img src={cashbookIcon} alt='cashbookIcon' />
                       </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.CASHBOOK")}
@@ -335,7 +351,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={multiStore} />
+                        <img src={multiStore} alt='multiStore' />
                       </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.MULTI_STORE_MANAGEMENT")}
@@ -346,7 +362,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={expenseManage} />
+                        <img src={expenseManage} alt='expenseManage' />
                       </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.EXPENSE_MANAGEMENT")}
@@ -355,7 +371,7 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={procurement} />
+                        <img src={procurement} alt='procurement' />
                       </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.PROCUREMENT")}
@@ -366,7 +382,10 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={security_permission} />
+                        <img
+                          src={security_permission}
+                          alt='security_permission'
+                        />
                       </div>
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.SECURITY_PERMISSION")}
@@ -377,9 +396,8 @@ function App() {
                     </li>
                     <li className='media flex-column flex-md-row text-center text-md-left mt-4'>
                       <div className='p-2'>
-                        <img src={mobileApp} />
+                        <img src={mobileApp} alt='mobileApp' />
                       </div>
-                      {/* mobileApp */}
                       <Feature
                         heading={t("FEATURE_CANOT_MISS.MOBILE_APP")}
                         paragraph={t("FEATURE_CANOT_MISS.MOBILE_APP_DETAILS")}
@@ -396,7 +414,7 @@ function App() {
                       <img
                         src={inventory_1}
                         className='img-responsive'
-                        alt='Inventory'
+                        alt='Inventory-1'
                       />
                     </figure>
                   </div>
@@ -437,190 +455,6 @@ function App() {
             </div>
           </section>
 
-          {/* <section className='section pricing-plans' id='pricing'>
-            <div className='shapes-container overflow-clear'></div>
-            <div className='container'>
-              <div className='section-heading text-center'>
-                <span className='rounded-pill shadow-box bold py-2 px-4'>
-                  <i className='far fa-lightbulb text-primary mr-2'></i>{" "}
-                  <span className='text-primary'>Save more</span> with these
-                  awesome plans
-                </span>
-                <h2 className='mt-3 heading-line'>Transparent pricing</h2>
-                <p className='lead text-muted'>
-                  Our plans have everything you need to take your app to the
-                  next level. <span className='highlight'>No hidden fees.</span>
-                </p>
-                <div
-                  id='pricing-basis-options'
-                  className='btn-group btn-group-toggle mt-5'
-                  data-toggle='buttons'
-                >
-                  <label className='btn btn-secondary active'>
-                    <input
-                      type='radio'
-                      name='pricing-basis'
-                      value='monthly'
-                      defaultChecked
-                    />{" "}
-                    Monthly
-                  </label>
-                  <label className='btn btn-secondary'>
-                    <input type='radio' name='pricing-basis' value='yearly' />{" "}
-                    Yearly
-                  </label>
-                </div>
-              </div>
-              <div className='row no-gutters align-items-center pricing-plans-options'>
-                <div className='col-lg-4 pricing-plan plan-basic order-md-first'>
-                  <div className='p-5'>
-                    <div className='text-center'>
-                      <h4 className='text-alternate bold text-capitalize'>
-                        basic
-                      </h4>
-                      <p>For individuals</p>
-                      <div className='pricing-details'>
-                        <span className='pricing-value'>
-                          <span
-                            className='odometer price'
-                            data-monthly='0'
-                            data-yearly='0'
-                          >
-                            0
-                          </span>
-                        </span>
-                      </div>
-                      <a
-                        href='#!'
-                        className='more-link btn btn-outline-alternate mb-3'
-                        onClick={() => toggleModal("basic")}
-                      >
-                        I want this
-                      </a>
-                    </div>
-                    <hr className='d-none d-md-block' />
-                    <div className='d-none d-md-flex'>
-                      <ul className='list-group list-group-flush list-group-no-border'>
-                        <li className='list-group-item'>
-                          Lorem ipsum dolor sit amet
-                        </li>
-                        <li className='list-group-item'>Dicta doloremque</li>
-                        <li className='list-group-item'>
-                          Consectetur fuga inventore
-                        </li>
-                        <li className='list-group-item'>
-                          Alias animi, assumenda atque
-                        </li>
-                        <li className='list-group-item'>
-                          Accusamus adipisci aspernatur
-                        </li>
-                      </ul>
-                    </div>
-                    <div className='d-md-none'>
-                      <button
-                        type='button'
-                        className='more-link btn btn-link d-flex align-items-center mx-auto'
-                        onClick={() => toggleModal("basic")}
-                      >
-                        View plan details
-                      </button>
-                    
-                      {showBasicModal && (
-                        <div
-                          className='modal'
-                          id='basic-plan-modal-basic'
-                          tabIndex='-1'
-                          role='dialog'
-                          style={{ display: "block", paddingRight: "17px" }}
-                        >
-                          <div className='modal-dialog' role='document'>
-                            <div className='modal-content'>
-                              <div className='modal-header'>
-                                <h5 className='modal-title bold text-capitalize'>
-                                  basic plan
-                                </h5>
-                                <button
-                                  type='button'
-                                  className='close'
-                                  onClick={() => toggleModal("basic")}
-                                >
-                                  <span aria-hidden='true'>×</span>
-                                </button>
-                              </div>
-                              <div className='modal-body plan-features'>
-                                <ul className='list-group list-group-flush text-center'>
-                                  <li className='list-group-item border-top-0'>
-                                    Lorem ipsum dolor sit amet
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Dicta doloremque
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Consectetur fuga inventore
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Alias animi, assumenda atque
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Accusamus adipisci aspernatur
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Delectus earum iste nobis
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Accusamus alias amet at
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Accusamus alias aliquid
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Animi blanditiis eveniet
-                                  </li>
-                                  <li className='list-group-item'>
-                                    Ab aliquid amet consequatur
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Call to action */}
-          {/* <div className='container pt-0 border-bottom'>
-              <div className='row align-items-center'>
-                <div className='col-md-8'>
-                  <div className='text-center text-md-left'>
-                    <h4 className='bold accent'>
-                      Not sure what is better for you?
-                    </h4>
-                    <p className='mt-0'>
-                      You can start for free, as long as you fell in love with
-                      our App you can decide what plan better suites your needs.{" "}
-                      <span className='italic dotted'>
-                        By picking any of the pay plans you will get 30 days
-                        free trial.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div className='col-md-4 text-center text-md-right'>
-                  <a
-                    href='#!'
-                    className='btn btn-primary btn-lg text-contrast p-4 more-link ml-md-auto'
-                  >
-                    Try it now !
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section> */}
-          {/* <!-- Integrations --> */}
-          {/* <!-- Why Choose Us --> */}
           <section className='section why-choose-us'>
             <div className='shapes-container'>
               <div className='pattern pattern-dots'></div>
@@ -711,11 +545,11 @@ function App() {
                 <div className='col-md-6'>
                   <div className='rotated-mockups device-twin'>
                     <div className='browser absolute shadow-lg'>
-                      <img src='img/screens/tablet/6.jpg' alt='...' />
+                      <img src='img/screens/tablet/6.jpg' alt='image-6' />
                     </div>
                     <div className='front iphone light'>
                       <div className='screen'>
-                        <img src='img/screens/app/1.png' alt='...' />
+                        <img src='img/screens/app/1.png' alt='image-1' />
                       </div>
                       <div className='notch'></div>
                     </div>
@@ -964,7 +798,7 @@ function App() {
                   <div className='section-heading text-center'>
                     {/* <i className='pe pe-7s-unlock fa-3x text-alternate'></i> */}
                     <div>
-                      <img src={unlockKey} />
+                      <img src={unlockKey} alt='unlockKey' />
                     </div>
                     <h2 className='heading-line bold mt-4'>
                       {t("FREETRIAL.START_FREE")}
@@ -982,7 +816,8 @@ function App() {
                   target='_blank'
                   className='btn btn-alternate btn-lg py-3 px-5 bold mr-0 mr-md-3 mb-3 mb-md-0'
                 >
-                  {t("FREETRIAL.SIGN_UP")}
+                  {/* {t("FREETRIAL.SIGN_UP")} */}
+                  Signup For Free
                 </a>
                 <a
                   href='mailto:contact@dukanbuddy.com'
@@ -1002,7 +837,7 @@ function App() {
                     <div className='icon-shape mr-4'>
                       {/* <i className='pe pe-7s-cash pe-3x'></i> */}
                       <span>
-                        <img src={emailIcon} />
+                        <img src={emailIcon} alt='emailIcon' />
                       </span>
                     </div>
                     <div className='media-body'>
@@ -1026,7 +861,7 @@ function App() {
                     <div className='icon-shape mr-4'>
                       {/* <i className='pe pe-7s-cash pe-3x'></i> */}
                       <span>
-                        <img src={emailIcon} />
+                        <img src={emailIcon} alt='emalIcon' />
                       </span>
                     </div>
                     <div className='media-body'>
@@ -1059,31 +894,11 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  {/* <h2 className='text-primary'>Get in Touch</h2>
-                  <div>
-                    <h5 className='text-primary'>Phone:</h5>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                      <img
-                        src={whatsapp}
-                        alt='WhatsApp'
-                        style={{ marginRight: "8px" }}
-                      />
-                      <img
-                        src={phone}
-                        alt='Phone'
-                        style={{ marginRight: "8px" }}
-                      />
-                      <p className='text-primary' style={{ margin: 0 }}>
-                        +91 6372-184-169
-                      </p>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
           </section>
         </main>
-        {/* <!-- Footer --> */}
       </div>
     </>
   );
