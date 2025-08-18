@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /user/
+Allow: /
+
+Sitemap: https://dukanbuddy.com/sitemap.xml

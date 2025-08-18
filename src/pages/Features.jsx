@@ -37,7 +37,7 @@ export const Features = () => {
   const { t } = useTranslation();
   return (
     <>
-      <SeoMeta
+      {/* <SeoMeta
         title='Powerful Features of Dukanbuddy | AI-Driven MSME Business Solutions'
         description="Discover Dukanbuddy's powerful features for MSMEs — including customer management, automated reminders, employee management, inventory tracking, AI-driven insights, and accounting tools to grow your business effortlessly."
         canonicalUrl='https://dukanbuddy.com/features'
@@ -46,7 +46,7 @@ export const Features = () => {
         ogImage='https://dukanbuddy.com/img/features-banner.png'
         ogUrl='https://dukanbuddy.com/features'
         ogType='website'
-      />
+      /> */}
       <section
         className='section alter3-features'
         id='features'
