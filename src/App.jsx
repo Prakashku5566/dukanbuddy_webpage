@@ -183,7 +183,7 @@ function App() {
                       {/* {t("OURMISSION.FOCUS_BUSINESS")} */}
                     </p>
                   </div>
-                  <ul className='nav'>
+                  {/* <ul className='nav'>
                     <li className='nav-item mr-3 py-2 op-5'>
                       <img src={"logo1"} className='icon' alt='logo1' />
                     </li>
@@ -202,7 +202,7 @@ function App() {
                     <li className='nav-item mr-3 py-2 op-5'>
                       <img src={"logo6"} className='icon' alt='logo6' />
                     </li>
-                  </ul>
+                  </ul> */}
                   <a
                     href='https://app.dukanbuddy.com/'
                     target='_blank'
