@@ -27,6 +27,7 @@ import {
 import CareerPage from "./pages/career";
 import ContactPage from "./pages/contact";
 import { Footer } from "./pages/Footer";
+import PrivacyPolicy from "./pages/privacy-policy";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <Navbar /> {/* Assuming you pass t and logo as props */}
@@ -37,6 +38,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path='/features' element={<Features />} />
       <Route path='/carees-page' element={<CareerPage />} />
       <Route path='/contact-page' element={<ContactPage />} />
+      <Route path='/privacy-policy' element={<PrivacyPolicy />} />
       <Route path='/gst-benifit-page' element={<GstBenefitsPage />} />
       <Route path='/blog-page' element={<BlogPage />} />
       <Route

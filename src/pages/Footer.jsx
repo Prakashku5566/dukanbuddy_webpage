@@ -39,6 +39,9 @@ export const Footer = () => {
               <Link className='nav-item py-2 text-contrast' to='/contact-page'>
                 {t("COMMON.CONTACT")}
               </Link>
+               <Link className='nav-item py-2 text-contrast' to='/privacy-policy'>
+                {t("COMMON.PRIVACY_POLICY")}
+              </Link>
             </nav>
           </div>
           <div className='col-md-2'>
